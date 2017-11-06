@@ -1,0 +1,20 @@
+    
+
+.content
+{
+    font-family: Roboto;
+    text-align: center;
+    padding:90px;
+}
+
+.footer
+{
+list-style-type: none;
+margin: 0;
+padding: 10px;
+overflow: hidden;
+background-color:#587bc4;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
