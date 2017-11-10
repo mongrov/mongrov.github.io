@@ -5,13 +5,3 @@
     font-family: Roboto;
     text-align: center;
 }
-
-.footer
-{
-list-style-type: none;
-margin: 0;
-padding: 10px;
-overflow: hidden;
-background-color:#587bc4;
-width: 100%;
-}
