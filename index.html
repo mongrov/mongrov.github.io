@@ -401,22 +401,14 @@
       </div>
     </div>
   </section>
-  <!-- Start of Mongrov.Chat Livechat Script -->
-  <script type="text/javascript">
-    (function (w, d, s, u) {
-      w.RocketChat = function (c) {
-        w.RocketChat._.push(c)
-      };
-      w.RocketChat._ = [];
-      w.RocketChat.url = u;
-      var h = d.getElementsByTagName(s)[0],
-        j = d.createElement(s);
-      j.async = true;
-      j.src =
-        'https://mongrov.redflock.net/packages/rocketchat_livechat/assets/rocketchat-livechat.min.js?_=201702160944';
-      h.parentNode.insertBefore(j, h);
-    })(window, document, 'script', 'https://mongrov.redflock.net/livechat');
-
+<!-- Start of Mongrov.Chat Livechat Script -->
+<script type="text/javascript">
+  (function(w, d, s, u) {
+    w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
+    var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
+    j.async = true; j.src = 'https://mongrov.redflock.net/packages/rocketchat_livechat/assets/rocketchat-livechat.min.js?_=201702160944';
+    h.parentNode.insertBefore(j, h);
+  })(window, document, 'script', 'https://mongrov.redflock.net/livechat');
   </script>
   <!-- End of Mongrov.Chat Livechat Script -->
 
