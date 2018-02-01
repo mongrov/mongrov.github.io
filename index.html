@@ -46,6 +46,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="featuresMenu">
                 <a class="dropdown-item" href="messaging.html">Messaging</a>
+                <a class="dropdown-item" href="geo-tracking.html">Geo Tracking</a>
               </div>
             </li>
             <li class="nav-item">
@@ -156,7 +157,7 @@
         </div>
       </div>
       <div class="row py-5">
-        <div class="col-md-3 text-center feature-link">
+        <div class="col-md-3 text-center feature-link" data-link="messaging">
           <img src="images/Messaging.png" class="img-fluid px-5" alt="">
           <h4 class="mt-4">Messaging</h4>
           <p>Real time communication with team using private and group chat keeping all your team
@@ -176,7 +177,7 @@
           <p>Task boards to create &amp; assign task, set due dates &amp; time spent and get status notifications on mobile.
             Peace of mind even on the go.</p>
         </div>
-        <div class="col-md-3 text-center">
+        <div class="col-md-3 text-center feature-link"  data-link="geo-tracking">
           <img src="images/geo.png" class="img-fluid px-5" alt="">
           <h4 class="mt-4">Geo Tracking</h4>
           <p>Real Time Location tracking of onfield workforce, dynamic work view on maps and automatic reports of places visited
@@ -440,8 +441,7 @@
   <!-- Custom scripts -->
   <script>
     $('.feature-link').click(function(){
-      console.log('hi');
-      window.location.href = 'messaging.html';
+      window.location.href = `${$(this).data("link")}.html`;
     });
   </script>
 </body>
