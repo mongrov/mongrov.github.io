@@ -9501,7 +9501,10 @@ img.zoom-img {
   width: 220px; }
 
 .gro-logo-white {
-  width: 200px; }
+  width: 160px; }
+
+#features .icon {
+  height: 5rem; }
 
 .nav-link.h5 {
   font-size: 1rem; }
