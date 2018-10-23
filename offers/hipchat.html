@@ -37,7 +37,7 @@
       <div class="container banner-content">
         <div class="row justify-content-center">
           <div class="col-lg-6 mb-3 mb-sm-0 d-flex align-items-center">
-            <div>
+            <div class="banner-left-text">
               <h1 class="display-5">Migrating from HipChat?
                 <br>Try Mongrov!</h1>
               <h4 class="text-muted">Swift migration | 24/7 support | Quick deployment</h4>
@@ -98,12 +98,12 @@
       </div>
     </section>
     <section class="p-0 bg-gradient">
-      <div class="container">
+      <div class="container m-padding-x-25">
 
         <div class="row justify-content-around align-items-center spacer-y-3">
           <div class="row justify-content-around align-items-center mb-3">
             <div class="col-md-9 text-center">
-              <span class="lead d-block mb-lg-2 text-white">A mobile first unified collaboration &amp work management solution for your teams; wherein you can integrate and access your existing software's &amp services seamlessly.</span>
+              <span class="lead d-block mb-lg-2 text-white">A collaborative work management solution for your teams; wherein you can integrate and access your existing software's &amp services seamlessly.</span>
 
             </div>
 
@@ -126,6 +126,7 @@
                   </span>
                 </div>
                 <input type="email" value="" name="EMAIL" class="form-control required email" placeholder="Your email" aria-label="Enter your email address">
+                <input type="hidden" name="_cc" value="hello@mongrov.com" />
               </div>
               <div class="col-md-4">
                 <button class="btn btn-lg btn-block btn-primary" type="submit" value="Send">Request Demo</button>
@@ -155,7 +156,7 @@
   </section>-->
 
     <section class="bg-gradient-2">
-      <div class="container">
+      <div class="container m-padding-x-25">
         <div class="row mb-4 text-center">
           <div class="col">
             <span class="h2 text-white">Features</span>
@@ -269,6 +270,25 @@
         </div>
       </div>
     </footer>
+
+    <!-- Start of Rocket.Chat Livechat Script -->
+    <script type="text/javascript">
+      (function(w, d, s, u)
+      {
+        w.RocketChat = function(c)
+        {
+          w.RocketChat._.push(c)
+        };
+        w.RocketChat._ = [];
+        w.RocketChat.url = u;
+        var h = d.getElementsByTagName(s)[0],
+          j = d.createElement(s);
+        j.async = true;
+        j.src = 'https://41a3b13c.ngrok.io/packages/rocketchat_livechat/assets/rocketchat-livechat.min.js?_=201702160944';
+        h.parentNode.insertBefore(j, h);
+      })(window, document, 'script', 'https://41a3b13c.ngrok.io/livechat');
+    </script>
+    <!-- End of Rocket.Chat Livechat Script -->
 
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/popper.min.js"></script>

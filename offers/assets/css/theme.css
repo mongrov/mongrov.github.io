@@ -9618,4 +9618,25 @@ canvas {
 .main-slider [data-flickity]:not(:hover) .flickity-prev-next-button {
   opacity: 0.3; }
 
+/* Custom media queries starts here */
+@media only screen and (max-width: 812px) {
+  .banner-left-text {
+    text-align: center;
+    width: 100%; }
+  .m-text-center {
+    text-align: center; } }
+
+@media only screen and (max-width: 640px) {
+  .m-padding-x-25 {
+    padding-left: 25px;
+    padding-right: 25px; } }
+
+@media only screen and (max-width: 480px) {
+  .banner-left-text h1 {
+    font-size: 200%; }
+  .banner-left-text h3 {
+    font-size: 150%; } }
+
+/* Custom media queries Ends here */
+
 /*# sourceMappingURL=theme.css.map */
