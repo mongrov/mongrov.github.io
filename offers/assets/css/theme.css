@@ -9622,9 +9622,12 @@ canvas {
 @media only screen and (max-width: 812px) {
   .banner-left-text {
     text-align: center;
-    width: 100%; }
+    width: 100%;
+    margin-top: 50px; }
   .m-text-center {
-    text-align: center; } }
+    text-align: center; }
+  .m-padding-bottom-0 {
+    padding-bottom: 0 !important; } }
 
 @media only screen and (max-width: 640px) {
   .m-padding-x-25 {
