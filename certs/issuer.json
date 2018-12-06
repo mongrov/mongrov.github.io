@@ -7,14 +7,13 @@
   "id": "https://mongrov.com/certs/issuer.json",
   "name": "Mongrov, Inc",
   "url": "https://mongrov.com",
-  "publicKey": [
+  "issuerKeys": [
     {
-      "@context": "https://w3id.org/openbadges/v2",
-      "type": "CryptographicKey",
-      "id": "https://mongrov.com/certs/publicKey.json",
-      "owner": "https://mongrov.com/certs/organization.json",
-      "publicKeyPem": "-----BEGIN PUBLIC KEY-----\n8F297B06d5367720754282dCE4f65DBaD3598122\n-----END PUBLIC KEY-----\n"
+      "date": "2018-11-25",
+      "key": "8F297B06d5367720754282dCE4f65DBaD3598122"
     }
+  ],
+  "revocationKeys": [
   ],
   "revocationList": "https://mongrov.com/certs/revocation-list.json",
   "image": "https://mongrov.com/images/mongrov-logo.png",
