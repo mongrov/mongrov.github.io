@@ -10,8 +10,7 @@
   "image": "https://mongrov.com/images/mongrov-logo.png",  
   "publicKey": [
     {
-      "id": "ecdsa-koblitz-pubkey:8F297B06d5367720754282dCE4f65DBaD3598122",
-      "created": "2018-12-02T22:54:06.736463+00:00"
+      "id": "ecdsa-koblitz-pubkey:8F297B06d5367720754282dCE4f65DBaD3598122"
     }
   ],
   "revocationList": "https://mongrov.com/certs/revocation-list.json",
