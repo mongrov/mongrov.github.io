@@ -10,7 +10,7 @@
   "image": "https://mongrov.com/images/mongrov-logo.png",  
   "publicKey": [
     {
-      "id": "ecdsa-koblitz-pubkey:F5df148c99F51CF6267deb55a230Fb71CBA49296",
+      "id": "ecdsa-koblitz-pubkey:f5df148c99f51cf6267deb55a230fb71cba49296",
       "created": "2018-11-05T22:54:06.736463+00:00"
     }
   ],
