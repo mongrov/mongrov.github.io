@@ -3,17 +3,17 @@
     "https://w3id.org/openbadges/v2",
     "https://w3id.org/blockcerts/v2"
   ],
-  "type": "Profile",
   "id": "https://mongrov.com/certs/issuer.json",
-  "name": "Mongrov, Inc",
   "url": "https://mongrov.com",
-  "issuerKeys": [
+  "name": "Mongrov, Inc",
+  "email": "hello@mongrov.com",
+  "image": "https://mongrov.com/images/mongrov-logo.png",  
+  "publicKey": [
     {
-      "date": "2018-11-25",
-      "key": "8F297B06d5367720754282dCE4f65DBaD3598122"
+      "id": "ecdsa-koblitz-pubkey:8F297B06d5367720754282dCE4f65DBaD3598122",
+      "created": "2018-12-05T22:54:06.736463+00:00"
     }
   ],
   "revocationList": "https://mongrov.com/certs/revocation-list.json",
-  "image": "https://mongrov.com/images/mongrov-logo.png",
-  "email": "hello@mongrov.com"
+  "type": "Profile"
 }
