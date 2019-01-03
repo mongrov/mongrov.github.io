@@ -208,8 +208,8 @@ var Alert = function ($) {
     _proto.dispose = function dispose() {
       $.removeData(this._element, DATA_KEY);
       this._element = null;
-    } // Private
-    ;
+    }; // Private
+
 
     _proto._getRootElement = function _getRootElement(element) {
       var selector = Util.getSelectorFromElement(element);
@@ -251,8 +251,8 @@ var Alert = function ($) {
 
     _proto._destroyElement = function _destroyElement(element) {
       $(element).detach().trigger(Event.CLOSED).remove();
-    } // Static
-    ;
+    }; // Static
+
 
     Alert._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -414,8 +414,8 @@ var Button = function ($) {
     _proto2.dispose = function dispose() {
       $.removeData(this._element, DATA_KEY);
       this._element = null;
-    } // Static
-    ;
+    }; // Static
+
 
     Button._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -669,8 +669,8 @@ var Carousel = function ($) {
       this._isSliding = null;
       this._activeElement = null;
       this._indicatorsElement = null;
-    } // Private
-    ;
+    }; // Private
+
 
     _proto3._getConfig = function _getConfig(config) {
       config = _objectSpread({}, Default, config);
@@ -869,8 +869,8 @@ var Carousel = function ($) {
       if (isCycling) {
         this.cycle();
       }
-    } // Static
-    ;
+    }; // Static
+
 
     Carousel._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -1214,8 +1214,8 @@ var Collapse = function ($) {
       this._element = null;
       this._triggerArray = null;
       this._isTransitioning = null;
-    } // Private
-    ;
+    }; // Private
+
 
     _proto4._getConfig = function _getConfig(config) {
       config = _objectSpread({}, Default, config);
@@ -1261,8 +1261,8 @@ var Collapse = function ($) {
           $(triggerArray).toggleClass(ClassName.COLLAPSED, !isOpen).attr('aria-expanded', isOpen);
         }
       }
-    } // Static
-    ;
+    }; // Static
+
 
     Collapse._getTargetFromElement = function _getTargetFromElement(element) {
       var selector = Util.getSelectorFromElement(element);
@@ -1549,8 +1549,8 @@ var Dropdown = function ($) {
       if (this._popper !== null) {
         this._popper.scheduleUpdate();
       }
-    } // Private
-    ;
+    }; // Private
+
 
     _proto5._addEventListeners = function _addEventListeners() {
       var _this9 = this;
@@ -1641,8 +1641,8 @@ var Dropdown = function ($) {
       }
 
       return popperConfig;
-    } // Static
-    ;
+    }; // Static
+
 
     Dropdown._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -1726,8 +1726,8 @@ var Dropdown = function ($) {
       }
 
       return parent || element.parentNode;
-    } // eslint-disable-next-line complexity
-    ;
+    }; // eslint-disable-next-line complexity
+
 
     Dropdown._dataApiKeydownHandler = function _dataApiKeydownHandler(event) {
       // If not input/textarea:
@@ -2036,8 +2036,8 @@ var Modal = function ($) {
 
     _proto6.handleUpdate = function handleUpdate() {
       this._adjustDialog();
-    } // Private
-    ;
+    }; // Private
+
 
     _proto6._getConfig = function _getConfig(config) {
       config = _objectSpread({}, Default, config);
@@ -2227,11 +2227,11 @@ var Modal = function ($) {
       } else if (callback) {
         callback();
       }
-    } // ----------------------------------------------------------------------
+    }; // ----------------------------------------------------------------------
     // the following methods are used to handle overflowing modals
     // todo (fat): these should probably be refactored out of modal.js
     // ----------------------------------------------------------------------
-    ;
+
 
     _proto6._adjustDialog = function _adjustDialog() {
       var isModalOverflowing = this._element.scrollHeight > document.documentElement.clientHeight;
@@ -2314,8 +2314,8 @@ var Modal = function ($) {
       var scrollbarWidth = scrollDiv.getBoundingClientRect().width - scrollDiv.clientWidth;
       document.body.removeChild(scrollDiv);
       return scrollbarWidth;
-    } // Static
-    ;
+    }; // Static
+
 
     Modal._jQueryInterface = function _jQueryInterface(config, relatedTarget) {
       return this.each(function () {
@@ -2755,8 +2755,8 @@ var Tooltip = function ($) {
       if (this._popper !== null) {
         this._popper.scheduleUpdate();
       }
-    } // Protected
-    ;
+    }; // Protected
+
 
     _proto7.isWithContent = function isWithContent() {
       return Boolean(this.getTitle());
@@ -2802,8 +2802,8 @@ var Tooltip = function ($) {
       }
 
       return title;
-    } // Private
-    ;
+    }; // Private
+
 
     _proto7._getAttachment = function _getAttachment(placement) {
       return AttachmentMap[placement.toUpperCase()];
@@ -2994,8 +2994,8 @@ var Tooltip = function ($) {
       this.hide();
       this.show();
       this.config.animation = initConfigAnimation;
-    } // Static
-    ;
+    }; // Static
+
 
     Tooltip._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -3176,8 +3176,8 @@ var Popover = function ($) {
 
       this.setElementContent($tip.find(Selector.CONTENT), content);
       $tip.removeClass(ClassName.FADE + " " + ClassName.SHOW);
-    } // Private
-    ;
+    }; // Private
+
 
     _proto8._getContent = function _getContent() {
       return this.element.getAttribute('data-content') || this.config.content;
@@ -3190,8 +3190,8 @@ var Popover = function ($) {
       if (tabClass !== null && tabClass.length > 0) {
         $tip.removeClass(tabClass.join(''));
       }
-    } // Static
-    ;
+    }; // Static
+
 
     Popover._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -3413,8 +3413,8 @@ var ScrollSpy = function ($) {
       this._targets = null;
       this._activeTarget = null;
       this._scrollHeight = null;
-    } // Private
-    ;
+    }; // Private
+
 
     _proto9._getConfig = function _getConfig(config) {
       config = _objectSpread({}, Default, typeof config === 'object' && config ? config : {});
@@ -3520,8 +3520,8 @@ var ScrollSpy = function ($) {
     _proto9._clear = function _clear() {
       var nodes = [].slice.call(document.querySelectorAll(this._selector));
       $(nodes).filter(Selector.ACTIVE).removeClass(ClassName.ACTIVE);
-    } // Static
-    ;
+    }; // Static
+
 
     ScrollSpy._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -3714,8 +3714,8 @@ var Tab = function ($) {
     _proto10.dispose = function dispose() {
       $.removeData(this._element, DATA_KEY);
       this._element = null;
-    } // Private
-    ;
+    }; // Private
+
 
     _proto10._activate = function _activate(element, container, callback) {
       var _this27 = this;
@@ -3780,8 +3780,8 @@ var Tab = function ($) {
       if (callback) {
         callback();
       }
-    } // Static
-    ;
+    }; // Static
+
 
     Tab._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
