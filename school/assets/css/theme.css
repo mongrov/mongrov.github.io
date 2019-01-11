@@ -160,6 +160,13 @@ a.btn {
 .testimonial button.flickity-button {
   display: none; }
 
+#features_section p {
+  font-size: 1.25rem; }
+
+#features_section .icon {
+  width: auto;
+  height: 3.5rem; }
+
 /* Responsive styles starts here */
 @media only screen and (max-width: 991px) {
   #school-page .slider-cards .h1 {
