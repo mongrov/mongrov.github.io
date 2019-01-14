@@ -70,12 +70,15 @@
 .bg-gradient-4 {
   background: linear-gradient(90deg, #0fdad0 0%, #19b8d2 100%); }
 
-#school-page .h1 {
-  font-size: 54px;
-  color: #333333; }
+h1, .h1 {
+  font-size: 52px !important;
+  color: #333333 !important; }
 
-#school-page svg path {
-  fill: #2b353c; }
+svg path {
+  fill: #2b353c !important; }
+
+.fork svg path {
+  fill: #FFFFFF !important; }
 
 #school-page .shadow-lg, #school-page .demo-pages a:hover, .demo-pages #school-page a:hover {
   box-shadow: none !important; }
@@ -166,6 +169,30 @@ a.btn {
 #features_section .icon {
   width: auto;
   height: 3.5rem; }
+
+span#star {
+  background: #FFF;
+  color: #0099FF;
+  width: 30px;
+  display: block;
+  float: right;
+  margin-left: 10px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  text-align: center; }
+
+span#fork {
+  background: #FFF;
+  color: #0099FF;
+  width: 30px;
+  display: block;
+  float: right;
+  margin-left: 10px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  text-align: center; }
 
 /* Responsive styles starts here */
 @media only screen and (max-width: 991px) {
