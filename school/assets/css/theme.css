@@ -39,10 +39,32 @@
   background-size: cover; }
 
 .SpacesHeroSection2 {
-  background-image: url(../img/abs2.svg), linear-gradient(180deg, #00B8FF 0, #1A91BF 50%, #1A91BF);
+  background-image: url(../img/abs-school1.svg), linear-gradient(180deg, #00B8FF 0, #00B8FF 50%, #1A91BF);
   background-position: right, bottom;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.SpacesHeroSection3 {
+  background-image: url(../img/abs-contact.svg), linear-gradient(180deg, #00B8FF 0, #00B8FF 50%, #1A91BF);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.SpacesHeroSection4 {
+  background-image: url(../img/abs-contact1.svg), linear-gradient(180deg, #B7ECFF 0, #B7ECFF 50%, #B7ECFF);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.SpacesHeroSection5 {
+  background-image: url(../img/abs-school2.svg), linear-gradient(180deg, #00B8FF 0, #00B8FF 50%, #1A91BF);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#contact-page2 .main-banner h1 {
+  font-size: 54px;
+  color: #009cd8 !important; }
 
 .main-banner {
   overflow: hidden;
