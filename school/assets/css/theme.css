@@ -32,8 +32,14 @@
   background-repeat: no-repeat;
   background-size: cover; }
 
+/* .SpacesHeroSection1 {
+    background-image: url(../img/abs3.svg), linear-gradient(180deg, #2b109a 0, #17076d 50%, #111032);
+    background-position: right, bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
 .SpacesHeroSection1 {
-  background-image: url(../img/abs3.svg), linear-gradient(180deg, #2b109a 0, #17076d 50%, #111032);
+  background-image: url(../img/abs3.svg), linear-gradient(180deg, #00B8FF 0, #00B8FF 50%, #1A91BF);
   background-position: right, bottom;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -51,13 +57,25 @@
   background-size: cover; }
 
 .SpacesHeroSection4 {
-  background-image: url(../img/abs-contact1.svg), linear-gradient(180deg, #B7ECFF 0, #B7ECFF 50%, #B7ECFF);
+  background-image: url(../img/abs-contact.svg), linear-gradient(180deg, #FFD795 0, #FFD795 50%, #ffd795);
   background-position: right, bottom;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .SpacesHeroSection5 {
   background-image: url(../img/abs-school2.svg), linear-gradient(180deg, #00B8FF 0, #00B8FF 50%, #1A91BF);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.SpacesHeroSectionMessaging {
+  background-image: url(../img/abs-messaging.svg), linear-gradient(180deg, #5fa595 0, #5fa595 50%, #5fa595);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.SpacesHeroSectionOpensource {
+  background-image: url(../img/abs-opensource.svg), linear-gradient(180deg, #718DE8 0, #718DE8 50%, #718DE8);
   background-position: right, bottom;
   background-repeat: no-repeat;
   background-size: cover; }
