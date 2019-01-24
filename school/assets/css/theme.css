@@ -51,13 +51,13 @@
   background-size: cover; }
 
 .SpacesHeroSection3 {
-  background-image: url(../img/abs-contact.svg), linear-gradient(180deg, #00B8FF 0, #00B8FF 50%, #1A91BF);
+  background-image: url(../img/abs-contact.svg), linear-gradient(180deg, #25D0DB 0, #25D0DB 50%, #25D0DB);
   background-position: right, bottom;
   background-repeat: no-repeat;
   background-size: cover; }
 
 .SpacesHeroSection4 {
-  background-image: url(../img/abs-contact.svg), linear-gradient(180deg, #FFD795 0, #FFD795 50%, #ffd795);
+  background-image: url(../img/abs-contact.svg), linear-gradient(180deg, #00B8FF 0, #00B8FF 50%, #00B8FF);
   background-position: right, bottom;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -75,7 +75,7 @@
   background-size: cover; }
 
 .SpacesHeroSectionOpensource {
-  background-image: url(../img/abs-opensource.svg), linear-gradient(180deg, #718DE8 0, #718DE8 50%, #718DE8);
+  background-image: url(../img/abs-opensource.svg), linear-gradient(180deg, #5E4DD6 0, #5E4DD6 50%, #5E4DD6);
   background-position: right, bottom;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -239,6 +239,12 @@ span#fork {
   line-height: 30px;
   border-radius: 5px;
   text-align: center; }
+
+.btn-violet {
+  background-color: #5432bd; }
+
+.btn-violet:hover {
+  background-color: #4829a5; }
 
 /* Responsive styles starts here */
 @media only screen and (max-width: 991px) {
