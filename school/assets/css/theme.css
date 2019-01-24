@@ -69,7 +69,7 @@
   background-size: cover; }
 
 .SpacesHeroSectionMessaging {
-  background-image: url(../img/abs-messaging.svg), linear-gradient(180deg, #5fa595 0, #5fa595 50%, #5fa595);
+  background-image: url(../img/abs-messaging.svg), linear-gradient(180deg, #27C1C4 0, #27C1C4 50%, #27C1C4);
   background-position: right, bottom;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -243,7 +243,7 @@ span#fork {
 /* Responsive styles starts here */
 @media only screen and (max-width: 991px) {
   #school-page .slider-cards .h1 {
-    font-size: 200%;
+    font-size: 200% !important;
     margin-bottom: 10px; }
   #school-page .slider-cards .h6 {
     margin-bottom: 10px; }
