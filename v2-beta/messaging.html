@@ -11,6 +11,8 @@
     <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all">
     <meta http-equiv="Expires" content="30" Cache-Control: max-age=86400>
 
+    <link rel="stylesheet" href="assets/css/motion.min.css">
+
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img//favicon-16x16.png">
@@ -54,6 +56,10 @@
 
       .dropdown-menu-wide {
         width: 300px;
+      }
+
+      section {
+        overflow: hidden;
       }
     </style>
 
@@ -169,7 +175,7 @@
 
             <div class="slider-cards">
               <div class="carousel-cell d-flex align-items-center">
-                <div class="col-md-7">
+                <div class="col-md-7 animation fade-in-right delay-05s">
 
                   <h1 class="display-6 h1 text-white">Messaging</h1>
                   <h5 class="text-light" style="font-weight: normal;">Real-time communication with team using private and group chat keeping all your team members up to date anywhere anytime.</h5>
@@ -183,7 +189,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-md-5 col-sm col">
+                <div class="col-md-5 col-sm col animation fade-in-left delay-05s">
                   <img src="assets/img/messaging-banner1.png" alt="School banner">
                 </div>
               </div>
@@ -193,10 +199,10 @@
       </div>
     </section>
     <section class="row no-gutters p-0 flex-md-row-reverse bg-white">
-      <div class="col-md-5 col-lg-6 d-flex  flex-column order-md-2">
+      <div class="col-md-5 col-lg-6 d-flex  flex-column order-md-2 left-sec" id="animation">
         <img src="assets/img/messaging-groups-private.jpg" alt="Image" class="flex-grow-1">
       </div>
-      <div class="col-md-7 col-lg-6 d-flex order-md-1 align-items-center col-sm-text-center">
+      <div class="col-md-7 col-lg-6 d-flex order-md-1 align-items-center col-sm-text-center right-sec" id="animation">
         <div class="row no-gutters justify-content-center py-md-4">
           <div class="col-md-10 col-lg-9 col-xl-12 p-3 py-md-5">
             <span class="h2 d-block">Groups - 1:1 / Private / Public</span>
@@ -217,10 +223,10 @@
       </div>
     </section>
     <section class="row no-gutters p-0 flex-md-row-reverse bg-lightgrey">
-      <div class="col-md-5 col-lg-6 d-flex flex-column order-md-1">
+      <div class="col-md-5 col-lg-6 d-flex flex-column order-md-1 right-sec" id="animation">
         <img src="assets/img/messaging-threaded.jpg" alt="Image" class="flex-grow-1">
       </div>
-      <div class="col-md-7 col-lg-6 d-flex order-md-2 align-items-center col-sm-text-center">
+      <div class="col-md-7 col-lg-6 d-flex order-md-2 align-items-center col-sm-text-center left-sec" id="animation">
         <div class="row no-gutters justify-content-center py-md-4">
           <div class="col-md-10 col-lg-9 col-xl-8 p-3 py-md-5">
             <span class="h2 d-block">Threaded Messaging</span>
@@ -240,10 +246,10 @@
       </div>
     </section>
     <section class="row no-gutters p-0 flex-md-row-reverse bg-white">
-      <div class="col-md-5 col-lg-6 d-flex flex-column order-md-2">
+      <div class="col-md-5 col-lg-6 d-flex flex-column order-md-2 left-sec" id="animation">
         <img src="assets/img/messaging-notification.jpg" alt="Image" class="flex-grow-1">
       </div>
-      <div class="col-md-7 col-lg-6 d-flex  order-md-1 align-items-center col-sm-text-center">
+      <div class="col-md-7 col-lg-6 d-flex  order-md-1 align-items-center col-sm-text-center right-sec" id="animation">
         <div class="row no-gutters justify-content-center py-md-4">
           <div class="col-md-10 col-lg-9 col-xl-12 p-3 py-md-5">
             <span class="h2 d-block">@notifications</span>
@@ -263,10 +269,10 @@
       </div>
     </section>
     <section class="row no-gutters p-0 flex-md-row-reverse bg-lightgrey">
-      <div class="col-md-5 col-lg-6 d-flex flex-column order-md-1">
+      <div class="col-md-5 col-lg-6 d-flex flex-column order-md-1 right-sec" id="animation">
         <img src="assets/img/messaging-attachements.jpg" alt="Image" class="flex-grow-1">
       </div>
-      <div class="col-md-7 col-lg-6 d-flex order-md-2 align-items-center col-sm-text-center">
+      <div class="col-md-7 col-lg-6 d-flex order-md-2 align-items-center col-sm-text-center left-sec" id="animation">
         <div class="row no-gutters justify-content-center py-md-4">
           <div class="col-md-10 col-lg-9 col-xl-8 p-3 py-md-5">
             <span class="h2 d-block">Attachments - Images, Audio, Video, Documents</span>
@@ -286,10 +292,10 @@
       </div>
     </section>
     <section class="row no-gutters p-0 flex-md-row-reverse bg-white">
-      <div class="col-md-5 col-lg-6 d-flex flex-column order-md-2">
+      <div class="col-md-5 col-lg-6 d-flex flex-column order-md-2 left-sec" id="animation">
         <img src="assets/img/messaging-administration.jpg" alt="Image" class="flex-grow-1">
       </div>
-      <div class="col-md-7 col-lg-6 d-flex  order-md-1 align-items-center col-sm-text-center">
+      <div class="col-md-7 col-lg-6 d-flex  order-md-1 align-items-center col-sm-text-center right-sec" id="animation">
         <div class="row no-gutters justify-content-center py-md-4">
           <div class="col-md-10 col-lg-9 col-xl-12 p-3 py-md-5">
             <span class="h2 d-block">Administration</span>
@@ -309,57 +315,73 @@
       </div>
     </section>
 
-    <section class="p-0 bg-skyblue" id="get_started">
-      <div class="container">
-
-        <div class="row justify-content-around align-items-center spacer-y-4">
-          <div class="col-md-8 text-center mb-3">
-            <span class="h1 d-block mb-lg-2 text-white">Let's get started</span>
-            <!-- <span class="d-block text-white">An easy to use application for making teachers - parents communication more effective with tools for school</span> -->
-          </div>
-          <div class="col-md-12">
-            <div class="row justify-content-center">
-              <div class="col-md-6 text-center">
-                <form class="row align-items-center mb-0" action="https://formspree.io/hello@mongrov.com" method="POST">
-                  <input type="hidden" value="Let's get started" name="SUBJECT" class="" placeholder="" required="">
-                  <div class="col-md-12 input-group input-group-lg mb-2 mb-md-0 mc-field-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="material-icons">perm_identity</i>
-                      </span>
-                    </div>
-                    <input type="text" value="" name="NAME" class="form-control required" placeholder="Your name" aria-label="Enter your name" required="">
-                  </div>
-                  <div class="col-md-12 input-group input-group-lg mt-2 mb-2 mb-md-0 mc-field-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="material-icons">stay_current_portrait</i>
-                      </span>
-                    </div>
-                    <input type="tel" value="" name="PHONE" class="form-control required" placeholder="Phone number" aria-label="Enter your phone number" required="">
-                  </div>
-
-                  <div class="col-md-12 input-group input-group-lg mb-2 mt-2 mb-md-0 mc-field-group">
-
-                    <textarea type="text" name="MESSAGE" class="form-control required" value="" rows="5" placeholder="Type message here" aria-label="Enter message here" required=""></textarea>
-                  </div>
-
-                  <div class="col-md-12 mt-2">
-                    <button class="btn btn-lg btn-block btn-getstarted" type="submit" value="Send">Get Started</button>
-                  </div>
-
-                  <div id="col-md-12 mce-responses" class="clear">
-                    <div class="response" id="mce-error-response" style="display:none"></div>
-                    <div class="response" id="mce-success-response" style="display:none"></div>
-                  </div>
-                </form>
+    <section class="bg-lightgrey">
+      <div class="container py-3">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center py-3">
+            <div class="card trial-sec" id="animation">
+              <div class="py-4 card-body">
+                <h4 class="h4">Ready to build your own workspace?</h4>
+                <a class="btn btn-primary typeform-share" href="https://app.mongrov.com/" target="_blank" style="font-size: 18px; height:38px" data-mode="drawer_right">Start Free Trial</a>
+                <!-- <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script> -->
+                <p class="pt-2" style="font-size:12px;color:#afafaf">Free for 14 days &#9679; No credit card</p>
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </section>
+
+    <!-- <section class="p-0 bg-skyblue" id="get_started">
+        <div class="container">
+  
+          <div class="row justify-content-around align-items-center spacer-y-4">
+            <div class="col-md-8 text-center mb-3">
+              <span class="h1 d-block mb-lg-2 text-white">Let's get started</span>
+              </div>
+            <div class="col-md-12">
+              <div class="row justify-content-center">
+                  <div class="col-md-6 text-center">
+                      <form class="row align-items-center mb-0" action="https://formspree.io/hello@mongrov.com" method="POST">
+                        <input type="hidden" value="Let's get started" name="SUBJECT" class="" placeholder="" required="">
+                        <div class="col-md-12 input-group input-group-lg mb-2 mb-md-0 mc-field-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="material-icons">perm_identity</i>
+                            </span>
+                          </div>
+                          <input type="text" value="" name="NAME" class="form-control required" placeholder="Your name" aria-label="Enter your name" required="">
+                        </div>
+                        <div class="col-md-12 input-group input-group-lg mt-2 mb-2 mb-md-0 mc-field-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">
+                              <i class="material-icons">stay_current_portrait</i>
+                            </span>
+                          </div>
+                          <input type="tel" value="" name="PHONE" class="form-control required" placeholder="Phone number" aria-label="Enter your phone number" required="">
+                        </div>
+
+                        <div class="col-md-12 input-group input-group-lg mb-2 mt-2 mb-md-0 mc-field-group">
+                            
+                          <textarea type="text" name="MESSAGE" class="form-control required" value="" rows="5" placeholder="Type message here" aria-label="Enter message here" required=""></textarea>
+                         </div>
+          
+                        <div class="col-md-12 mt-2">
+                          <button class="btn btn-lg btn-block btn-getstarted" type="submit" value="Send">Get Started</button>
+                        </div>
+                        
+                        <div id="col-md-12 mce-responses" class="clear">
+                          <div class="response" id="mce-error-response" style="display:none"></div>
+                          <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                      </form>
+                    </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </section> -->
 
     <section class="spacer-y-3 section-prefooter" style="padding-bottom: 20px;">
       <div class="container">
@@ -425,6 +447,7 @@
           </div>
         </div>
       </div>
+
     </footer>
 
     <!-- Start of Rocket.Chat Livechat Script -->
@@ -481,6 +504,75 @@
     <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="assets/js/zoom.min.js"></script>
     <script type="text/javascript" src="assets/js/theme.js"></script>
+
+    <script>
+      $(window).scroll(function()
+      {
+        $('.left-sec').each(function()
+        {
+          var elPosition = $(this).offset().top;
+          var elHeight = $(this).height();
+          var windowTop = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          if (elPosition < windowTop + windowHeight - elHeight)
+          {
+            $(this).addClass("animation fade-in-right");
+          }
+          if (elPosition > windowTop + windowHeight)
+          {
+            $(this).removeClass("animation fade-in-right");
+          }
+          if (elPosition + elHeight < windowTop)
+          {
+            $(this).removeClass("animation fade-in-right");
+          }
+        });
+      });
+      $(window).scroll(function()
+      {
+        $('.right-sec').each(function()
+        {
+          var elPosition = $(this).offset().top;
+          var elHeight = $(this).height();
+          var windowTop = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          if (elPosition < windowTop + windowHeight - elHeight)
+          {
+            $(this).addClass("animation fade-in-left");
+          }
+          if (elPosition > windowTop + windowHeight)
+          {
+            $(this).removeClass("animation fade-in-left");
+          }
+          if (elPosition + elHeight < windowTop)
+          {
+            $(this).removeClass("animation fade-in-left");
+          }
+        });
+      });
+      $(window).scroll(function()
+      {
+        $('.trial-sec').each(function()
+        {
+          var elPosition = $(this).offset().top;
+          var elHeight = $(this).height();
+          var windowTop = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          if (elPosition < windowTop + windowHeight - elHeight)
+          {
+            $(this).addClass("animation scale-in");
+          }
+          if (elPosition > windowTop + windowHeight)
+          {
+            $(this).removeClass("animation scale-in");
+          }
+          if (elPosition + elHeight < windowTop)
+          {
+            $(this).removeClass("animation scale-in");
+          }
+        });
+      });
+    </script>
 
   </body>
 </html>

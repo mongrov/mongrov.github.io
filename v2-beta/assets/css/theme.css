@@ -89,7 +89,7 @@
   padding: 0; }
 
 .main-banner h1 {
-  font-size: 54px;
+  font-size: 52px !important;
   color: #333333; }
 
 .main-banner .slider-cards .flickity-button.previous {
@@ -113,11 +113,14 @@
 .btn-signin {
   color: #FFF; }
 
+.main-banner .carousel-cell {
+  height: 580px; }
+
 .bg-gradient-4 {
   background: linear-gradient(90deg, #0fdad0 0%, #19b8d2 100%); }
 
 h1, .h1 {
-  font-size: 52px !important;
+  font-size: 48px !important;
   color: #333333 !important; }
 
 svg path {
