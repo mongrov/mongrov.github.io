@@ -286,10 +286,11 @@ section {
 .sai-main-banner {
   background: url(../img/herosec-bg.png) no-repeat left bottom;
   background-size: cover;
+  background-attachment: fixed;
   display: block; }
 
 .sai-herosec-right {
-  background: url(../img/sai-banner-img1.png) no-repeat right top;
+  background: url(../img/sai-banner-img1.png) no-repeat right bottom;
   background-size: cover;
   min-height: 790px !important; }
 
@@ -303,7 +304,7 @@ ul.left-menu li {
 ul.left-menu li a {
   padding: 8px 0;
   display: block;
-  color: #B5263D; }
+  color: #e40d30; }
 
 .sai-top-nav ul {
   list-style: none;
@@ -321,7 +322,7 @@ ul.left-menu li a {
 .hero-sec-content {
   position: absolute;
   bottom: 35%;
-  left: 30px; }
+  left: 5%; }
 
 .hero-sec-content h1 {
   color: #FFFFFF;
@@ -332,7 +333,7 @@ ul.left-menu li a {
   font-size: 20px; }
 
 .thoughtforDay h3 {
-  color: #5F2E2A;
+  color: #bd485b;
   font-size: 28px; }
 
 .thoughtforDay a {
@@ -349,10 +350,17 @@ ul.left-menu li a {
 
 .services-sec {
   background: url(../img/services-bg.png) no-repeat top left;
+  background-color: #fbf1c5 !important;
   background-size: cover; }
 
 .bg-orange {
   background: #FFA68D !important; }
+
+.bg-yellow {
+  background: #fbf1c5 !important; }
+
+.bg-pink {
+  background: #ffc9cc !important; }
 
 .active-projects h5, .news-sec h5 {
   color: #646464; }
@@ -377,8 +385,8 @@ ul.left-menu li a {
   display: none !important; }
 
 .tm-sec {
-  background-image: url(../img/sai-tm-bg.svg), linear-gradient(180deg, #fff5f2 0%, #fff5f2 50%, #dc506c 50%, #dc506c 100%);
-  background-position: left, center;
+  background-image: url(../img/sai-tm-bg.svg), linear-gradient(180deg, #fff 0%, #fff 50%, #fbf1c5 50%, #fbf1c5 100%) !important;
+  background-position: -100px, center;
   background-repeat: no-repeat; }
 
 .tm-sec span {
@@ -386,7 +394,7 @@ ul.left-menu li a {
   line-height: 20px; }
 
 .text-maroon {
-  color: #B5263D !important; }
+  color: #bd485b !important; }
 
 .text-orange {
   color: #FF6F53 !important; }
@@ -10007,5 +10015,83 @@ img.zoom-img {
     transform: scale(1.05); }
   .demo-pages a {
     transition: opacity 0.4s ease, transform 0.2s ease, box-shadow 0.2s ease; }
+
+.datepicker {
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden; }
+  .datepicker .datepicker-header {
+    background-size: 100%; }
+  .datepicker .ui-datepicker-inline {
+    padding: 30px; }
+  .datepicker .ui-datepicker-header {
+    text-align: center;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: .1em; }
+    .datepicker .ui-datepicker-header .ui-datepicker-prev,
+    .datepicker .ui-datepicker-header .ui-datepicker-next {
+      display: inline;
+      float: left;
+      cursor: pointer;
+      font-size: 1.4em;
+      padding: 0 10px;
+      margin-top: -10px;
+      color: #CCC; }
+    .datepicker .ui-datepicker-header .ui-datepicker-next {
+      float: right; }
+  .datepicker .ui-datepicker-calendar {
+    width: 100%;
+    text-align: center; }
+    .datepicker .ui-datepicker-calendar thead {
+      color: #CCC; }
+    .datepicker .ui-datepicker-calendar tr th, .datepicker .ui-datepicker-calendar tr td {
+      padding-bottom: .5em; }
+    .datepicker .ui-datepicker-calendar a {
+      color: #444;
+      text-decoration: none;
+      display: block;
+      margin: 0 auto;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      cursor: pointer; }
+    .datepicker .ui-datepicker-calendar .ui-state-highlight {
+      background-color: #D24D57;
+      color: #FFF; }
+
+.navbar-brand {
+  margin-right: 0; }
+  .navbar-brand img {
+    width: 80%; }
+  .navbar-brand span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #f3376c; }
+
+ul.left-menu {
+  padding-left: 15px; }
+  ul.left-menu li {
+    margin: 0;
+    border-bottom: 1px solid #ecd5da;
+    padding: 10px 0; }
+
+.white-grad {
+  background: linear-gradient(to bottom, white, white, rgba(255, 255, 255, 0)); }
+
+.tm-sec {
+  background-image: url(../img/sai-tm-bg.svg), linear-gradient(180deg, #fff 0%, #fff 50%, #dc506c 50%, #dc506c 100%);
+  background-position: -100px, center;
+  background-repeat: no-repeat; }
+
+.services-sec {
+  background: url(../img/services-bg.png) no-repeat top left;
+  background-color: #fff8d7 !important;
+  background-size: cover; }
 
 /*# sourceMappingURL=theme.css.map */
