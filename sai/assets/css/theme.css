@@ -168,10 +168,10 @@ a.btn {
   background: #2551a1; }
 
 .section-prefooter {
-  background: #DC506C; }
+  background: #EB531E; }
 
 .section-footer {
-  background-image: url(../img/sai-footer-bg.png), linear-gradient(180deg, #dc506c 0%, #dc506c 50%, #dc506c 50%, #dc506c 100%);
+  background-image: url(../img/sai-footer-bg.png), linear-gradient(180deg, #EB531E 0%, #EB531E 50%, #EB531E 50%, #EB531E 100%);
   background-position: left, bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -246,6 +246,9 @@ span#fork {
 .btn-violet:hover {
   background-color: #4829a5; }
 
+.tm-sec .flickity-prev-next-button.previous, .tm-sec .flickity-prev-next-button.next {
+  display: none; }
+
 /* Responsive styles starts here */
 @media only screen and (max-width: 991px) {
   #school-page .slider-cards .h1 {
@@ -304,7 +307,7 @@ ul.left-menu li {
 ul.left-menu li a {
   padding: 8px 0;
   display: block;
-  color: #e40d30; }
+  color: #F55C27; }
 
 .sai-top-nav ul {
   list-style: none;
@@ -333,11 +336,11 @@ ul.left-menu li a {
   font-size: 20px; }
 
 .thoughtforDay h3 {
-  color: #bd485b;
+  color: #F55C27;
   font-size: 28px; }
 
 .thoughtforDay a {
-  color: #B5263D;
+  color: #F55C27;
   text-decoration: underline; }
 
 .thoughtforDay ul {
@@ -360,7 +363,7 @@ ul.left-menu li a {
   background: #fbf1c5 !important; }
 
 .bg-pink {
-  background: #ffc9cc !important; }
+  background: #ffd7b9 !important; }
 
 .active-projects h5, .news-sec h5 {
   color: #646464; }
@@ -389,23 +392,60 @@ ul.left-menu li a {
   background-position: -100px, center;
   background-repeat: no-repeat; }
 
-.tm-sec span {
-  font-size: 60px;
-  line-height: 20px; }
+.tm-sec h6 span {
+  font-size: 14px;
+  color: #b58b77; }
+
+.tm-sec h6 {
+  margin-bottom: 0; }
 
 .text-maroon {
-  color: #bd485b !important; }
+  color: #F55C27 !important; }
 
 .text-orange {
-  color: #FF6F53 !important; }
+  color: #FF8022 !important; }
 
 .donate-btn {
-  background: #E14B6E !important;
+  background: #F55C27 !important;
   border-radius: 50px !important;
   margin-top: -5px; }
 
 .saiHeroSecMobile {
   display: none; }
+
+.navbar-brand span {
+  color: #e44f1c !important; }
+
+ul.left-menu li {
+  border-bottom: 1px solid #ffdec6 !important; }
+
+.datepicker .ui-datepicker-calendar .ui-state-highlight {
+  background-color: #F55C27 !important; }
+
+.sai_image-botom {
+  position: absolute;
+  bottom: 0;
+  right: 30px; }
+
+@media only screen and (max-width: 1366px) {
+  .sai_image-botom {
+    right: -20px; }
+  .sai-herosec-right {
+    background-size: contain;
+    background-position: top right;
+    min-height: 650px !important; } }
+
+@media only screen and (max-width: 1024px) {
+  .hero-sec-content h1 {
+    font-size: 200%; }
+  .hero-sec-content p {
+    font-size: 70%; }
+  .hero-sec-content {
+    bottom: 46%; }
+  .sai-main-banner {
+    background: none; }
+  .services-sec {
+    background-size: contain !important; } }
 
 @media only screen and (max-width: 991px) {
   .services-sec {
@@ -415,17 +455,25 @@ ul.left-menu li a {
     float: none !important;
     margin-bottom: 70px; }
   .tm-sec {
-    background-image: none;
-    background: #ffebe5;
+    background-image: none !important;
+    background: #ffd7b9 !important;
     text-align: center;
     align-items: center; }
   .section-prefooter {
-    text-align: center; } }
+    text-align: center; }
+  .hero-sec-content {
+    bottom: 35%; }
+  .tm-sec .col-md-2 {
+    width: 120px;
+    margin: 0 auto;
+    margin-bottom: 20px; } }
 
 @media only screen and (max-width: 768px) {
   .saiHeroSecMobile {
     display: block; }
   .sai-main-banner {
+    display: none; }
+  .sai_image-botom {
     display: none; } }
 
 /* Sai Home page styles Ends here */
