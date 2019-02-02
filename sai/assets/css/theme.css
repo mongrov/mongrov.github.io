@@ -433,7 +433,15 @@ ul.left-menu li {
   .sai-herosec-right {
     background-size: contain;
     background-position: top right;
-    min-height: 650px !important; } }
+    min-height: 650px !important; }
+  .hero-sec-content {
+    position: absolute;
+    bottom: 35%;
+    left: 20%; }
+  .hero-sec-content h1 {
+    font-size: 200%; }
+  .hero-sec-content p {
+    font-size: 100%; } }
 
 @media only screen and (max-width: 1024px) {
   .hero-sec-content h1 {
