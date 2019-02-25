@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.display-5 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2; }
+
 .bg-teal {
   background-color: #2DA8BF !important; }
 
@@ -20,6 +25,14 @@
 .bg-darkblue {
   background: #010e28; }
 
+.img-greyscall {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%); }
+
+.img-greyscall:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%); }
+
 /* .SpacesHeroSection {
     background-image: url(../img/abs1.svg), linear-gradient(180deg, #2b109a 0, #17076d 50%, #111032);
     background-position: bottom,50%;
@@ -28,6 +41,12 @@
 } */
 .SpacesHeroSection {
   background-image: url(../img/abs2.svg), linear-gradient(180deg, #2b109a 0, #17076d 50%, #111032);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.SpacesHeroSectionPricing {
+  background-image: url(../img/abs-pricing.svg), linear-gradient(180deg, #6350FF 0, #6350FF 50%, #6350FF);
   background-position: right, bottom;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -74,8 +93,32 @@
   background-repeat: no-repeat;
   background-size: cover; }
 
+.SpacesHeroSectionConferencing {
+  background-image: url(../img/abs-conferencing.svg), linear-gradient(180deg, #896bff 0, #896bff 50%, #896bff);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.SpacesHeroSectionGeo {
+  background-image: url(../img/abs-geo.svg), linear-gradient(180deg, #3BC2FF 0, #3BC2FF 50%, #3BC2FF);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.SpacesHeroSectionAbout {
+  background-image: url(../img/abs-about.svg), linear-gradient(180deg, #339AFF 0, #339AFF 50%, #339AFF);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .SpacesHeroSectionOpensource {
   background-image: url(../img/abs-opensource.svg), linear-gradient(180deg, #5E4DD6 0, #5E4DD6 50%, #5E4DD6);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.SpacesHeroSectionMessaging {
+  background-image: url(../img/abs-messaging.svg), linear-gradient(180deg, #7a82ed 0, #7a82ed 50%, #7a82ed);
   background-position: right, bottom;
   background-repeat: no-repeat;
   background-size: cover; }
