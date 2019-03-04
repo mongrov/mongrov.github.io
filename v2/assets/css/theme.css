@@ -51,6 +51,12 @@
   background-repeat: no-repeat;
   background-size: cover; }
 
+.SpacesHeroSectionHome {
+  background-image: url(../img/abs-home.svg), linear-gradient(180deg, #00B8FF 0, #00B8FF 50%, #1A91BF);
+  background-position: left top;
+  background-repeat: repeat;
+  background-size: contain; }
+
 /* .SpacesHeroSection1 {
     background-image: url(../img/abs3.svg), linear-gradient(180deg, #2b109a 0, #17076d 50%, #111032);
     background-position: right, bottom;
