@@ -332,7 +332,11 @@ span#fork {
     font-size: 14px;
     line-height: 12px; }
   .main-banner h1 {
-    font-size: 200% !important; } }
+    font-size: 200% !important; }
+  .h1 {
+    font-size: 240% !important; }
+  .section-prefooter ul li {
+    margin-bottom: 15px; } }
 
 /* Responsive styles ends here */
 /*!
