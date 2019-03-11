@@ -314,11 +314,22 @@ span#fork {
     margin-left: 0 !important;
     width: 102px; }
   .main-banner .carousel-cell {
-    height: auto; } }
+    height: auto; }
+  .SpacesHeroSectionOpensource h1 {
+    font-size: 240% !important; }
+  .SpacesHeroSectionOpensource .btn-violet {
+    margin-left: 0 !important;
+    margin-top: 15px; } }
 
 @media only screen and (max-width: 767px) {
   .col-sm-text-center {
-    text-align: center; } }
+    text-align: center; }
+  .css-llvukp {
+    right: -20 !important; }
+  #terms-page h1, #privacy-page h1 {
+    font-size: 240% !important; }
+  #terms-page h3, #terms-page h4, #privacy-page h3, #privacy-page h4 {
+    text-align: left; } }
 
 @media only screen and (max-width: 480px) {
   #school-page .btn-lg, #school-page .btn-group-lg > .btn {
@@ -336,7 +347,9 @@ span#fork {
   .h1 {
     font-size: 240% !important; }
   .section-prefooter ul li {
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  #messaging-page ul.list-group {
+    text-align: left; } }
 
 /* Responsive styles ends here */
 /*!
