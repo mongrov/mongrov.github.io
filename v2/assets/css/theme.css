@@ -51,6 +51,12 @@
   background-repeat: no-repeat;
   background-size: cover; }
 
+.SpacesHeroSectionTaskboard {
+  background-image: url(../img/abs-taskboard.svg), linear-gradient(180deg, #20AF87 0, #20AF87 50%, #20AF87);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .SpacesHeroSectionHome {
   background-image: url(../img/abs-home.svg), linear-gradient(180deg, #00B8FF 0, #00B8FF 50%, #1A91BF);
   background-position: left top;
@@ -93,12 +99,6 @@
   background-repeat: no-repeat;
   background-size: cover; }
 
-.SpacesHeroSectionMessaging {
-  background-image: url(../img/abs-messaging.svg), linear-gradient(180deg, #27C1C4 0, #27C1C4 50%, #27C1C4);
-  background-position: right, bottom;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
 .SpacesHeroSectionConferencing {
   background-image: url(../img/abs-conferencing.svg), linear-gradient(180deg, #896bff 0, #896bff 50%, #896bff);
   background-position: right, bottom;
@@ -124,7 +124,7 @@
   background-size: cover; }
 
 .SpacesHeroSectionMessaging {
-  background-image: url(../img/abs-messaging.svg), linear-gradient(180deg, #7a82ed 0, #7a82ed 50%, #7a82ed);
+  background-image: url(../img/abs-messaging.svg), linear-gradient(180deg, #59C5CF 0, #59C5CF 50%, #59C5CF);
   background-position: right, bottom;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -250,6 +250,11 @@ a.btn {
 
 .section-prefooter .list-social-links a {
   padding: 10px 10px 5px 10px; }
+
+.section-prefooter .list-social-links a span {
+  margin-left: -9999px;
+  display: block;
+  float: left; }
 
 .navbar .dropdown-menu-right {
   left: 0;
