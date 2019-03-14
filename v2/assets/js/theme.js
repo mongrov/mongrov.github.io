@@ -1,1 +1,1051 @@
-"use strict";function _defineProperties(t,e){for(var a=0;a<e.length;a++){var i=e[a];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(t,i.key,i)}}function _createClass(t,e,a){return e&&_defineProperties(t.prototype,e),a&&_defineProperties(t,a),t}"objectFit"in document.documentElement.style==!1&&$(".bg-image").each(function(){var t=$(this),e=t.attr("src"),a=t.get(0).classList;t.before($('<div class="'+a+'" style="background: url('+e+'); background-size: cover; background-position: 50% 50%;"></div>')),t.remove()});var mrCountdown=function(t){if("function"!=typeof t.fn.countdown)throw new Error("mrCountdown requires jquery.countdown.js (https://github.com/hilios/jQuery.countdown/)");var e="mrCountdown",a=t.fn[e],i={LOAD_DATA_API:"load.mr.countdown.data-api"},o={DAYS_TEXT:"days",ELAPSED:"Timer Done"},r={COUNTDOWN:"[data-countdown-date]",DATE_ATTR:"data-countdown-date",DAYS_TEXT_ATTR:"data-days-text",DATE_FORMAT_ATTR:"data-date-format",DATE_FALLBACK_ATTR:"data-date-fallback"},s=function(){function e(e){this.element=e;var a=t(e);this.date=a.attr(r.DATE_ATTR),this.daysText=a.attr(r.DAYS_TEXT_ATTR)||o.DAYS_TEXT,this.countdownText="%D "+this.daysText+" %H:%M:%S",this.dateFormat=a.attr(r.DATE_FORMAT_ATTR)||this.countdownText,this.fallback=a.attr(r.DATE_FALLBACK_ATTR)||o.ELAPSED,this.initCountdown()}return e.prototype.initCountdown=function(){var e=this,a=t(this.element);t(this.element).countdown(this.date,function(t){t.elapsed?a.text(e.fallback):a.text(t.strftime(e.dateFormat))})},e.jQueryInterface=function(){return this.each(function(){var a=t(this),i=a.data("mr.countdown");i||(i=new e(this),a.data("mr.countdown",i))})},_createClass(e,null,[{key:"VERSION",get:function(){return"1.0.0"}}]),e}();return t(window).on(i.LOAD_DATA_API,function(){for(var e=t.makeArray(t(r.COUNTDOWN)),a=e.length;a--;){var i=t(e[a]);s.jQueryInterface.call(i,i.data())}}),t.fn[e]=s.jQueryInterface,t.fn[e].Constructor=s,t.fn[e].noConflict=function(){return t.fn[e]=a,s.jQueryInterface},s}(jQuery);$(document).on("shown.bs.modal layoutComplete",function(t){$(t.target).find("[data-flickity]").each(function(t,e){var a=$(e);a.data().flickity.isInitActivated&&a.flickity("resize")})});var $grid=$(".isotope").each(function(t,e){$(e).isotope({itemSelector:".grid-item",layoutMode:"masonry",filter:$(e).attr("data-default-filter")})});$grid.imagesLoaded().progress(function(){$grid.isotope("layout")}),$("[data-isotope-filter]").on("click",function(t){t.preventDefault();var e='.isotope[data-isotope-id="'+$(t.target).closest("[data-isotope-id]").attr("data-isotope-id")+'"]',a=$(t.target).attr("data-isotope-filter");$(e).isotope({filter:a}).find("[data-flickity]").each(function(t,e){var a=$(e);a.data().flickity.isInitActivated&&a.flickity("resize")}).end().isotope({filter:a}),$(t.target).siblings().removeClass("active"),$(t.target).addClass("active")});var mrMaps=function(t){var e="mrMaps",a=t.fn[e],i={MAP:"[data-maps-api-key]",MARKER:"div.map-marker",STYLE:"div.map-style",MARKER_ADDRESS:"data-address",MARKER_LATLNG:"data-latlong",INFOWindow:"div.info-window"},o="",r={MAP_LOADED:"loaded.mr.maps"},s={MARKER_IMAGE_URL:"assets/img/map-marker.png",MAP:{disableDefaultUI:!0,draggable:!0,scrollwheel:!1,styles:[{featureType:"administrative.country",elementType:"labels.text",stylers:[{lightness:"29"}]},{featureType:"administrative.province",elementType:"labels.text.fill",stylers:[{lightness:"-12"},{color:"#796340"}]},{featureType:"administrative.locality",elementType:"labels.text.fill",stylers:[{lightness:"15"},{saturation:"15"}]},{featureType:"landscape.man_made",elementType:"geometry",stylers:[{visibility:"on"},{color:"#fbf5ed"}]},{featureType:"landscape.natural",elementType:"geometry",stylers:[{visibility:"on"},{color:"#fbf5ed"}]},{featureType:"poi",elementType:"labels",stylers:[{visibility:"off"}]},{featureType:"poi.attraction",elementType:"all",stylers:[{visibility:"on"},{lightness:"30"},{saturation:"-41"},{gamma:"0.84"}]},{featureType:"poi.attraction",elementType:"labels",stylers:[{visibility:"on"}]},{featureType:"poi.business",elementType:"all",stylers:[{visibility:"off"}]},{featureType:"poi.business",elementType:"labels",stylers:[{visibility:"off"}]},{featureType:"poi.medical",elementType:"geometry",stylers:[{color:"#fbd3da"}]},{featureType:"poi.medical",elementType:"labels",stylers:[{visibility:"on"}]},{featureType:"poi.park",elementType:"geometry",stylers:[{color:"#b0e9ac"},{visibility:"on"}]},{featureType:"poi.park",elementType:"labels",stylers:[{visibility:"on"}]},{featureType:"poi.park",elementType:"labels.text.fill",stylers:[{hue:"#68ff00"},{lightness:"-24"},{gamma:"1.59"}]},{featureType:"poi.sports_complex",elementType:"all",stylers:[{visibility:"on"}]},{featureType:"poi.sports_complex",elementType:"geometry",stylers:[{saturation:"10"},{color:"#c3eb9a"}]},{featureType:"road",elementType:"geometry.stroke",stylers:[{visibility:"on"},{lightness:"30"},{color:"#e7ded6"}]},{featureType:"road",elementType:"labels",stylers:[{visibility:"on"},{saturation:"-39"},{lightness:"28"},{gamma:"0.86"}]},{featureType:"road.highway",elementType:"geometry.fill",stylers:[{color:"#ffe523"},{visibility:"on"}]},{featureType:"road.highway",elementType:"geometry.stroke",stylers:[{visibility:"on"},{saturation:"0"},{gamma:"1.44"},{color:"#fbc28b"}]},{featureType:"road.highway",elementType:"labels",stylers:[{visibility:"on"},{saturation:"-40"}]},{featureType:"road.arterial",elementType:"geometry",stylers:[{color:"#fed7a5"}]},{featureType:"road.arterial",elementType:"geometry.fill",stylers:[{visibility:"on"},{gamma:"1.54"},{color:"#fbe38b"}]},{featureType:"road.local",elementType:"geometry.fill",stylers:[{color:"#ffffff"},{visibility:"on"},{gamma:"2.62"},{lightness:"10"}]},{featureType:"road.local",elementType:"geometry.stroke",stylers:[{visibility:"on"},{weight:"0.50"},{gamma:"1.04"}]},{featureType:"transit.station.airport",elementType:"geometry.fill",stylers:[{color:"#dee3fb"}]},{featureType:"water",elementType:"geometry",stylers:[{saturation:"46"},{color:"#a4e1ff"}]}],zoom:17,zoomControl:!1}},n=function(){function e(e){this.element=e,this.$element=t(e),this.markers=[],this.geocoder=new google.maps.Geocoder,this.markerElements=this.$element.find(i.MARKER),this.styleElement=this.$element.find(i.STYLE).first(),this.initMap(),this.createMarkers()}e.init=function(){for(var a=t.makeArray(t(i.MAP)),o=a.length;o--;){var r=t(a[o]);e.jQueryInterface.call(r,r.data())}};var a=e.prototype;return a.initMap=function(){var a,i=this,o=this.element,n=this.$element,l=void 0!==n.attr("data-zoom-controls"),c=void 0!==n.attr("data-zoom-controls")&&n.attr("data-zoom-controls"),d=void 0!==n.attr("data-latlong")&&n.attr("data-latlong"),m=!!d&&parseFloat(d.substr(0,d.indexOf(","))),f=!!d&&parseFloat(d.substr(d.indexOf(",")+1)),u=n.attr("data-address")||"",p={};try{p.styles=this.styleElement.length?JSON.parse(this.styleElement.html().trim()):void 0}catch(t){throw new Error(t)}if(p.zoom=n.attr("data-map-zoom")?parseInt(n.attr("data-map-zoom"),10):void 0,p.zoomControl=l,p.zoomControlOptions=!1!==c?{position:google.maps.ControlPosition[c]}:void 0,a=jQuery.extend({},s.MAP,p),this.map=new google.maps.Map(o,a),google.maps.event.addListenerOnce(this.map,"center_changed",function(){var e=t.Event(r.MAP_LOADED,{map:i.map});n.trigger(e)}),void 0!==m&&""!==m&&!1!==m&&void 0!==f&&""!==f&&!1!==f)this.map.setCenter(new google.maps.LatLng(m,f));else{if(""===u)throw new Error("No valid address or latitude/longitude pair provided for map.");this.geocodeAddress(u,e.centerMap,this,this.map)}},a.geocodeAddress=function(t,e,a,i){this.geocoder.geocode({address:t},function(o,r){if(r!==google.maps.GeocoderStatus.OK)throw new Error('There was a problem geocoding the address "'+t+'".');e(o,a,i)})},e.centerMap=function(t,e){e.map.setCenter(t[0].geometry.location)},e.moveMarker=function(t,e,a){a.setPosition(t[0].geometry.location)},a.createMarkers=function(){var a=this;s.MARKER={icon:{url:s.MARKER_IMAGE_URL,scaledSize:new google.maps.Size(50,50)},title:o,optimised:!1},this.markerElements.each(function(o,r){var n,l=t(r),c=l.attr(i.MARKER_ADDRESS),d=l.attr(i.MARKER_LATLNG),m=l.find(i.INFOWindow),f={title:l.attr("data-marker-title")};f.icon=void 0!==l.attr("data-marker-image")?{url:l.attr("data-marker-image"),scaledSize:new google.maps.Size(50,50)}:void 0;var u=jQuery.extend({},s.MARKER,f);if(n=new google.maps.Marker(jQuery.extend({},u,{map:a.map})),m.length){var p=new google.maps.InfoWindow({content:m.first().html(),maxWidth:parseInt(m.attr("data-max-width")||"250",10)});n.addListener("click",function(){p.open(a.map,n)})}if(d)/(-?\d+(\.\d+)?),\s*(-?\d+(\.\d+)?)/.test(d)&&(n.setPosition(new google.maps.LatLng(parseFloat(d.substr(0,d.indexOf(","))),parseFloat(d.substr(d.indexOf(",")+1)))),a.markers[o]=n);else{if(!c)throw n=null,new Error("Invalid data-address or data-latlong provided for marker "+(o+1));a.geocodeAddress(c,e.moveMarker,a,n),a.markers[o]=n}})},e.jQueryInterface=function(){return this.each(function(){var a=t(this),i=a.data("mr.maps");i||(i=new e(this),a.data("mr.maps",i))})},_createClass(e,null,[{key:"VERSION",get:function(){return"1.0.0"}}]),e}();if(document.querySelector("[data-maps-api-key]")&&!document.querySelector(".gMapsAPI")&&t("[data-maps-api-key]").length){var l=t("[data-maps-api-key]:first").attr("data-maps-api-key")||"";if(""!==l){var c=document.createElement("script");c.type="text/javascript",c.src="https://maps.googleapis.com/maps/api/js?key="+l+"&callback=mrMaps.init",c.className="gMapsAPI",document.body.appendChild(c)}}return t.fn[e]=n.jQueryInterface,t.fn[e].Constructor=n,t.fn[e].noConflict=function(){return t.fn[e]=a,n.jQueryInterface},n}(jQuery);Prism.highlightAll();var mrSmoothScroll=new SmoothScroll("a[data-smooth-scroll]",{offset:$("body").attr("data-smooth-scroll-offset")||0}),mrSticky=function(t){if("undefined"==typeof scrollMonitor)throw new Error("mrSticky requires scrollMonitor.js (https://github.com/stutrek/scrollMonitor)");var e="mrSticky",a=t.fn[e],i="position-fixed",o="sticky-bottom",r="sticky-viewport-bottom",s="min-height",n="max-width",l="top",c={LOAD_DATA_API:"load.mr.sticky.data-api",RESIZE:"resize.mr.sticky"},d={BELOW_NAV:"below-nav",TOP:"top",BOTTOM:"bottom"},m={DATA_ATTR:"sticky",DATA_STICKY:"[data-sticky]",NAV_STICKY:'body > div.nav-container > div[data-sticky="top"]'},f=function(){function e(e){var a=t(e),i=a.data(m.DATA_ATTR),o=a.closest("section")||null;this.element=e,this.stickBelowNav=i===d.BELOW_NAV,this.stickBottom=i===d.BOTTOM,this.stickyUntil=o,this.updateNavProperties(),this.isNavElement=a.is(this.navElement),this.initWatcher(e),this.updateCss(),this.setResizeEvent()}var a=e.prototype;return a.initWatcher=function(e){var a=this,s=t(e),n=!this.isNavElement,c=this.stickBelowNav&&this.navIsSticky&&n?{top:this.navHeight}:0;c=this.stickBottom&&n?{bottom:-s.outerHeight}:c;var d=scrollMonitor.create(e,c);d.lock();var m=null!==this.stickyUntil?scrollMonitor.create(this.stickyUntil,{bottom:-(d.height+c.top)}):null;this.watcher=d,this.untilWatcher=m,this.navHeight=this.navHeight,this.isNavElement&&0===d.top&&!this.navIsAbsolute&&s.addClass(i),d.stateChange(function(){s.toggleClass(i,d.isAboveViewport||!a.navIsAbsolute&&!a.stickBottom&&a.isNavElement&&0===d.top),s.toggleClass(r,(d.isFullyInViewport||d.isAboveViewport)&&a.stickBottom),a.stickBottom||s.css(l,d.isAboveViewport&&a.navIsSticky&&a.stickBelowNav?a.navHeight:0)}),null!==m&&(m.exitViewport(function(){s.addClass(o)}),m.enterViewport(function(){s.removeClass(o)}))},a.setResizeEvent=function(){var t=this;window.addEventListener("resize",function(){return t.updateCss()})},a.updateCss=function(){var e=t(this.element);e.css(n,e.parent().width()),this.updateNavProperties();var a=e.outerHeight(),i=!this.isNavElement;(!this.navIsAbsolute&&this.isNavElement||i)&&e.parent().css(s,a),this.navIsSticky&&i&&e.css(s,a)},a.updateNavProperties=function(){var e=this.navElement||t(m.NAV_STICKY).first();this.navElement=e,this.navHeight=e.outerHeight(),this.navIsAbsolute="absolute"===e.css("position"),this.navIsSticky=e.length},e.jQueryInterface=function(){return this.each(function(){var a=t(this),i=a.data("mr.sticky");i||(i=new e(this),a.data("mr.sticky",i))})},_createClass(e,null,[{key:"VERSION",get:function(){return"1.1.0"}}]),e}();return t(window).on(c.LOAD_DATA_API,function(){for(var e=t.makeArray(t(m.DATA_STICKY)),a=e.length;a--;){var i=t(e[a]);f.jQueryInterface.call(i,i.data())}}),t.fn[e]=f.jQueryInterface,t.fn[e].Constructor=f,t.fn[e].noConflict=function(){return t.fn[e]=a,f.jQueryInterface},f}(jQuery),mrUtil=function(t){return t("body").tooltip({selector:'[data-toggle="tooltip"]',container:"body"}),{activateIframeSrc:function(e){var a=t(e);a.attr("data-src")&&a.attr("src",a.attr("data-src"))},idleIframeSrc:function(e){var a=t(e);a.attr("data-src",a.attr("src")).attr("src","")},forEach:function(t,e,a){for(var i=0;i<t.length;i+=1)e.call(a,i,t[i])},dedupArray:function(t){return t.reduce(function(t,e){var a=JSON.stringify(e);return-1===t.temp.indexOf(a)&&(t.out.push(e),t.temp.push(a)),t},{temp:[],out:[]}).out}}}(jQuery);$(document).ready(function(){$(".video-cover .video-play-icon").on("click touchstart",function(){var t=$(this).closest(".video-cover").find("iframe");mrUtil.activateIframeSrc(t),$(this).parent(".video-cover").addClass("video-cover-playing")}),!0==="ontouchstart"in document.documentElement&&$(".video-cover").each(function(){$(this).addClass("video-cover-touch");var t=$(this).closest(".video-cover").find("iframe");mrUtil.activateIframeSrc(t)}),$(".modal").on("shown.bs.modal",function(){var t=$(this);if(t.find("iframe[data-src]").length){var e=t.find("iframe[data-src]");e.closest(".video-cover").length||mrUtil.activateIframeSrc(e)}}),$(".modal").on("hidden.bs.modal",function(){var t=$(this);if(t.find("iframe[src]").length){var e=t.find("iframe[data-src]");e.closest(".video-cover").length&&e.closest(".video-cover").removeClass("video-cover-playing"),mrUtil.idleIframeSrc(e)}}),$('[data-toggle="tooltip"]').tooltip()}),$(document).ready(function(){$(".wizard").smartWizard({transitionEffect:"fade",showStepURLhash:!1,toolbarSettings:{toolbarPosition:"none"}})});
+"use strict";
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+//
+//
+// background-images.js
+//
+// a javscript fallback for CSS 'object-fit' property for browsers that don't support it
+if ('objectFit' in document.documentElement.style === false) {
+  $('.bg-image').each(function attachBg() {
+    var img = $(this);
+    var src = img.attr('src');
+    var classes = img.get(0).classList; // Replaces the default <img.bg-image> element with a <div.bg-image>
+    // to attach background using legacy friendly CSS rules
+
+    img.before($("<div class=\"" + classes + "\" style=\"background: url(" + src + "); background-size: cover; background-position: 50% 50%;\"></div>")); // Removes original <img.bg-image> as it is no longer required
+
+    img.remove();
+  });
+} //
+//
+// countdown.js
+//
+// an initializer for the Final Countdown plugin
+// http://hilios.github.io/jQuery.countdown/documentation.html#introduction
+//
+
+
+var mrCountdown = function ($) {
+  /**
+   * Check for countdown dependency
+   * countdown - https://github.com/hilios/jQuery.countdown/
+   */
+  if (typeof $.fn.countdown !== 'function') {
+    throw new Error('mrCountdown requires jquery.countdown.js (https://github.com/hilios/jQuery.countdown/)');
+  }
+  /**
+   * ------------------------------------------------------------------------
+   * Constants
+   * ------------------------------------------------------------------------
+   */
+
+
+  var NAME = 'mrCountdown';
+  var VERSION = '1.0.0';
+  var DATA_KEY = 'mr.countdown';
+  var EVENT_KEY = "." + DATA_KEY;
+  var DATA_API_KEY = '.data-api';
+  var JQUERY_NO_CONFLICT = $.fn[NAME];
+  var Event = {
+    LOAD_DATA_API: "load" + EVENT_KEY + DATA_API_KEY
+  };
+  var Default = {
+    DAYS_TEXT: 'days',
+    ELAPSED: 'Timer Done'
+  };
+  var Selector = {
+    COUNTDOWN: '[data-countdown-date]',
+    DATE_ATTR: 'data-countdown-date',
+    DAYS_TEXT_ATTR: 'data-days-text',
+    DATE_FORMAT_ATTR: 'data-date-format',
+    DATE_FALLBACK_ATTR: 'data-date-fallback'
+  };
+  /**
+   * ------------------------------------------------------------------------
+   * Class Definition
+   * ------------------------------------------------------------------------
+   */
+
+  var Countdown =
+  /*#__PURE__*/
+  function () {
+    function Countdown(element) {
+      // The current map element
+      this.element = element;
+      var $element = $(element);
+      this.date = $element.attr(Selector.DATE_ATTR);
+      this.daysText = $element.attr(Selector.DAYS_TEXT_ATTR) || Default.DAYS_TEXT;
+      this.countdownText = "%D " + this.daysText + " %H:%M:%S";
+      this.dateFormat = $element.attr(Selector.DATE_FORMAT_ATTR) || this.countdownText;
+      this.fallback = $element.attr(Selector.DATE_FALLBACK_ATTR) || Default.ELAPSED;
+      this.initCountdown();
+    } // getters
+
+
+    var _proto = Countdown.prototype;
+
+    _proto.initCountdown = function initCountdown() {
+      var _this = this;
+
+      var element = $(this.element);
+      $(this.element).countdown(this.date, function (event) {
+        if (event.elapsed) {
+          element.text(_this.fallback);
+        } else {
+          element.text(event.strftime(_this.dateFormat));
+        }
+      });
+    };
+
+    Countdown.jQueryInterface = function jQueryInterface() {
+      return this.each(function jqEachCountdown() {
+        var $element = $(this);
+        var data = $element.data(DATA_KEY);
+
+        if (!data) {
+          data = new Countdown(this);
+          $element.data(DATA_KEY, data);
+        }
+      });
+    };
+
+    _createClass(Countdown, null, [{
+      key: "VERSION",
+      get: function get() {
+        return VERSION;
+      }
+    }]);
+
+    return Countdown;
+  }(); // END Class definition
+
+  /**
+   * ------------------------------------------------------------------------
+   * Initialise by data attribute
+   * ------------------------------------------------------------------------
+   */
+
+
+  $(window).on(Event.LOAD_DATA_API, function () {
+    var cdownsOnPage = $.makeArray($(Selector.COUNTDOWN));
+    /* eslint-disable no-plusplus */
+
+    for (var i = cdownsOnPage.length; i--;) {
+      var $countdown = $(cdownsOnPage[i]);
+      Countdown.jQueryInterface.call($countdown, $countdown.data());
+    }
+  });
+  /**
+   * ------------------------------------------------------------------------
+   * jQuery
+   * ------------------------------------------------------------------------
+   */
+
+  /* eslint-disable no-param-reassign */
+
+  $.fn[NAME] = Countdown.jQueryInterface;
+  $.fn[NAME].Constructor = Countdown;
+
+  $.fn[NAME].noConflict = function CountdownNoConflict() {
+    $.fn[NAME] = JQUERY_NO_CONFLICT;
+    return Countdown.jQueryInterface;
+  };
+  /* eslint-enable no-param-reassign */
+
+
+  return Countdown;
+}(jQuery); //
+//
+// flickity.js
+//
+// Reset size of flickity sliders embedded in modals
+
+
+$(document).on('shown.bs.modal layoutComplete', function (e) {
+  var flickityInstance = $(e.target).find('[data-flickity]');
+  flickityInstance.each(function (index, instance) {
+    var $instance = $(instance);
+
+    if ($instance.data().flickity.isInitActivated) {
+      $instance.flickity('resize');
+    }
+  });
+}); //
+//
+// isotope.js
+//
+// Initialize the isotope plugin and retrigger the layout when images load
+// init Isotope
+
+var $grid = $('.isotope').each(function (index, element) {
+  $(element).isotope({
+    itemSelector: '.grid-item',
+    layoutMode: 'masonry',
+    filter: $(element).attr('data-default-filter')
+  });
+}); // layout Isotope after each image loads
+
+$grid.imagesLoaded().progress(function () {
+  $grid.isotope('layout');
+}); // filtering
+
+$('[data-isotope-filter]').on('click', function (e) {
+  e.preventDefault();
+  var isotopeId = ".isotope[data-isotope-id=\"" + $(e.target).closest('[data-isotope-id]').attr('data-isotope-id') + "\"]";
+  var filterValue = $(e.target).attr('data-isotope-filter');
+  $(isotopeId).isotope({
+    filter: filterValue
+  }).find('[data-flickity]').each(function (index, instance) {
+    var $instance = $(instance);
+
+    if ($instance.data().flickity.isInitActivated) {
+      $instance.flickity('resize');
+    }
+  }).end().isotope({
+    filter: filterValue
+  });
+  $(e.target).siblings().removeClass('active');
+  $(e.target).addClass('active');
+}); //
+//
+// maps.js
+//
+// an initializer for the Google Maps js API
+//
+
+/* global google */
+
+var mrMaps = function ($) {
+  /**
+   * ------------------------------------------------------------------------
+   * Constants
+   * ------------------------------------------------------------------------
+   */
+  var NAME = 'mrMaps';
+  var VERSION = '1.0.0';
+  var DATA_KEY = 'mr.maps';
+  var EVENT_KEY = "." + DATA_KEY;
+  var JQUERY_NO_CONFLICT = $.fn[NAME];
+  var Selector = {
+    MAP: '[data-maps-api-key]',
+    MARKER: 'div.map-marker',
+    STYLE: 'div.map-style',
+    MARKER_ADDRESS: 'data-address',
+    MARKER_LATLNG: 'data-latlong',
+    INFOWindow: 'div.info-window'
+  };
+  var String = {
+    MARKER_TITLE: ''
+  };
+  var Event = {
+    MAP_LOADED: "loaded" + EVENT_KEY
+  };
+  var Default = {
+    MARKER_IMAGE_URL: 'assets/img/map-marker.png',
+    MAP: {
+      disableDefaultUI: true,
+      draggable: true,
+      scrollwheel: false,
+      styles: [{
+        featureType: 'administrative.country',
+        elementType: 'labels.text',
+        stylers: [{
+          lightness: '29'
+        }]
+      }, {
+        featureType: 'administrative.province',
+        elementType: 'labels.text.fill',
+        stylers: [{
+          lightness: '-12'
+        }, {
+          color: '#796340'
+        }]
+      }, {
+        featureType: 'administrative.locality',
+        elementType: 'labels.text.fill',
+        stylers: [{
+          lightness: '15'
+        }, {
+          saturation: '15'
+        }]
+      }, {
+        featureType: 'landscape.man_made',
+        elementType: 'geometry',
+        stylers: [{
+          visibility: 'on'
+        }, {
+          color: '#fbf5ed'
+        }]
+      }, {
+        featureType: 'landscape.natural',
+        elementType: 'geometry',
+        stylers: [{
+          visibility: 'on'
+        }, {
+          color: '#fbf5ed'
+        }]
+      }, {
+        featureType: 'poi',
+        elementType: 'labels',
+        stylers: [{
+          visibility: 'off'
+        }]
+      }, {
+        featureType: 'poi.attraction',
+        elementType: 'all',
+        stylers: [{
+          visibility: 'on'
+        }, {
+          lightness: '30'
+        }, {
+          saturation: '-41'
+        }, {
+          gamma: '0.84'
+        }]
+      }, {
+        featureType: 'poi.attraction',
+        elementType: 'labels',
+        stylers: [{
+          visibility: 'on'
+        }]
+      }, {
+        featureType: 'poi.business',
+        elementType: 'all',
+        stylers: [{
+          visibility: 'off'
+        }]
+      }, {
+        featureType: 'poi.business',
+        elementType: 'labels',
+        stylers: [{
+          visibility: 'off'
+        }]
+      }, {
+        featureType: 'poi.medical',
+        elementType: 'geometry',
+        stylers: [{
+          color: '#fbd3da'
+        }]
+      }, {
+        featureType: 'poi.medical',
+        elementType: 'labels',
+        stylers: [{
+          visibility: 'on'
+        }]
+      }, {
+        featureType: 'poi.park',
+        elementType: 'geometry',
+        stylers: [{
+          color: '#b0e9ac'
+        }, {
+          visibility: 'on'
+        }]
+      }, {
+        featureType: 'poi.park',
+        elementType: 'labels',
+        stylers: [{
+          visibility: 'on'
+        }]
+      }, {
+        featureType: 'poi.park',
+        elementType: 'labels.text.fill',
+        stylers: [{
+          hue: '#68ff00'
+        }, {
+          lightness: '-24'
+        }, {
+          gamma: '1.59'
+        }]
+      }, {
+        featureType: 'poi.sports_complex',
+        elementType: 'all',
+        stylers: [{
+          visibility: 'on'
+        }]
+      }, {
+        featureType: 'poi.sports_complex',
+        elementType: 'geometry',
+        stylers: [{
+          saturation: '10'
+        }, {
+          color: '#c3eb9a'
+        }]
+      }, {
+        featureType: 'road',
+        elementType: 'geometry.stroke',
+        stylers: [{
+          visibility: 'on'
+        }, {
+          lightness: '30'
+        }, {
+          color: '#e7ded6'
+        }]
+      }, {
+        featureType: 'road',
+        elementType: 'labels',
+        stylers: [{
+          visibility: 'on'
+        }, {
+          saturation: '-39'
+        }, {
+          lightness: '28'
+        }, {
+          gamma: '0.86'
+        }]
+      }, {
+        featureType: 'road.highway',
+        elementType: 'geometry.fill',
+        stylers: [{
+          color: '#ffe523'
+        }, {
+          visibility: 'on'
+        }]
+      }, {
+        featureType: 'road.highway',
+        elementType: 'geometry.stroke',
+        stylers: [{
+          visibility: 'on'
+        }, {
+          saturation: '0'
+        }, {
+          gamma: '1.44'
+        }, {
+          color: '#fbc28b'
+        }]
+      }, {
+        featureType: 'road.highway',
+        elementType: 'labels',
+        stylers: [{
+          visibility: 'on'
+        }, {
+          saturation: '-40'
+        }]
+      }, {
+        featureType: 'road.arterial',
+        elementType: 'geometry',
+        stylers: [{
+          color: '#fed7a5'
+        }]
+      }, {
+        featureType: 'road.arterial',
+        elementType: 'geometry.fill',
+        stylers: [{
+          visibility: 'on'
+        }, {
+          gamma: '1.54'
+        }, {
+          color: '#fbe38b'
+        }]
+      }, {
+        featureType: 'road.local',
+        elementType: 'geometry.fill',
+        stylers: [{
+          color: '#ffffff'
+        }, {
+          visibility: 'on'
+        }, {
+          gamma: '2.62'
+        }, {
+          lightness: '10'
+        }]
+      }, {
+        featureType: 'road.local',
+        elementType: 'geometry.stroke',
+        stylers: [{
+          visibility: 'on'
+        }, {
+          weight: '0.50'
+        }, {
+          gamma: '1.04'
+        }]
+      }, {
+        featureType: 'transit.station.airport',
+        elementType: 'geometry.fill',
+        stylers: [{
+          color: '#dee3fb'
+        }]
+      }, {
+        featureType: 'water',
+        elementType: 'geometry',
+        stylers: [{
+          saturation: '46'
+        }, {
+          color: '#a4e1ff'
+        }]
+      }],
+      zoom: 17,
+      zoomControl: false
+    }
+  };
+  /**
+   * ------------------------------------------------------------------------
+   * Class Definition
+   * ------------------------------------------------------------------------
+   */
+
+  var Map =
+  /*#__PURE__*/
+  function () {
+    function Map(element) {
+      // The current map element
+      this.element = element;
+      this.$element = $(element);
+      this.markers = [];
+      this.geocoder = new google.maps.Geocoder();
+      this.markerElements = this.$element.find(Selector.MARKER);
+      this.styleElement = this.$element.find(Selector.STYLE).first();
+      this.initMap();
+      this.createMarkers();
+    } // version getter
+
+
+    Map.init = function init() {
+      var mapsOnPage = $.makeArray($(Selector.MAP));
+      /* eslint-disable no-plusplus */
+
+      for (var i = mapsOnPage.length; i--;) {
+        var $map = $(mapsOnPage[i]);
+        Map.jQueryInterface.call($map, $map.data());
+      }
+    };
+
+    var _proto2 = Map.prototype;
+
+    _proto2.initMap = function initMap() {
+      var _this2 = this;
+
+      var mapElement = this.element;
+      var mapInstance = this.$element;
+      var showZoomControl = typeof mapInstance.attr('data-zoom-controls') !== typeof undefined;
+      var zoomControlPos = typeof mapInstance.attr('data-zoom-controls') !== typeof undefined ? mapInstance.attr('data-zoom-controls') : false;
+      var latlong = typeof mapInstance.attr('data-latlong') !== typeof undefined ? mapInstance.attr('data-latlong') : false;
+      var latitude = latlong ? parseFloat(latlong.substr(0, latlong.indexOf(','))) : false;
+      var longitude = latlong ? parseFloat(latlong.substr(latlong.indexOf(',') + 1)) : false;
+      var address = mapInstance.attr('data-address') || '';
+      var mapOptions = null; // let markerOptions = null;
+
+      var mapAo = {}; // Attribute overrides - allows data attributes on the map to override global options
+
+      try {
+        mapAo.styles = this.styleElement.length ? JSON.parse(this.styleElement.html().trim()) : undefined;
+      } catch (error) {
+        throw new Error(error);
+      }
+
+      mapAo.zoom = mapInstance.attr('data-map-zoom') ? parseInt(mapInstance.attr('data-map-zoom'), 10) : undefined;
+      mapAo.zoomControl = showZoomControl;
+      mapAo.zoomControlOptions = zoomControlPos !== false ? {
+        position: google.maps.ControlPosition[zoomControlPos]
+      } : undefined;
+      mapOptions = jQuery.extend({}, Default.MAP, mapAo);
+      this.map = new google.maps.Map(mapElement, mapOptions);
+      google.maps.event.addListenerOnce(this.map, 'center_changed', function () {
+        // Map has been centered.
+        var loadedEvent = $.Event(Event.MAP_LOADED, {
+          map: _this2.map
+        });
+        mapInstance.trigger(loadedEvent);
+      });
+
+      if (typeof latitude !== typeof undefined && latitude !== '' && latitude !== false && typeof longitude !== typeof undefined && longitude !== '' && longitude !== false) {
+        this.map.setCenter(new google.maps.LatLng(latitude, longitude));
+      } else if (address !== '') {
+        this.geocodeAddress(address, Map.centerMap, this, this.map);
+      } else {
+        throw new Error('No valid address or latitude/longitude pair provided for map.');
+      }
+    };
+
+    _proto2.geocodeAddress = function geocodeAddress(address, callback, thisMap, args) {
+      this.geocoder.geocode({
+        address: address
+      }, function (results, status) {
+        if (status !== google.maps.GeocoderStatus.OK) {
+          throw new Error("There was a problem geocoding the address \"" + address + "\".");
+        } else {
+          callback(results, thisMap, args);
+        }
+      });
+    };
+
+    Map.centerMap = function centerMap(geocodeResults, thisMap) {
+      thisMap.map.setCenter(geocodeResults[0].geometry.location);
+    };
+
+    Map.moveMarker = function moveMarker(geocodeResults, thisMap, gMarker) {
+      gMarker.setPosition(geocodeResults[0].geometry.location);
+    };
+
+    _proto2.createMarkers = function createMarkers() {
+      var _this3 = this;
+
+      Default.MARKER = {
+        icon: {
+          url: Default.MARKER_IMAGE_URL,
+          scaledSize: new google.maps.Size(50, 50)
+        },
+        title: String.MARKER_TITLE,
+        optimised: false
+      };
+      this.markerElements.each(function (index, marker) {
+        var gMarker;
+        var $marker = $(marker);
+        var markerAddress = $marker.attr(Selector.MARKER_ADDRESS);
+        var markerLatLng = $marker.attr(Selector.MARKER_LATLNG);
+        var infoWindow = $marker.find(Selector.INFOWindow);
+        var markerAo = {
+          title: $marker.attr('data-marker-title')
+        };
+        markerAo.icon = typeof $marker.attr('data-marker-image') !== typeof undefined ? {
+          url: $marker.attr('data-marker-image'),
+          scaledSize: new google.maps.Size(50, 50)
+        } : undefined;
+        var markerOptions = jQuery.extend({}, Default.MARKER, markerAo);
+        gMarker = new google.maps.Marker(jQuery.extend({}, markerOptions, {
+          map: _this3.map
+        }));
+
+        if (infoWindow.length) {
+          var gInfoWindow = new google.maps.InfoWindow({
+            content: infoWindow.first().html(),
+            maxWidth: parseInt(infoWindow.attr('data-max-width') || '250', 10)
+          });
+          gMarker.addListener('click', function () {
+            gInfoWindow.open(_this3.map, gMarker);
+          });
+        } // Set marker position
+
+
+        if (markerLatLng) {
+          if (/(-?\d+(\.\d+)?),\s*(-?\d+(\.\d+)?)/.test(markerLatLng)) {
+            gMarker.setPosition(new google.maps.LatLng(parseFloat(markerLatLng.substr(0, markerLatLng.indexOf(','))), parseFloat(markerLatLng.substr(markerLatLng.indexOf(',') + 1))));
+            _this3.markers[index] = gMarker;
+          }
+        } else if (markerAddress) {
+          _this3.geocodeAddress(markerAddress, Map.moveMarker, _this3, gMarker);
+
+          _this3.markers[index] = gMarker;
+        } else {
+          gMarker = null;
+          throw new Error("Invalid data-address or data-latlong provided for marker " + (index + 1));
+        }
+      });
+    };
+
+    Map.jQueryInterface = function jQueryInterface() {
+      return this.each(function jqEachMap() {
+        var $element = $(this);
+        var data = $element.data(DATA_KEY);
+
+        if (!data) {
+          data = new Map(this);
+          $element.data(DATA_KEY, data);
+        }
+      });
+    };
+
+    _createClass(Map, null, [{
+      key: "VERSION",
+      get: function get() {
+        return VERSION;
+      }
+    }]);
+
+    return Map;
+  }(); // END Class definition
+
+  /**
+   * ------------------------------------------------------------------------
+   * Initialise by data attribute
+   * ------------------------------------------------------------------------
+   */
+  // Load Google MAP API JS with callback to initialise when fully loaded
+
+
+  if (document.querySelector('[data-maps-api-key]') && !document.querySelector('.gMapsAPI')) {
+    if ($('[data-maps-api-key]').length) {
+      var apiKey = $('[data-maps-api-key]:first').attr('data-maps-api-key') || '';
+
+      if (apiKey !== '') {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = "https://maps.googleapis.com/maps/api/js?key=" + apiKey + "&callback=mrMaps.init";
+        script.className = 'gMapsAPI';
+        document.body.appendChild(script);
+      }
+    }
+  }
+  /**
+   * ------------------------------------------------------------------------
+   * jQuery
+   * ------------------------------------------------------------------------
+   */
+
+  /* eslint-disable no-param-reassign */
+
+
+  $.fn[NAME] = Map.jQueryInterface;
+  $.fn[NAME].Constructor = Map;
+
+  $.fn[NAME].noConflict = function MapNoConflict() {
+    $.fn[NAME] = JQUERY_NO_CONFLICT;
+    return Map.jQueryInterface;
+  };
+  /* eslint-enable no-param-reassign */
+
+
+  return Map;
+}(jQuery); //
+//
+// prism.js
+//
+// Initialises the prism code highlighting plugin
+
+/* global Prism */
+
+
+Prism.highlightAll(); //
+//
+// smooth-scroll.js
+//
+// Initialises the prism code highlighting plugin
+
+/* global SmoothScroll */
+
+var mrSmoothScroll = new SmoothScroll('a[data-smooth-scroll]', {
+  offset: $('body').attr('data-smooth-scroll-offset') || 0
+}); //
+//
+// sticky.js
+//
+// Initialises the srollMonitor plugin and provides interface to watcher objects
+// for sticking elements to the top of viewport while scrolling
+
+/* global scrollMonitor */
+
+var mrSticky = function ($) {
+  /**
+   * Check for scrollMonitor dependency
+   * scrollMonitor - https://github.com/stutrek/scrollMonitor
+   */
+  if (typeof scrollMonitor === 'undefined') {
+    throw new Error('mrSticky requires scrollMonitor.js (https://github.com/stutrek/scrollMonitor)');
+  }
+  /**
+   * ------------------------------------------------------------------------
+   * Constants
+   * ------------------------------------------------------------------------
+   */
+
+
+  var NAME = 'mrSticky';
+  var VERSION = '1.1.0';
+  var DATA_KEY = 'mr.sticky';
+  var EVENT_KEY = "." + DATA_KEY;
+  var DATA_API_KEY = '.data-api';
+  var JQUERY_NO_CONFLICT = $.fn[NAME];
+  var NO_OFFSET = 0;
+  var ClassName = {
+    FIXED_TOP: 'position-fixed',
+    ABSOLUTE_BOTTOM: 'sticky-bottom',
+    FIXED_BOTTOM: 'sticky-viewport-bottom'
+  };
+  var Css = {
+    HEIGHT: 'min-height',
+    WIDTH: 'max-width',
+    SPACE_TOP: 'top',
+    SPACE_BOTTOM: 'bottom'
+  };
+  var Event = {
+    LOAD_DATA_API: "load" + EVENT_KEY + DATA_API_KEY,
+    RESIZE: "resize" + EVENT_KEY
+  };
+  var Options = {
+    BELOW_NAV: 'below-nav',
+    TOP: 'top',
+    BOTTOM: 'bottom'
+  };
+  var Selector = {
+    DATA_ATTR: 'sticky',
+    DATA_STICKY: '[data-sticky]',
+    NAV_STICKY: 'body > div.nav-container > div[data-sticky="top"]'
+  };
+  /**
+   * ------------------------------------------------------------------------
+   * Class Definition
+   * ------------------------------------------------------------------------
+   */
+
+  var Sticky =
+  /*#__PURE__*/
+  function () {
+    function Sticky(element) {
+      var $element = $(element);
+      var stickyData = $element.data(Selector.DATA_ATTR);
+      var stickyUntil = $element.closest('section') || null;
+      this.element = element;
+      this.stickBelowNav = stickyData === Options.BELOW_NAV;
+      this.stickBottom = stickyData === Options.BOTTOM;
+      this.stickyUntil = stickyUntil;
+      this.updateNavProperties();
+      this.isNavElement = $element.is(this.navElement);
+      this.initWatcher(element);
+      this.updateCss();
+      this.setResizeEvent();
+    } // getters
+
+
+    var _proto3 = Sticky.prototype;
+
+    _proto3.initWatcher = function initWatcher(element) {
+      var _this4 = this;
+
+      var $element = $(element);
+      var notNavElement = !this.isNavElement;
+      var offset = this.stickBelowNav && this.navIsSticky && notNavElement ? {
+        top: this.navHeight
+      } : NO_OFFSET;
+      offset = this.stickBottom && notNavElement ? {
+        bottom: -$element.outerHeight
+      } : offset;
+      var watcher = scrollMonitor.create(element, offset); // ensure that we're always watching the place the element originally was
+
+      watcher.lock();
+      var untilWatcher = this.stickyUntil !== null ? scrollMonitor.create(this.stickyUntil, {
+        bottom: -(watcher.height + offset.top)
+      }) : null;
+      this.watcher = watcher;
+      this.untilWatcher = untilWatcher;
+      this.navHeight = this.navHeight; // For navs that start at top, stick them immediately to avoid a jump
+
+      if (this.isNavElement && watcher.top === 0 && !this.navIsAbsolute) {
+        $element.addClass(ClassName.FIXED_TOP);
+      }
+
+      watcher.stateChange(function () {
+        // Add fixed when element leaves via top of viewport or if nav is sitting at top
+        $element.toggleClass(ClassName.FIXED_TOP, watcher.isAboveViewport || !_this4.navIsAbsolute && !_this4.stickBottom && _this4.isNavElement && watcher.top === 0); // Fix to bottom when element enters via bottom of viewport and has data-sticky="bottom"
+
+        $element.toggleClass(ClassName.FIXED_BOTTOM, (watcher.isFullyInViewport || watcher.isAboveViewport) && _this4.stickBottom);
+
+        if (!_this4.stickBottom) {
+          $element.css(Css.SPACE_TOP, watcher.isAboveViewport && _this4.navIsSticky && _this4.stickBelowNav ? _this4.navHeight : NO_OFFSET);
+        }
+      });
+
+      if (untilWatcher !== null) {
+        untilWatcher.exitViewport(function () {
+          // If the element is in a section, it will scroll up with the section
+          $element.addClass(ClassName.ABSOLUTE_BOTTOM);
+        });
+        untilWatcher.enterViewport(function () {
+          $element.removeClass(ClassName.ABSOLUTE_BOTTOM);
+        });
+      }
+    };
+
+    _proto3.setResizeEvent = function setResizeEvent() {
+      var _this5 = this;
+
+      window.addEventListener('resize', function () {
+        return _this5.updateCss();
+      });
+    };
+
+    _proto3.updateCss = function updateCss() {
+      var $element = $(this.element); // Fix width by getting parent's width to avoid element spilling out when pos-fixed
+
+      $element.css(Css.WIDTH, $element.parent().width());
+      this.updateNavProperties();
+      var elemHeight = $element.outerHeight();
+      var notNavElement = !this.isNavElement; // Set a min-height to prevent "jumping" when sticking to top
+      // but not applied to the nav element itself unless it is overlay (absolute) nav
+
+      if (!this.navIsAbsolute && this.isNavElement || notNavElement) {
+        $element.parent().css(Css.HEIGHT, elemHeight);
+      }
+
+      if (this.navIsSticky && notNavElement) {
+        $element.css(Css.HEIGHT, elemHeight);
+      }
+    };
+
+    _proto3.updateNavProperties = function updateNavProperties() {
+      var $navElement = this.navElement || $(Selector.NAV_STICKY).first();
+      this.navElement = $navElement;
+      this.navHeight = $navElement.outerHeight();
+      this.navIsAbsolute = $navElement.css('position') === 'absolute';
+      this.navIsSticky = $navElement.length;
+    };
+
+    Sticky.jQueryInterface = function jQueryInterface() {
+      return this.each(function jqEachSticky() {
+        var $element = $(this);
+        var data = $element.data(DATA_KEY);
+
+        if (!data) {
+          data = new Sticky(this);
+          $element.data(DATA_KEY, data);
+        }
+      });
+    };
+
+    _createClass(Sticky, null, [{
+      key: "VERSION",
+      get: function get() {
+        return VERSION;
+      }
+    }]);
+
+    return Sticky;
+  }();
+  /**
+   * ------------------------------------------------------------------------
+   * Initialise by data attribute
+   * ------------------------------------------------------------------------
+   */
+
+
+  $(window).on(Event.LOAD_DATA_API, function () {
+    var stickyElements = $.makeArray($(Selector.DATA_STICKY));
+    /* eslint-disable no-plusplus */
+
+    for (var i = stickyElements.length; i--;) {
+      var $sticky = $(stickyElements[i]);
+      Sticky.jQueryInterface.call($sticky, $sticky.data());
+    }
+  });
+  /**
+   * ------------------------------------------------------------------------
+   * jQuery
+   * ------------------------------------------------------------------------
+   */
+
+  /* eslint-disable no-param-reassign */
+
+  $.fn[NAME] = Sticky.jQueryInterface;
+  $.fn[NAME].Constructor = Sticky;
+
+  $.fn[NAME].noConflict = function StickyNoConflict() {
+    $.fn[NAME] = JQUERY_NO_CONFLICT;
+    return Sticky.jQueryInterface;
+  };
+  /* eslint-enable no-param-reassign */
+
+
+  return Sticky;
+}(jQuery); //
+//
+// Util
+//
+// Medium Rare utility functions
+// v 1.1.0
+
+
+var mrUtil = function ($) {
+  // Activate tooltips
+  $('body').tooltip({
+    selector: '[data-toggle="tooltip"]',
+    container: 'body'
+  });
+  var Util = {
+    activateIframeSrc: function activateIframeSrc(iframe) {
+      var $iframe = $(iframe);
+
+      if ($iframe.attr('data-src')) {
+        $iframe.attr('src', $iframe.attr('data-src'));
+      }
+    },
+    idleIframeSrc: function idleIframeSrc(iframe) {
+      var $iframe = $(iframe);
+      $iframe.attr('data-src', $iframe.attr('src')).attr('src', '');
+    },
+    forEach: function forEach(array, callback, scope) {
+      for (var i = 0; i < array.length; i += 1) {
+        callback.call(scope, i, array[i]); // passes back stuff we need
+      }
+    },
+    dedupArray: function dedupArray(arr) {
+      return arr.reduce(function (p, c) {
+        // create an identifying String from the object values
+        var id = JSON.stringify(c); // if the JSON string is not found in the temp array
+        // add the object to the output array
+        // and add the key to the temp array
+
+        if (p.temp.indexOf(id) === -1) {
+          p.out.push(c);
+          p.temp.push(id);
+        }
+
+        return p; // return the deduped array
+      }, {
+        temp: [],
+        out: []
+      }).out;
+    }
+  };
+  return Util;
+}(jQuery);
+
+$(document).ready(function () {
+  $('.video-cover .video-play-icon').on('click touchstart', function clickedPlay() {
+    var $iframe = $(this).closest('.video-cover').find('iframe');
+    mrUtil.activateIframeSrc($iframe);
+    $(this).parent('.video-cover').addClass('video-cover-playing');
+  }); // Disable video cover behaviour on mobile devices to avoid user having to press twice
+
+  var isTouchDevice = 'ontouchstart' in document.documentElement;
+
+  if (isTouchDevice === true) {
+    $('.video-cover').each(function activeateMobileIframes() {
+      $(this).addClass('video-cover-touch');
+      var $iframe = $(this).closest('.video-cover').find('iframe');
+      mrUtil.activateIframeSrc($iframe);
+    });
+  } // <iframe> in modals
+
+
+  $('.modal').on('shown.bs.modal', function modalShown() {
+    var $modal = $(this);
+
+    if ($modal.find('iframe[data-src]').length) {
+      var $iframe = $modal.find('iframe[data-src]');
+
+      if (!$iframe.closest('.video-cover').length) {
+        mrUtil.activateIframeSrc($iframe);
+      }
+    }
+  });
+  $('.modal').on('hidden.bs.modal', function modalHidden() {
+    var $modal = $(this);
+
+    if ($modal.find('iframe[src]').length) {
+      var $iframe = $modal.find('iframe[data-src]');
+
+      if ($iframe.closest('.video-cover').length) {
+        $iframe.closest('.video-cover').removeClass('video-cover-playing');
+      }
+
+      mrUtil.idleIframeSrc($iframe);
+    }
+  });
+  $('[data-toggle="tooltip"]').tooltip();
+}); //
+//
+// wizard.js
+//
+// initialises the jQuery Smart Wizard plugin
+
+$(document).ready(function () {
+  $('.wizard').smartWizard({
+    transitionEffect: 'fade',
+    showStepURLhash: false,
+    toolbarSettings: {
+      toolbarPosition: 'none'
+    }
+  });
+});
