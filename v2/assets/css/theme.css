@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* purgecss start ignore */
 @font-face {
   font-family: 'Graphik-Regular';
   font-display: auto;
@@ -21,11 +22,31 @@ body {
 .home-link {
   display: none; }
 
+.display-5 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2; }
+
+.bg-teal {
+  background-color: #2DA8BF !important; }
+
 .bg-skyblue {
   background-color: #00b8ff !important; }
 
 .bg-lightgrey {
   background: #f5f5f5; }
+
+.bg-violetblue {
+  background: #7b6cff; }
+
+.bg-violetblue {
+  background-color: #7654ff !important; }
+
+.bg-darkbluegradient {
+  background: linear-gradient(180deg, #2b109a 0, #17076d 50%, #111032); }
+
+.bg-darkblue {
+  background: #010e28; }
 
 .img-greyscall {
   -webkit-filter: grayscale(100%);
@@ -41,6 +62,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 } */
+.SpacesHeroSection {
+  background-image: url(../img/abs2.svg), linear-gradient(180deg, #2b109a 0, #17076d 50%, #111032);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .SpacesHeroSectionPricing {
   background-image: url(../img/abs-pricing.svg), linear-gradient(180deg, #6350FF 0, #6350FF 50%, #6350FF);
@@ -66,6 +92,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 } */
+.SpacesHeroSection1 {
+  background-image: url(../img/abs3.svg), linear-gradient(180deg, #00B8FF 0, #00B8FF 50%, #1A91BF);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .SpacesHeroSection2 {
   background-image: url(../img/abs-school1.svg), linear-gradient(180deg, #00B8FF 0, #00B8FF 50%, #1A91BF);
@@ -73,8 +104,20 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.SpacesHeroSection3 {
+  background-image: url(../img/abs-contact.svg), linear-gradient(180deg, #25D0DB 0, #25D0DB 50%, #25D0DB);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .SpacesHeroSection4 {
   background-image: url(../img/abs-contact.svg), linear-gradient(180deg, #00B8FF 0, #00B8FF 50%, #00B8FF);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.SpacesHeroSection5 {
+  background-image: url(../img/abs-school2.svg), linear-gradient(180deg, #00B8FF 0, #00B8FF 50%, #1A91BF);
   background-position: right, bottom;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -109,6 +152,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
+#contact-page2 .main-banner h1 {
+  font-size: 54px;
+  color: #009cd8 !important; }
+
 .roverz_img {
   width: 120px;
   margin-bottom: 20px;
@@ -122,11 +169,32 @@ body {
   font-size: 52px !important;
   color: #333333; }
 
+.main-banner .slider-cards .flickity-button.previous {
+  display: block !important; }
+
+.main-banner .flickity-prev-next-button {
+  background: #e6e6e6; }
+
+.main-banner .flickity-button:hover {
+  background: #e6e6e6; }
+
+.main-banner .flickity-prev-next-button.previous {
+  left: -100px; }
+
+.main-banner .flickity-prev-next-button.next {
+  right: -100px; }
+
+.main-banner .slider-cards .flickity-page-dots {
+  display: none; }
+
 .btn-signin {
   color: #FFF; }
 
 .main-banner .carousel-cell {
   height: 580px; }
+
+.bg-gradient-4 {
+  background: linear-gradient(90deg, #0fdad0 0%, #19b8d2 100%); }
 
 h1, .h1 {
   font-size: 48px !important;
@@ -138,7 +206,7 @@ svg path {
 .fork svg path {
   fill: #FFFFFF !important; }
 
-#school-page .shadow-lg {
+#school-page .shadow-lg, #school-page .demo-pages a:hover, .demo-pages #school-page a:hover {
   box-shadow: none !important; }
 
 .navbar-nav .h6 {
@@ -149,6 +217,19 @@ svg path {
 } */
 .navbar-nav .nav-link {
   margin: 0; }
+
+.demo-section h1 {
+  font-weight: normal; }
+
+.demo-section .btn {
+  background: #00be4c;
+  border: none;
+  color: #FFF; }
+
+.demo-section .btn:hover {
+  background: #00af46;
+  border: none;
+  color: #FFF; }
 
 a.navbar-brand {
   max-width: 160px; }
@@ -207,6 +288,12 @@ a.btn {
   left: 0;
   right: auto; }
 
+.testimonial .flickity-page-dots {
+  display: none; }
+
+.testimonial button.flickity-button {
+  display: none; }
+
 #features_section p {
   font-size: 1.25rem; }
 
@@ -263,7 +350,7 @@ span#fork {
     margin-bottom: 10px; }
   #school-page .slider-cards .h6 {
     margin-bottom: 10px; }
-  #school-page .btn-lg {
+  #school-page .btn-lg, #school-page .btn-group-lg > .btn {
     font-size: 16px; }
   img[class*='flex-'][class*='-grow-1'] {
     object-fit: contain !important; }
@@ -284,6 +371,8 @@ span#fork {
 @media only screen and (max-width: 767px) {
   .col-sm-text-center {
     text-align: center; }
+  .css-llvukp {
+    right: -20 !important; }
   #terms-page h1, #privacy-page h1 {
     font-size: 240% !important; }
   #terms-page h3, #terms-page h4, #privacy-page h3, #privacy-page h4 {
@@ -295,7 +384,7 @@ span#fork {
     margin-bottom: 15px; } }
 
 @media only screen and (max-width: 480px) {
-  #school-page .btn-lg {
+  #school-page .btn-lg, #school-page .btn-group-lg > .btn {
     font-size: 16px;
     margin-bottom: 10px; }
   #school-page .carousel-cell {
@@ -315,6 +404,7 @@ span#fork {
     text-align: left; } }
 
 /* Responsive styles ends here */
+/* purgecss end ignore */
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -1296,6 +1386,13 @@ button.close {
   border: 0;
   -webkit-appearance: none; }
 
+/* purgecss start ignore */
+.modal-open {
+  overflow: hidden; }
+  .modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto; }
+
 .modal {
   position: fixed;
   top: 0;
@@ -1318,6 +1415,17 @@ button.close {
     @media screen and (prefers-reduced-motion: reduce) {
       .modal.fade .modal-dialog {
         transition: none; } }
+  .modal.show .modal-dialog {
+    transform: translate(0, 0); }
+
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - (0.5rem * 2)); }
+  .modal-dialog-centered::before {
+    display: block;
+    height: calc(100vh - (0.5rem * 2));
+    content: ""; }
 
 .modal-content {
   position: relative;
@@ -1330,6 +1438,19 @@ button.close {
   border: 0 solid rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   outline: 0; }
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000; }
+  .modal-backdrop.fade {
+    opacity: 0; }
+  .modal-backdrop.show {
+    opacity: 0.5; }
 
 .modal-header {
   display: flex;
@@ -1352,10 +1473,40 @@ button.close {
   flex: 1 1 auto;
   padding: 1.5rem; }
 
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  border-top: 0 solid #e9ecef; }
+  .modal-footer > :not(:first-child) {
+    margin-left: .25rem; }
+  .modal-footer > :not(:last-child) {
+    margin-right: .25rem; }
+
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll; }
+
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 500px;
-    margin: 1.75rem auto; } }
+    margin: 1.75rem auto; }
+  .modal-dialog-centered {
+    min-height: calc(100% - (1.75rem * 2)); }
+    .modal-dialog-centered::before {
+      height: calc(100vh - (1.75rem * 2)); }
+  .modal-sm {
+    max-width: 300px; } }
+
+@media (min-width: 992px) {
+  .modal-lg {
+    max-width: 800px; } }
+
+/* purgecss end ignore */
 
 .bg-dark {
   background-color: #152a49 !important; }
