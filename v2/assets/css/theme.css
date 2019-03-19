@@ -122,6 +122,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.SpacesHeroSectionAgile {
+  background-image: url(../img/abs-messaging.svg), linear-gradient(180deg, #2af598 0%, #009efd 100%);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .SpacesHeroSectionConferencing {
   background-image: url(../img/abs-conferencing.svg), linear-gradient(180deg, #896bff 0, #896bff 50%, #896bff);
   background-position: right, bottom;
