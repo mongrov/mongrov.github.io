@@ -126,7 +126,7 @@ body {
   background-size: cover; }
 
 .SpacesHeroSectionAgile {
-  background-image: url(../img/abs-messaging.svg), linear-gradient(180deg, #936AD8 0%, #936AD8 100%);
+  background: #3a69da url(../img/abs-messaging.svg);
   background-position: right, bottom;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -353,11 +353,8 @@ span#fork {
   background-color: #669cff; }
 
 .goAgileSlide h3 {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 5px;
-  box-shadow: 0 0 3rem rgba(52, 58, 64, 0.175) !important;
-  margin-top: 150px; }
+  padding: 0;
+  margin-top: 100px; }
 
 /* Responsive styles starts here */
 @media only screen and (max-width: 1367px) {
@@ -1651,6 +1648,14 @@ button.close {
       content: ""; }
   .carousel-indicators .active {
     background-color: #fff; }
+
+.bg-light {
+  background-color: #f8f9fa !important; }
+
+a.bg-light:hover, a.bg-light:focus,
+button.bg-light:hover,
+button.bg-light:focus {
+  background-color: #dae0e5 !important; }
 
 .bg-dark {
   background-color: #152a49 !important; }
