@@ -356,18 +356,14 @@ span#fork {
   padding: 0;
   margin-top: 100px; }
 
-.main-banner.SpacesHeroSectionHome .slider-cards .flickity-page-dots {
-  display: block;
-  text-align: center;
-  padding-left: unset; }
+#go-agile .flickity-page-dots {
+  display: none; }
 
-.main-banner.SpacesHeroSectionHome .slider-cards .flickity-page-dots .dot {
-  width: 30px;
-  height: 3px;
-  background: #FFFFFF; }
+#go-agile .slider-cards .flickity-button.previous {
+  display: block !important; }
 
-.main-banner.SpacesHeroSectionHome .slider-cards .flickity-button.previous, .main-banner.SpacesHeroSectionHome .slider-cards .flickity-button.next {
-  display: none !important; }
+#go-agile .flickity-prev-next-button {
+  background: #d3f3ff; }
 
 .bg-blue {
   background: #5c9cfb; }
