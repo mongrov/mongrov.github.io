@@ -230,9 +230,6 @@ svg path {
   border: none;
   color: #FFF; }
 
-a.navbar-brand {
-  max-width: 160px; }
-
 a.btn {
   font-weight: normal;
   border: none; }
@@ -423,16 +420,11 @@ span#fork {
 /* purgecss end ignore */
 /* Groov App styles Starts here */
 p {
-  font-family: 'SFProDisplay-Regular' !important;
-  letter-spacing: 1px; }
-
-#groovapp-page .h2 {
-  letter-spacing: 2px; }
+  font-family: 'SFProDisplay-Regular' !important; }
 
 .main-banner h1 {
   font-size: 46px !important;
-  color: #333333;
-  letter-spacing: 2px; }
+  color: #333333; }
 
 .bg-green {
   background-color: #38d39f !important; }
@@ -455,21 +447,33 @@ p {
   float: left; }
 
 .section-footer .list-social-links > li.text-white a {
-  color: #fff;
-  background: #170934;
   padding: 1px 7px;
-  margin: 0px 10px; }
+  margin: 0;
+  width: 48px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%); }
 
 .section-footer .list-social-links > li.text-white a:hover {
-  background: #38d39f; }
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0); }
 
 .section-footer .list-social-links {
-  width: 206px;
-  margin: 0 auto; }
+  float: right;
+  clear: both;
+  margin-bottom: 0; }
 
-.app-screens {
-  background-image: url(../img/green-halfround.svg), linear-gradient(180deg, #FFFFFF 0, #FFFFFF 50%, #FFFFFF);
-  background-repeat: no-repeat; }
+a.navbar-brand {
+  width: 120px; }
+
+.app-screens img {
+  max-width: 100%;
+  box-shadow: 0px 0px 18px #0000000f; }
+
+#whyus svg path {
+  fill: #ffffff !important; }
+
+.clearboth {
+  clear: both; }
 
 /*  Groov App styles ends here */
 /*!
