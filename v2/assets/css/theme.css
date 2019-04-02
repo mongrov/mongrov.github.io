@@ -83,6 +83,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.SpacesHeroSectionCollaboration {
+  background-image: url(../img/abs-taskboard.svg), linear-gradient(180deg, #20AF87 0, #20AF87 50%, #20AF87);
+  background-position: right, bottom;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .SpacesHeroSectionHome {
   background-image: url(../img/abs-home.svg), linear-gradient(180deg, #00B8FF 0, #00B8FF 50%, #1A91BF);
   background-position: left top;
@@ -368,6 +374,9 @@ span#fork {
 .bg-blue {
   background: #5c9cfb; }
 
+.dropdown-menu-wide.widthAuto {
+  width: 30rem !important; }
+
 /* Responsive styles starts here */
 @media only screen and (max-width: 1367px) {
   .pricing_col_sec ul {
@@ -426,7 +435,9 @@ span#fork {
     text-align: center; }
   .roverz_img {
     margin: 0 auto;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  .rocketchat-widget {
+    display: none; } }
 
 @media only screen and (max-width: 480px) {
   #school-page .btn-lg, #school-page .btn-group-lg > .btn {
