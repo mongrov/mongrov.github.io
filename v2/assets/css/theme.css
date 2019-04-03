@@ -16,7 +16,7 @@ p {
 body {
   font-family: 'Graphik-Regular' !important; }
 
-.dropdown-menu-wide {
+.dropdown-menu-wide.small-wdth-menu {
   width: 300px !important; }
 
 .home-link {
@@ -374,8 +374,9 @@ span#fork {
 .bg-blue {
   background: #5c9cfb; }
 
-.dropdown-menu-wide.widthAuto {
-  width: 30rem !important; }
+span.sm-font {
+  font-size: 13px;
+  font-weight: normal; }
 
 /* Responsive styles starts here */
 @media only screen and (max-width: 1367px) {
@@ -437,7 +438,9 @@ span#fork {
     margin: 0 auto;
     margin-bottom: 15px; }
   .rocketchat-widget {
-    display: none; } }
+    display: none; }
+  .play-appstore-cont {
+    justify-content: center; } }
 
 @media only screen and (max-width: 480px) {
   #school-page .btn-lg, #school-page .btn-group-lg > .btn {
