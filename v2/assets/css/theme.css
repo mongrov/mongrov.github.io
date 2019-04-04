@@ -59,6 +59,9 @@ body {
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%); }
 
+#collaboration-page svg path {
+  fill: #00b8ff !important; }
+
 /* .SpacesHeroSection {
     background-image: url(../img/abs1.svg), linear-gradient(180deg, #2b109a 0, #17076d 50%, #111032);
     background-position: bottom,50%;
@@ -181,6 +184,15 @@ body {
   width: 120px;
   margin-bottom: 20px;
   display: block; }
+
+.menu-bg-enterprice {
+  background: #20AF87; }
+
+.menu-bg-agile {
+  background: #3a69da; }
+
+.menu-bg-school {
+  background: #00B8FF; }
 
 .main-banner {
   overflow: hidden;
