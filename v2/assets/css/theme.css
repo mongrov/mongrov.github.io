@@ -367,9 +367,6 @@ span#fork {
 .goAgileSlide .carousel-indicators li {
   background-color: #7dd6ff; }
 
-.goAgileSlide .carousel-indicators .active {
-  background-color: #669cff; }
-
 .goAgileSlide h3 {
   padding: 0;
   margin-top: 100px; }
@@ -389,6 +386,52 @@ span#fork {
 span.sm-font {
   font-size: 13px;
   font-weight: normal; }
+
+#go-agile .carousel-indicators {
+  position: unset;
+  margin-left: 0;
+  margin-right: 0; }
+
+.goAgileSlide .carousel-indicators li {
+  background-color: #7dd6ff;
+  height: 28px;
+  width: auto; }
+
+.goAgileSlide .carousel-indicators li {
+  background-color: #ffffff;
+  height: 40px;
+  width: 200px;
+  text-indent: 0;
+  text-align: center;
+  color: #000;
+  box-shadow: 0px 1px 14px #ccc;
+  line-height: 40px;
+  margin: 0 10px; }
+
+.goAgileSlide .carousel-indicators .active {
+  background-color: #0099FF;
+  color: #FFF; }
+
+#go-agile .carousel-control-prev-icon, #go-agile .carousel-control-next-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #5f9dfa no-repeat center center;
+  background-size: 50% 100%;
+  padding: 20px;
+  border-radius: 50%; }
+
+#go-agile .carousel-control-prev-icon {
+  background-image: url(../img/left-arrow.svg); }
+
+#go-agile .carousel-control-next-icon {
+  background-image: url(../img/right-arrow.svg); }
+
+#go-agile .carousel-control-prev {
+  left: -80px; }
+
+#go-agile .carousel-control-next {
+  right: -80px; }
 
 /* Responsive styles starts here */
 @media only screen and (max-width: 1367px) {
@@ -433,7 +476,13 @@ span.sm-font {
     margin-left: 0 !important;
     margin-top: 15px; }
   #member-gallery h5 {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  #go-agile .carousel-indicators {
+    display: block;
+    width: 200px;
+    margin-left: 0;
+    margin: 0 auto;
+    margin-bottom: 20px; } }
 
 @media only screen and (max-width: 767px) {
   .col-sm-text-center {
@@ -452,7 +501,13 @@ span.sm-font {
   .rocketchat-widget {
     display: none; }
   .play-appstore-cont {
-    justify-content: center; } }
+    justify-content: center; }
+  #go-agile .carousel-control-prev, #go-agile .carousel-control-next {
+    display: none; }
+  .goAgileSlide .carousel-indicators li {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 5px; } }
 
 @media only screen and (max-width: 480px) {
   #school-page .btn-lg, #school-page .btn-group-lg > .btn {
