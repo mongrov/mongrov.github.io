@@ -470,6 +470,8 @@ span.sm-font {
     width: 102px; }
   .main-banner .carousel-cell {
     height: auto; }
+  .main-banner h1 {
+    line-height: 40px; }
   .SpacesHeroSectionOpensource h1 {
     font-size: 240% !important; }
   .SpacesHeroSectionOpensource .btn-violet {
@@ -507,7 +509,9 @@ span.sm-font {
   .goAgileSlide .carousel-indicators li {
     width: 100%;
     margin: 0;
-    margin-bottom: 5px; } }
+    margin-bottom: 5px; }
+  .mb-xs-5 {
+    margin-bottom: 30px; } }
 
 @media only screen and (max-width: 480px) {
   #school-page .btn-lg, #school-page .btn-group-lg > .btn {
