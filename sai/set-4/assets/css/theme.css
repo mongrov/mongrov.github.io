@@ -13566,4 +13566,26 @@ article table {
 .bg-black {
   background-color: #000000 !important; }
 
+footer .nav-link:not(.active):not(.disabled):not(:hover) {
+  opacity: 1; }
+
+button.plyr__control--overlaid {
+  background: #004071; }
+
+.plyr--full-ui input[type='range'] {
+  color: #004071; }
+
+.plyr--video .plyr__control:hover {
+  background: #004071; }
+
+svg.icon * {
+  fill: #004071; }
+
+.navbar-toggler:hover, .navbar-toggler:focus {
+  outline: none; }
+
+.p-lead {
+  font-size: 1.15em;
+  font-weight: bold !important; }
+
 /*# sourceMappingURL=theme.css.map */
