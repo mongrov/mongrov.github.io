@@ -13666,4 +13666,8 @@ section .nav-link.btn-blue1:not(.active):not(.disabled):not(:hover) {
 .text-blue2 {
   color: #90ddff !important; }
 
+.navbar[data-sticky="top"].scrolled.navbar-dark {
+  background: #004071;
+  border-bottom-color: rgba(0, 0, 0, 0); }
+
 /*# sourceMappingURL=theme.css.map */
