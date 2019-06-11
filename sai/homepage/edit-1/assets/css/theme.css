@@ -13585,7 +13585,8 @@ svg.icon * {
   outline: none; }
 
 .p-lead {
-  font-size: 1.15em; }
+  font-size: 1.15em;
+  font-weight: bold !important; }
 
 .bg-darkblue {
   background: #004071 !important; }
@@ -13598,69 +13599,5 @@ svg.bg-darkblue * {
 
 .text-pink {
   color: #F4B6D1 !important; }
-
-.bg-stupi {
-  background: #FDEEF4 url(assets/img/sai/stupi.png);
-  background-size: 550px;
-  background-repeat: no-repeat;
-  background-position: -60px 60px; }
-
-.bg-pink {
-  background: #F4B6D1 !important; }
-
-#thought-slider [data-flickity].controls-light .flickity-page-dots .dot {
-  background: #004071; }
-
-#thought.header-desktop-app .row:last-of-type {
-  margin-bottom: -35.5rem;
-  z-index: 2;
-  position: relative;
-  margin-top: 140px !important; }
-
-#thought.header-desktop-app + section {
-  padding-top: 0;
-  position: relative;
-  z-index: -111;
-  min-height: 500px; }
-
-.news-img-container {
-  display: block;
-  overflow: hidden;
-  max-height: 210px; }
-
-.bg-stupi1 {
-  background: #e8f8ff url(assets/img/sai/stupi.png);
-  background-size: 550px;
-  background-repeat: no-repeat;
-  background-position: -60px 60px; }
-
-.btn-blue1.nav-link.btn.active {
-  color: #FFFFFF;
-  background-color: #004071;
-  border-color: #004071;
-  border-radius: 30px; }
-
-section .nav-link.btn-blue1:not(.active):not(.disabled):not(:hover) {
-  opacity: 1;
-  color: #004071;
-  border-color: #dee2e6;
-  background: #f8f9fa;
-  border-radius: 30px; }
-
-.nav-link.btn-blue1:hover {
-  text-decoration: none;
-  color: #FFFFFF;
-  background-color: #004071;
-  border-color: #004071;
-  border-radius: 30px; }
-
-.text-blue1 {
-  color: #e8f8ff !important; }
-
-.text-count-blue {
-  color: #3755BE !important; }
-
-.text-blue2 {
-  color: #90ddff !important; }
 
 /*# sourceMappingURL=theme.css.map */

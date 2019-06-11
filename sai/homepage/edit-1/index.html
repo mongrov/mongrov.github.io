@@ -11,63 +11,7 @@
     <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
-    
-    <style>
-
-@font-face {
-  font-family: 'AvenirLTStd-Medium';
-  src: url('assets/sai-fonts/AvenirLTStd-Medium.eot?#iefix') format('embedded-opentype'),  url('assets/sai-fonts/AvenirLTStd-Medium.woff') format('woff'), url('assets/sai-fonts/AvenirLTStd-Medium.ttf')  format('truetype'), url('assets/sai-fonts/AvenirLTStd-Medium.svg#AvenirLTStd-Medium') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto-Regular';
-  src: url('assets/sai-fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),  url('assets/sai-fonts/Roboto-Regular.woff') format('woff'), url('assets/sai-fonts/Roboto-Regular.ttf')  format('truetype'), url('assets/sai-fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-body{
-    font-family: 'Roboto-Regular';
-}
-
-.ff-avenir {
-  font-family: 'AvenirLTStd-Medium' !important;
-}
-
-.ff-source-serif-pro {
-  font-family: 'SourceSerifPro-Regular' !important;
-}
-
-.ff-source-serif-semi-bold {
-  font-family: 'SourceSerifPro-Semibold' !important;
-}
-
-.bg-stupi {
-    background:#FDEEF4 url(assets/img/sai/stupi.png);
-    background-size: 550px;
-    background-repeat: no-repeat;
-    background-position: -60px 60px;
-}
-.text-darkblue{
-  color: #004071 !important;
-}
-
-.text-pink {
-  color: #F4B6D1 !important;
-}
-.bg-darkblue{
-  background: #004071 !important;
-}
-
-
-.bg-pink {
-  background: #F4B6D1 !important;
-}
-
-    </style>
-
+   
   </head>
 
   <body>
@@ -79,8 +23,8 @@ body{
       <nav class="navbar navbar-expand-lg justify-content-between navbar-light border-bottom-0 bg-white" data-sticky="top">
         <div class="container">
           <div class="col flex-fill px-0 d-flex justify-content-between">
-            <a class="navbar-brand mr-0" href="#">
-              <img class="logo-img" src="assets/img/sai/logo.svg" alt="Leap"/>
+            <a class="navbar-brand mr-0 fade-page" href="#">
+              <img class="logo-img" src="assets/img/sai/logo.svg" alt="Leap">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
               <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,15 +38,15 @@ body{
             <div class="py-2 py-lg-0">
               <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">About</a>
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Home</a>
                 
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Founder</a>
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">About</a>
                   
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Projects</a>
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Services</a>
                   
                 </li>
                 <li class="nav-item dropdown">
@@ -110,16 +54,13 @@ body{
                   
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Ashrams</a>
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Prasanthi Nilayam
+                  </a>
+                  
                 </li>
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Prasanthi Nilayam</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Accommodations</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Get Involved</a>
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Contact</a>
+                  
                 </li>
               </ul>
             </div>
@@ -128,1099 +69,461 @@ body{
         </div>
       </nav>
     </div>
-    
-    <section class="controls-inside controls-light p-0 bg-primary-3" data-flickity='{ "imagesLoaded": true, "wrapAround": true }'>
-        <div class="carousel-cell py-5">
-            <img src="assets/img/sai/sai-banner2.jpg" alt="Image" class="bg-image"/>
-            <div class="container">
-              <div class="row justify-content-center min-vh-70 align-items-end">
-                <div class="col-lg-10 col-xl-9">
-                  <div class="text-center text-light">
-                    <!-- <h1 class="display-6"> Sri Sathya Sai Baba</h1> -->
-                  </div>
-                </div>
+    <section class="text-dark bg-primary-alt o-hidden p-0">
+        <div class="container">
+          <div class="row align-items-center min-vh-50">
+            <div class="col-lg-6 text-center text-lg-left mb-4 mb-lg-0">
+              
+              <div class="my-4">
+                <h1 class="display-5 text-darkblue">Love All Serve All<br>
+                    Help Ever Hurt Never</h1>
+            <p class="lead ">
+                    Start the day with Love, Fill the day with Love,
+                    End the day with Love, This is the way to God.
+            </p>
               </div>
+            
             </div>
-      </div>
-      <div class="carousel-cell py-5">
-          <img src="assets/img/sai/sai-banner3.jpg" alt="Image" class="bg-image"/>
+            <div class="col-lg-6 text-center aos-init aos-animate" data-aos="fade-left">
+              <img src="assets/img/sai/slider3.png" alt="Image" class="min-vw-60">
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- <section class="p-0 jarallax" data-jarallax data-speed="0.2" >
+        <img src="assets/img/sai/test-bg.svg" alt="Image" class="jarallax-img">
+            <div class="container-fluid border-bottom">
+                    <div class="row align-items-center justify-content-between">
+                      <div class="col-lg-6 col-xl-5 px-md-6 px-lg-0">
+                        <h1 class="display-5">Love All Serve All<br>
+                                Help Ever Hurt Never</h1>
+                        <p class="lead">
+                                Start the day with Love, Fill the day with Love,
+                                End the day with Love, This is the way to God.
+                        </p>
+                        
+                        
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="row justify-content-center">
+                          <div class="col-lg-12 col-8 mt-4 mt-lg-0">
+                            <img src="assets/img/sai/slider2.png" alt="Image" data-aos="fade-left" class="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+     </section> -->
+
+     <section class="controls-inside controls-light p-0 bg-primary-3" data-flickity='{ "imagesLoaded": true, "wrapAround": true }'>
+        <div class="carousel-cell py-5">
+          <img src="assets/img/sai/2.jpg" alt="Image" class="bg-image">
           <div class="container">
             <div class="row justify-content-center min-vh-70 align-items-end">
               <div class="col-lg-10 col-xl-9">
                 <div class="text-center text-light">
-                  <!-- <h1 class="display-6"> Sri Sathya Sai Baba</h1> -->
+                  <h1 class="display-6"> Sri Sathya Sai Institute of Higher Medical Sciences</h1>
+                  
                 </div>
               </div>
             </div>
           </div>
-    </div>
-      <div class="carousel-cell py-5">
-        <img src="assets/img/sai/2.jpg" alt="Image" class="bg-image">
-        <div class="container">
-          <div class="row justify-content-center min-vh-70 align-items-end">
-            <div class="col-lg-10 col-xl-9">
-              <div class="text-center text-light">
-                <h4 class="display-6 m-0"> Sri Sathya Sai Institute of Higher Medical Sciences</h4>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="carousel-cell py-5">
-        <img src="assets/img/sai/1.jpg" alt="Image" class="bg-image"/>
-        <div class="container">
-          <div class="row justify-content-center min-vh-70 align-items-end">
-            <div class="col-lg-10 col-xl-9">
-              <div class="text-center text-light">
-                  <h4 class="display-6 m-0">Sri Sathya Sai Institute of Higher Medical Sciences</h4>
-               
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-cell py-5">
-        <img src="assets/img/sai/3.jpg" alt="Image" class="bg-image">
-        <div class="container">
-          <div class="row justify-content-center min-vh-70 align-items-end">
-            <div class="col-lg-10 col-xl-9">
-              <div class="text-center text-light">
-                  <h4 class="display-6 m-0">Sri Sathya Sai Super Speciality Hospital</h4>
-               
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-     
-    </section>
-
-    <section class="bg-white sathya-sai-sec">
-        <div class="container">
-          <div class="row justify-content-center text-center mb-1">
-            <div class="col-xl-9 col-lg-9">
-                  <h2 class="h1 text-center text-darkblue ff-avenir mb-1">Love All Serve All...
-                    Help Ever Hurt Never..!</h2>
-                    <p class="mb-3 lead">Start the day with Love, Fill the day with Love, End the day with Love, This is the way to God.</p>
-            </div>
-          </div>
-          <div class="row justify-content-center mb-5">
-            <div class="col-xl-11">
-              <ul class="nav justify-content-center row" role="tablist">
-                <li class="mx-1 col-md-2">
-                  <a class="nav-link btn btn-blue1 active" href="#saa-tab-1" data-toggle="tab" role="tab" aria-controls="saas-tab-1" aria-selected="true">
-                      About
-                  </a>
-                </li>
-                <li class="mx-1 col-md-2">
-                  <a class="nav-link btn btn-blue1" href="#saa-tab-2" data-toggle="tab" role="tab" aria-controls="saas-tab-2" aria-selected="false">
-                    
-                    Teachings
-                  </a>
-                </li>
-                <li class="mx-1 col-md-2">
-                  <a class="nav-link btn btn-blue1" href="#saa-tab-3" data-toggle="tab" role="tab" aria-controls="saas-tab-3" aria-selected="false">
-                    
-                    Writings
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="col-xl-11" data-aos="fade-up">
-              <div class="tab-content">
-                <div class="tab-pane fade show active" id="saa-tab-1" role="tabpanel" aria-labelledby="saas-tab-1">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-3 px-md-2 px-4 mb-3 mb-md-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                          <div class="card rounded-0 shadow-lg">
-                            <a href="#">
-                              <img src="assets/img/sai/article1.png" alt="Image" class="card-img-top rounded-0"/>
-                            </a>
-                            <div class="card-body align-items-start p-2 ">
-                                <p class="m-0 p-lead text-darkblue ff-avenir">Thought for the Day</p>
-                             
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 px-md-2 px-4 mb-3 mb-md-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-                          <div class="card rounded-0 shadow-lg">
-                            <a href="#">
-                              <img src="assets/img/sai/article2.png" alt="Image" class="card-img-top rounded-0"/>
-                            </a>
-                            <div class="card-body align-items-start p-2">
-                                <p class="m-0 p-lead text-darkblue ff-avenir">Sathya Sai Speaks</p>
-                                
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 px-md-2 px-4 mb-3 mb-md-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                          <div class="card rounded-0 shadow-lg">
-                            <a href="#">
-                              <img src="assets/img/sai/article3.png" alt="Image" class="card-img-top rounded-0"/>
-                            </a>
-                            <div class="card-body align-items-start p-2">
-                                <p class="m-0 p-lead text-darkblue ff-avenir">Sathya Sai Quotes </p>
-                               
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 px-md-2 px-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                            <div class="card rounded-0 shadow-lg">
-                              <a href="#">
-                                <img src="assets/img/sai/article4.png" alt="Image" class="card-img-top rounded-0"/>
-                              </a>
-                              <div class="card-body align-items-start p-2">
-                                  <p class="m-0 p-lead text-darkblue ff-avenir">Thursday Divine Darshan </p>
-                                  
-                                </div>
-                            </div>
-                          </div>
-                      </div>
+        <div class="carousel-cell py-5">
+          <img src="assets/img/sai/1.jpg" alt="Image" class="bg-image">
+          <div class="container">
+            <div class="row justify-content-center min-vh-70 align-items-end">
+              <div class="col-lg-10 col-xl-9">
+                <div class="text-center text-light">
+                  <h1 class="display-6">Sri Sathya Sai Institute of Higher Medical Sciences</h1>
+                 
                 </div>
-                <div class="tab-pane fade" id="saa-tab-2" role="tabpanel" aria-labelledby="saas-tab-2">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-3 px-md-2 px-4 mb-3 mb-md-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                          <div class="card rounded-0 shadow-lg">
-                            <a href="#">
-                              <img src="assets/img/sai/article1.png" alt="Image" class="card-img-top rounded-0"/>
-                            </a>
-                            <div class="card-body align-items-start p-2 ">
-                                <p class="m-0 p-lead text-darkblue ff-avenir">Thought for the Day</p>
-                             
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 px-md-2 px-4 mb-3 mb-md-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-                          <div class="card rounded-0 shadow-lg">
-                            <a href="#">
-                              <img src="assets/img/sai/article2.png" alt="Image" class="card-img-top rounded-0"/>
-                            </a>
-                            <div class="card-body align-items-start p-2">
-                                <p class="m-0 p-lead text-darkblue ff-avenir">Sathya Sai Speaks</p>
-                                
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 px-md-2 px-4 mb-3 mb-md-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                          <div class="card rounded-0 shadow-lg">
-                            <a href="#">
-                              <img src="assets/img/sai/article3.png" alt="Image" class="card-img-top rounded-0"/>
-                            </a>
-                            <div class="card-body align-items-start p-2">
-                                <p class="m-0 p-lead text-darkblue ff-avenir">Sathya Sai Quotes </p>
-                               
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 px-md-2 px-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                            <div class="card rounded-0 shadow-lg">
-                              <a href="#">
-                                <img src="assets/img/sai/article4.png" alt="Image" class="card-img-top rounded-0"/>
-                              </a>
-                              <div class="card-body align-items-start p-2">
-                                  <p class="m-0 p-lead text-darkblue ff-avenir">Thursday Divine Darshan </p>
-                                  
-                                </div>
-                            </div>
-                          </div>
-                      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell py-5">
+          <img src="assets/img/sai/3.jpg" alt="Image" class="bg-image">
+          <div class="container">
+            <div class="row justify-content-center min-vh-70 align-items-end">
+              <div class="col-lg-10 col-xl-9">
+                <div class="text-center text-light">
+                  <h1 class="display-6">Sri Sathya Sai Super Speciality Hospital</h1>
+                 
                 </div>
-                <div class="tab-pane fade" id="saa-tab-3" role="tabpanel" aria-labelledby="saas-tab-3">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-3 px-md-2 px-4 mb-3 mb-md-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-                          <div class="card rounded-0 shadow-lg">
-                            <a href="#">
-                              <img src="assets/img/sai/article1.png" alt="Image" class="card-img-top rounded-0"/>
-                            </a>
-                            <div class="card-body align-items-start p-2 ">
-                                <p class="m-0 p-lead text-darkblue ff-avenir">Thought for the Day</p>
-                             
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 px-md-2 px-4 mb-3 mb-md-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
-                          <div class="card rounded-0 shadow-lg">
-                            <a href="#">
-                              <img src="assets/img/sai/article2.png" alt="Image" class="card-img-top rounded-0"/>
-                            </a>
-                            <div class="card-body align-items-start p-2">
-                                <p class="m-0 p-lead text-darkblue ff-avenir">Sathya Sai Speaks</p>
-                                
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 px-md-2 px-4 mb-3 mb-md-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                          <div class="card rounded-0 shadow-lg">
-                            <a href="#">
-                              <img src="assets/img/sai/article3.png" alt="Image" class="card-img-top rounded-0"/>
-                            </a>
-                            <div class="card-body align-items-start p-2">
-                                <p class="m-0 p-lead text-darkblue ff-avenir">Sathya Sai Quotes </p>
-                               
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 px-md-2 px-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
-                            <div class="card rounded-0 shadow-lg">
-                              <a href="#">
-                                <img src="assets/img/sai/article4.png" alt="Image" class="card-img-top rounded-0"/>
-                              </a>
-                              <div class="card-body align-items-start p-2">
-                                  <p class="m-0 p-lead text-darkblue ff-avenir">Thursday Divine Darshan </p>
-                                  
-                                </div>
-                            </div>
-                          </div>
-                      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell py-5">
+          <img src="assets/img/sai/4.jpg" alt="Image" class="bg-image">
+          <div class="container">
+            <div class="row justify-content-center min-vh-70 align-items-end">
+              <div class="col-lg-10 col-xl-9">
+                <div class="text-center text-light">
+                  <h1 class="display-6">Sri Sathya Sai Vidya Vahini Center for Excellence</h1>
+                 
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-    <section class="bg-stupi1">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-xl-10">
-            <h2 class="h1 text-darkblue ff-avenir">Service to Man is Service to God </h2>
-            <h6 class="display-6 mx-xl-6 text-darkblue">SRI SATHYA SAI </h6>
-
-            <p class="text-darkblue">
-              The Sri Sathya Sai Central Trust was founded in 1972 by Bhagawan Sri Sathya Sai Baba as a public charitable trust with the objectives of extending relief to the poor, including education and health, and any other objects of general public utility as defined in section 2(15) of the Indian Income Tax Act of 1991, without any discrimination.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <div class="m-0 services-cont rounded-0">
-              <img src="assets/img/sai/ser1.jpg" alt="Image" class=""/>
-              <h3 class="text-center mt-1 mb-0 ff-avenir text-darkblue">Educare</h3>
+    <section class="" >
+      <!-- <img src="assets/img/sai/test-bg1.svg" alt="Image" class="jarallax-img"> -->
+      <div class="container pt-5">
+        <div class="row justify-content-between align-items-center o-hidden">
+          <div class="col-md-6 col-lg-6">
+            <div class="d-flex mb-4" data-aos="fade-up" data-aos-delay="500">
+              
+              <div class="ml-3">
+                <h5 class="h3 text-darkblue">About</h5>
+                <h5 class="text-darkblue">I am God. And you too are God. The only difference between you and Me is that while I am aware of it, you are completely unaware.</h5>
+                <p>
+                  This is the answer Bhagawan Sri Sathya Sai Baba gives to people who query Him about His identity and divinity. This fundamental truth of man’s divine nature is at the heart of His message and mission. Indeed, in His discourses to devotees, He addresses them as “Embodiments of the Divine Atma”. All who experience His pure and selfless love, and benefit from His illuminating counsel, and witness His miraculous nature get a glimpse of the glory and majesty of God, and therefore of what one potentially and inherently is.
+                </p>
+                <a href="#" class="hover-arrow text-darkblue">Read More</a>
+              </div>
             </div>
             
           </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="m-0 services-cont rounded-0">
-                <img src="assets/img/sai/ser2.jpg" alt="Image" class=""/>
-                <h3 class="text-center mt-1 mb-0 ff-avenir text-darkblue" >Medicare</h3>
+          <div class="col-md-6">
+            <img src="assets/img/sai/bg12.png" alt="Image">
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+
+    <section class="has-divider bg-primary-alt">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col">
+            <h2 class="h1 text-darkblue">Care Projects</h2>
+            <p>Sri Sathya Sai Central Trust was founded by Bhagawan Sri Sathya Sai Baba on 2nd September, 1972. Under Bhagawan's guidance, the Trust has been undertaking a number of welfare activities such as providing free education at school and university levels, delivering quality medical care at primary, secondary and tertiary levels completely free of charge, supply of pure drinking water in various regions of the state of Andhra Pradesh and the metropolitan city of Chennai.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300" >
+            <div class="card card-body">
+              <div class="icon-round mb-3 mb-md-4 bg-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #e7effb;
+                        }
+                      </style>
+                    </defs>
+                    <circle class="cls-1" cx="100" cy="100" r="99"/>
+                    <image x="40" y="52" width="120" height="97" xlink:href="data:img/png;base64,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"/>
+                  </svg>
+              </div>
+              <h4 class="text-darkblue">Educare</h4>
+              <p>
+                The system of education in Bhagawan’s educational institutions mirrors the ancient Gurukula system that was followed in India in the days of yore.
+              </p>
+             
             </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="card card-body">
+              <div class="icon-round mb-3 mb-md-4 bg-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #e7effb;
+                        }
+                      </style>
+                    </defs>
+                    <circle class="cls-1" cx="100" cy="100" r="99"/>
+                    <image x="55" y="59" width="90" height="82" xlink:href="data:img/png;base64,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"/>
+                  </svg>
+              </div>
+              <h4 class="text-darkblue">Medicare</h4>
+              <p>
+                Bhagawan Sri Sathya Sai Baba has established hospitals that offer world-class healthcare to all totally free of charge.
+              </p>
+             
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="card card-body">
+              <div class="icon-round mb-3 mb-md-4 bg-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #e7effb;
+                        }
+                      </style>
+                    </defs>
+                    <circle class="cls-1" cx="100" cy="100" r="99"/>
+                    <image x="55" y="62" width="90" height="76" xlink:href="data:img/png;base64,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"/>
+                  </svg>
+              </div>
+              <h4 class="text-darkblue">Sociocare</h4>
+              <p>
+                Bhagawan Sri Sathya Sai Baba, through His mammoth drinking water supply projects, has shown a beleaguered humanity the way out of the crisis.
+              </p>
+             
+            </div>
+          </div>
+          <!-- <div class="col-lg-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="card card-body">
+              <div class="icon-round mb-3 mb-md-4 bg-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+                    <defs>
+                      <style>
+                        .cls-1 {
+                          fill: #e7effb;
+                        }
+                      </style>
+                    </defs>
+                    <circle class="cls-1" cx="100" cy="100" r="99"/>
+                    <image x="55" y="60" width="90" height="80" xlink:href="data:img/png;base64,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"/>
+                  </svg>
+              </div>
+              <h4>Water Project</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </p>
+             
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="divider flip-x">
+        <svg class="" width="100%" height="100%" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+          <path d="M0,0 C6.83050094,50 15.1638343,75 25,75 C41.4957514,75 62.4956597,0 81.2456597,0 C93.7456597,0 99.9971065,0 100,0 L100,100 L0,100" fill="#ffffff"></path>
+        </svg>
+      </div>
+    </section>
+    <section class="">
+      <div class="container pb-0">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-xl-8 col-lg-9">
+            <h2 class="h1 mx-xl-6 text-darkblue">Our Trust in numbers</h2>
+            
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-4 mb-3 mb-4 mb-md-0 " >
               
+            <span class="display-4 text-darkblue d-block" data-countup="" data-start="1" data-end="500" data-duration="3" data-grouping="true" data-suffix="+">500</span>
+            <img src="assets/img/sai/Icons1.svg" alt="Avatar" class="avatar avatar-lg">
+            <span class="h6">Education Projects</span>
+          </div>
+          <div class="col-md-4 mb-3 mb-4 mb-md-0 " data-aos="fade-up" data-aos-delay="200">
+              
+            <span class="display-4 text-darkblue d-block" data-countup="" data-start="100" data-end="650" data-duration="3" data-grouping="true" data-suffix="+">650+</span>
+            <img src="assets/img/sai/Icons2.svg" alt="Avatar" class="avatar avatar-lg">
+            <span class="h6">Healthcare Projects</span>
+          </div>
+          <div class="col-md-4 mb-3 mb-4 mb-md-0 " data-aos="fade-up" data-aos-delay="300">
+              
+            <span class="display-4 text-darkblue d-block" data-countup="" data-start="200" data-end="600" data-duration="3" data-grouping="true" data-suffix="+">600</span>
+            <img src="assets/img/sai/Icons3.svg" alt="Avatar" class="avatar avatar-lg">
+            <span class="h6">Socialcare Projects</span>
+          </div>
+        </div>
+        
+      </div>
+     
+    </section>
+
+
+    <section class="bg-primary-alt has-divider">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-xl-6 col-lg-6">
+            <div class="row justify-content-center">
+              <div class="col-md-8 col-lg mb-4 mb-lg-0">
+                <img src="assets/img/sai/About1.png" alt="Image">
+              </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="m-0 services-cont rounded-0">
-                  <img src="assets/img/sai/ser3.jpg" alt="Image" class=""/>
-                  <h3 class="text-center mt-1 mb-0 ff-avenir text-darkblue">Sociocare</h3>
+          </div>
+          <div class="col-lg-5">
+            <h3 class="h1 text-darkblue">Thought for the day</h3>
+            <p class="">To say that God is the prime cause of everything is true to a certain extent, but you are not thrust by Him into an iron cage of destiny from which there is no escape. Do not blame fate or the stars for your condition. He has endowed you with discrimination and detachment, and also with a sense of awe and wonder; you have to use these for attaining Him. Though bound, you are not entirely incapacitated. A cow that is tethered to a post by means of a rope can walk around it and graze on all the area that the rope can traverse; when all the grass therein has been eaten, perhaps the master might loosen the knot and tether it to another different post! Graze freely as far as the rope allows, but do not stray far from the post and pull at the rope, then you will inflict pain on your neck. (Divine Discourse, Nov 24, 1961)</p>
+            <h6 class="">-Sri Sathya Sai Baba</h6>
+          </div>
+        </div>
+      </div>
+      <div class="divider flip-x">
+        <svg class="" width="100%" height="100%" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+          <path d="M0,0 C6.83050094,50 15.1638343,75 25,75 C41.4957514,75 62.4956597,0 81.2456597,0 C93.7456597,0 99.9971065,0 100,0 L100,100 L0,100" fill="#ffffff"></path>
+        </svg>
+      </div>
+    </section>
+  
+    <section class="pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+              <h2 class="h1 text-center pb-3 text-darkblue">Latest News & Events</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-delay="300" >
+            <div class="card">
+              <a href="#">
+                <img src="assets/img/sai/news1.jpg" alt="Image" class="card-img-top">
+              </a>
+              <div class="card-body align-items-start">
+                <div class="mb-3">
+                  <h5 class="text-darkblue">SAI Summer Series in Prasanthi Nilayam: 17 - 21 July</h5>
                 </div>
-             </div>
+                <p>
+                  SSIO is introducing a new initiative – SAI (Self-Awareness and Inspiration) Summer
+                  Series: An international retreat in Prasanthi Nilayam...
+                </p>
+                <a class="hover-arrow text-darkblue" href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-delay="400">
+            <div class="card">
+              <a href="#">
+                <img src="assets/img/sai/news2.jpg" alt="Image" class="card-img-top">
+              </a>
+              <div class="card-body align-items-start">
+                <div class="mb-3">
+                  <h5 class="text-darkblue">Joint Statement by SSIO, SSSCT and SSSSO India</h5>
+                </div>
+                <p>
+                  Joint statement by the Sathya Sai International Organisation, Sri Sathya Sai Central
+                  Trust and Sri Sathya Sai Service Organisation of India.
+                </p>
+                <a class="hover-arrow text-darkblue" href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 " data-aos="fade-up" data-aos-delay="500">
+            <div class="card">
+              <a href="#">
+                <img src="assets/img/sai/news4.jpg" alt="Image" class="card-img-top">
+              </a>
+              <div class="card-body align-items-start">
+                <div class="mb-3">
+                  <h5 class="text-darkblue">Orientation Manual for SSIO Officers</h5>
+                </div>
+                <p>
+                  The Orientation Programme for all incoming and continuing SSIO officers at local, national and international levels is available now.
+                </p>
+                <a class="hover-arrow text-darkblue" href="#">Read More</a>
+              </div>
+            </div>
+          </div>
            </div>
       </div>
-    </section>
 
-    <section class="">
-      <div class="container">
-        <div class="row">
-            <div class="col">
-                <h2 class="h1 text-center text-darkblue ff-avenir">Prasanthi Nilayam</h2>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            
-          <div class="col-lg-6 d-flex align-items-center" >
-              <div class="card card-body rounded-0 bg-black px-0">
-              <div class=" o-hidden">
-                  <div class="plyr" data-plyr-provider="youtube" data-plyr-embed-id="qaVbYJB_a0s"></div>
-              </div>
-            </div>
-          </div>
-           <div class="col-lg-3 d-flex " >
-                <div class="card card-body rounded-0 bg-pink">
-                    <div class="mb-3 mb-lg-5 flex-grow-1  ">
-                    <h2 class="h6 mb-2 text-white ">Events Calendar </h2>
-                    <h2 class="h5 mb-0 text-darkblue">23 NOV 2018</h2>
-                    <h2 class="h6 mb-2 text-darkblue">BABA’S 93RD BIRTHDAY</h2>
-                    <p class="text-darkblue">Sai Kulwant Hall, Prasanthi Nilayam </p>
-                    
-                    </div>
-                    <div><a href="#" class="btn btn-sm btn-primary rounded-pill">Read More</a></div>
-                    
-                </div>
-            </div>
-            
-            <div class="col-lg-3 d-flex" >
-                <div class="card card-body rounded-0 bg-darkblue">
-                  <div class="mb-0 flex-grow-1 text-center">
-                    <div class="">
-                      <svg class="" style="fill: #F4B6D1; width: 70px;" version="1.1" id="Capa_1" x="0px" y="0px"
-                      viewBox="0 0 480 480" style="enable-background:new 0 0 480 480;" xml:space="preserve">
-                      <g>
-                      <g>
-                      <path d="M304,304.808V232c0-13.232-10.768-24-24-24H56c-13.232,0-24,10.768-24,24v72.808C13.768,308.528,0,324.688,0,344v48v80
-                      c0,4.416,3.584,8,8,8h32c4.416,0,8-3.584,8-8v-24h240v24c0,4.416,3.584,8,8,8h32c4.416,0,8-3.584,8-8v-80v-48
-                      C336,324.688,322.232,308.528,304,304.808z M48,232c0-4.408,3.592-8,8-8h224c4.408,0,8,3.592,8,8v72h-16v-32
-                      c0-13.232-10.768-24-24-24h-48c-13.232,0-24,10.768-24,24v32h-16v-32c0-13.232-10.768-24-24-24H88c-13.232,0-24,10.768-24,24v32
-                      H48V232z M256,272v32h-64v-32c0-4.408,3.592-8,8-8h48C252.408,264,256,267.592,256,272z M144,272v32H80v-32c0-4.408,3.592-8,8-8
-                      h48C140.408,264,144,267.592,144,272z M320,464h-16v-24c0-4.416-3.584-8-8-8H40c-4.416,0-8,3.584-8,8v24H16v-64h304V464z M320,384
-                      H16v-40c0-13.232,10.768-24,24-24h32h80h32h80h32c13.232,0,24,10.768,24,24V384z"/>
-                      </g>
-                      </g>
-                      <g>
-                      <g>
-                      <path d="M472,304H360c-4.416,0-8,3.584-8,8v64v56h16v-48h96v48h16v-56v-64C480,307.584,476.416,304,472,304z M464,368h-96v-48h96
-                      V368z"/>
-                      </g>
-                      </g>
-                      <g>
-                      <g>
-                      <rect x="400" y="336" width="32" height="16"/>
-                      </g>
-                      </g>
-                      <g>
-                      <g>
-                      <path d="M455.592,237.464l-16-48C438.496,186.2,435.448,184,432,184h-32c-3.448,0-6.496,2.2-7.592,5.472l-16,48
-                      c-0.816,2.44-0.4,5.12,1.104,7.208c1.504,2.088,3.92,3.32,6.488,3.32h24v24h-16v16h48v-16h-16v-24h24
-                      c2.568,0,4.984-1.232,6.488-3.328C455.992,242.584,456.4,239.904,455.592,237.464z M395.096,232l10.672-32h20.472l10.664,32
-                      H395.096z"/>
-                      </g>
-                      </g>
-                      <g>
-                      <g>
-                      <path d="M475.272,104.696l-232-104c-2.088-0.928-4.464-0.928-6.544,0l-232,104C1.848,105.992,0,108.848,0,112v96h16v-90.824
-                      L240,16.768l224,100.416V208h16v-96C480,108.848,478.152,105.992,475.272,104.696z"/>
-                      </g>
-                      </g>
-                      <g>
-                      <g>
-                      <path d="M295.224,110.672l-15.784,2.656c0.376,2.184,0.56,4.424,0.56,6.672c0,22.056-17.944,40-40,40c-22.056,0-40-17.944-40-40
-                      c0-22.056,17.944-40,40-40c4.576,0,9.072,0.768,13.344,2.28l5.328-15.088C252.68,65.072,246.4,64,240,64c-30.88,0-56,25.12-56,56
-                      s25.12,56,56,56s56-25.12,56-56C296,116.864,295.736,113.728,295.224,110.672z"/>
-                      </g>
-                      </g>
-                      <g>
-                      <g>
-                      <path d="M290.344,66.344L240,116.688l-10.344-10.344l-11.312,11.312l16,16c1.56,1.56,3.608,2.344,5.656,2.344
-                      c2.048,0,4.096-0.784,5.656-2.344l56-56L290.344,66.344z"/>
-                      </g>
-                      </g>
-                      </svg>
-                    </div>  
- 
-                    <h2 class="h5 mt-2 text-white">Accommodations in Prasanthi Nilayam</h2>
-                    <a href="http://www.prasanthinilayam.in/guidelines.php" target="_blank" class="text-small text-pink">Booking Guidelines</a>
-                        <!-- <ul class="p-0 list-unstyled">
-                         <li class="py-1">
-                              <a href="http://www.prasanthinilayam.in/guidelines.php" target="_blank" class="text-small text-pink">Booking Guidelines</a>
-                          </li>
-                           <li class="border-bottom py-1"><a href="http://www.prasanthinilayam.in/processflow.php" target="_blank" class="text-small text-pink">Process Flow</a></li>
-                          <li class="border-bottom py-1">
-                              <a href="assets/img/sai/Form C.pdf" download="Form" class="text-small text-pink">Download Form C (for non-Indian visitors)</a>
-                          </li>
-                           <li class="border-bottom py-1"><a href="#" class="text-small text-pink">Online Accomodation Booking</a></li>
-                        </ul> -->
-                     </div>
-                     <a href="http://www.prasanthinilayam.in/index.php" target="_blank" class="btn btn-sm rounded-pill btn-yellow mt-2">Make a Reservation</a>
-                  
-                </div>
-            </div>
-        </div>
-
-      </div>
-
-    </section>
-    <section class="bg-darkblue">
       
-     
-      <div class="container">
-          <h2 class="h1 text-center text-white ff-avenir">Tour Prasanthi Nilayam</h2>
-        <div class="row min-vh-50">
-           <div class="col-lg-4 d-flex " >
-              <div class="card card-body rounded-0 bg-white mb-0">
-                  <div class="mb-0 flex-grow-1  ">
-                  <h2 class="h5 mb-2 text-darkblue ff-avenir">Reaching Prasanthi Nilayam</h2>
-                  <div class="row">
-                    <div class="col-4">
-                      <a href="#">
-                        <svg class="icon" version="1.1" id="Capa_1" x="0px" y="0px"
-                        width="39.055px" height="39.054px" viewBox="0 0 39.055 39.054" style="enable-background:new 0 0 39.055 39.054;"
-                        xml:space="preserve">
-                     <g>
-                       <g>
-                         <path d="M38.831,14.26c-0.191-0.233-0.476-0.369-0.775-0.369h-3.801c-0.938-2.474-2.16-4.898-3.549-5.813
-                           c-4.805-3.161-17.55-3.161-22.355,0c-1.39,0.916-2.607,3.343-3.55,5.813H1c-0.302,0-0.586,0.136-0.775,0.369
-                           c-0.19,0.232-0.266,0.539-0.204,0.834l0.563,2.728c0.096,0.465,0.506,0.797,0.979,0.797h1.126
-                           c-1.087,1.254-1.614,2.833-1.621,4.413c-0.007,1.952,0.734,3.716,2.089,4.964c0.015,0.013,0.03,0.022,0.044,0.035v3.817
-                           c0,0.827,0.672,1.5,1.5,1.5h3.506c0.828,0,1.5-0.673,1.5-1.5v-1.534h19.641v1.534c0,0.827,0.672,1.5,1.5,1.5h3.506
-                           c0.826,0,1.5-0.673,1.5-1.5v-3.742c1.438-1.317,2.125-3.129,2.134-4.938c0.006-1.634-0.545-3.271-1.696-4.551h1.201
-                           c0.475,0,0.885-0.332,0.979-0.798l0.564-2.727C39.094,14.799,39.021,14.494,38.831,14.26z M9.998,10.583
-                           c3.83-2.521,15.229-2.521,19.057,0c0.744,0.488,1.701,2.461,2.578,4.877H7.422C8.297,13.045,9.254,11.073,9.998,10.583z
-                            M5.512,23.408c0-1.63,1.322-2.95,2.951-2.95c1.631,0,2.951,1.32,2.951,2.95s-1.32,2.951-2.951,2.951
-                           C6.834,26.359,5.512,25.038,5.512,23.408z M30.631,26.359c-1.629,0-2.951-1.321-2.951-2.951s1.322-2.95,2.951-2.95
-                           c1.631,0,2.951,1.32,2.951,2.95S32.26,26.359,30.631,26.359z"/>
-                       </g>
-                     </g>
-                     
-                     </svg>
-                      <span class="h6 mb-0 ml-2">Road</span>
-                    </a>
-                    </div>
-                    <div class="col-4">
-                        <a href="#">
-                            <svg class="icon" version="1.1" id="Capa_1" x="0px" y="0px"
-                            width="484.5px" height="484.5px" viewBox="0 0 484.5 484.5" style="enable-background:new 0 0 484.5 484.5;" xml:space="preserve"
-                            >
-                            <g>
-                            <g id="directions-subway">
-                            <path d="M242.25,0c-112.2,0-204,12.75-204,102v242.25c0,48.45,40.8,89.25,89.25,89.25l-38.25,38.25v12.75h306v-12.75L357,433.5
-                            c48.45,0,89.25-40.8,89.25-89.25V102C446.25,12.75,354.45,0,242.25,0z M127.5,382.5c-20.4,0-38.25-17.85-38.25-38.25
-                            S107.1,306,127.5,306s38.25,17.85,38.25,38.25S147.9,382.5,127.5,382.5z M216.75,229.5H89.25V102h127.5V229.5z M357,382.5
-                            c-20.4,0-38.25-17.85-38.25-38.25S336.6,306,357,306s38.25,17.85,38.25,38.25S377.4,382.5,357,382.5z M395.25,229.5h-127.5V102
-                            h127.5V229.5z"/>
-                            </g>
-                            </g>
-                            </svg>
-                            <span class="h6 mb-0 ml-2">Train</span>
-                            </a>
-                    </div>
-                    <div class="col-4">
-                        <a href="#">
-                            <svg class="icon" version="1.1" id="Capa_1" x="0px" y="0px"
-                            width="400.156px" height="400.155px" viewBox="0 0 400.156 400.155" style="enable-background:new 0 0 400.156 400.155;"
-                            xml:space="preserve">
-                         <g>
-                           <path d="M396.31,49.545c6.088-18.271,4.949-32.354-3.432-42.255c-9.897-8.376-23.983-9.514-42.258-3.434
-                             c-18.273,6.091-34.643,16.368-49.111,30.833l-45.679,45.683L65.973,34.978c-3.046-0.953-5.901-0.192-8.564,2.282L20.862,73.805
-                             c-2.091,2.096-2.95,4.665-2.568,7.71c0.571,3.049,2.19,5.33,4.854,6.854l145.038,79.656l-73.948,73.948L38.85,226.845
-                             c-0.38-0.192-1.139-0.288-2.282-0.288c-2.666,0-4.853,0.855-6.567,2.57L2.594,256.819c-1.903,2.279-2.758,4.66-2.568,7.132
-                             c0.378,3.045,1.615,5.235,3.711,6.57l71.946,53.957l53.959,71.944c1.714,2.098,3.999,3.329,6.854,3.716h0.571
-                             c2.666,0,4.853-0.855,6.567-2.566l27.406-27.404c2.474-2.669,3.236-5.619,2.286-8.854l-15.133-55.388l73.947-73.953L311.8,377.019
-                             c1.14,2.475,3.138,3.997,5.995,4.569c0.568,0.191,1.235,0.284,1.999,0.284c2.279,0,4.09-0.572,5.421-1.712l36.552-27.407
-                             c3.23-2.663,4.373-5.801,3.426-9.418l-45.68-198.711l45.967-45.965C379.942,84.188,390.219,67.816,396.31,49.545z"/>
-                         </g>
-                         
-                         </svg>
-                          <span class="h6 mb-0 ml-2">Air</span>
-                          </a>
-                    </div>
-
-
-
-                  </div>
-                  <ul class="list-unstyled list mt-3 mb-0">
-                     
-                      <li class="d-flex align-items-center py-2 border-bottom border-top">
-                          <a target="_blank" href="https://www.confirmtkt.com/station/sspn">
-                              <svg class="icon" version="1.1" id="Capa_1" x="0px" y="0px"
-                            width="484.5px" height="484.5px" viewBox="0 0 484.5 484.5" style="enable-background:new 0 0 484.5 484.5;" xml:space="preserve"
-                            >
-                            <g>
-                            <g id="directions-subway">
-                            <path d="M242.25,0c-112.2,0-204,12.75-204,102v242.25c0,48.45,40.8,89.25,89.25,89.25l-38.25,38.25v12.75h306v-12.75L357,433.5
-                            c48.45,0,89.25-40.8,89.25-89.25V102C446.25,12.75,354.45,0,242.25,0z M127.5,382.5c-20.4,0-38.25-17.85-38.25-38.25
-                            S107.1,306,127.5,306s38.25,17.85,38.25,38.25S147.9,382.5,127.5,382.5z M216.75,229.5H89.25V102h127.5V229.5z M357,382.5
-                            c-20.4,0-38.25-17.85-38.25-38.25S336.6,306,357,306s38.25,17.85,38.25,38.25S377.4,382.5,357,382.5z M395.25,229.5h-127.5V102
-                            h127.5V229.5z"/>
-                            </g>
-                            </g>
-                            </svg>
-                        <span class="h6 mb-0 ml-2">Trains leaving from Puttaparthi</span>
-                        </a>
-                      </li>
-                      <li class="d-flex align-items-center py-2 border-bottom">
-                          <a href="#">
-                          <svg class="icon" height="20pt" viewBox="-124 -21 682 682.66669" width="20pt" xmlns="http://www.w3.org/2000/svg"><path d="m411.625 80-63.835938-63.835938v63.835938zm0 0"/><path d="m202.425781 111.738281c-1.117187.367188-15.140625 19.761719 1.097657 36.171875 10.8125-23.785156-.605469-36.324218-1.097657-36.171875zm0 0"/><path d="m178.882812 292c23.792969-9.117188 49.679688-17.085938 73.976563-22.71875-15.371094-17.636719-30.730469-39.65625-43.527344-62.359375-8.140625 27.820313-18.894531 57.867187-30.449219 85.078125zm0 0"/><path d="m104.140625 361.78125c-.113281 1.03125-.425781 3.761719 4.902344 7.785156 1.695312-.527344 11.609375-4.996094 30.066406-38.636718-24.339844 13.492187-34.269531 24.585937-34.96875 30.851562zm0 0"/><path d="m294.402344 280.945312c9.277344 7.054688 11.554687 10.621094 17.625 10.621094 2.660156 0 10.253906-.117187 13.769531-4.960937 1.703125-2.351563 2.367187-3.863281 2.617187-4.652344-1.394531-.742187-3.257812-2.21875-13.378906-2.21875-5.753906 0-12.976562.257813-20.632812 1.210937zm0 0"/><path d="m336.355469 102.855469c-6.308594 0-11.425781-5.117188-11.425781-11.425781v-91.429688h-331.429688v434.289062h434.289062v-331.433593zm5.039062 194.765625c-6.339843 8.765625-15.070312 13.394531-25.277343 13.394531-13.851563 0-29.976563-8.636719-47.964844-25.703125-32.308594 6.675781-70.03125 18.574219-100.527344 31.738281-9.519531 19.957031-18.640625 36.027344-27.140625 47.816407-11.648437 16.164062-21.707031 23.703124-31.671875 23.703124-3.964844 0-7.769531-1.265624-11.003906-3.667968-11.863282-8.800782-13.449219-18.570313-12.695313-25.234375 2.078125-18.296875 25.003907-37.476563 68.15625-57.007813 17.136719-37.070312 33.429688-82.753906 43.144531-120.910156-11.371093-24.4375-22.410156-56.125-14.363281-74.722656 2.820313-6.515625 6.351563-11.519532 12.914063-13.675782 2.601562-.859374 9.152344-1.9375 11.578125-1.9375 5.738281 0 10.777343 7.304688 14.351562 11.796876 3.359375 4.242187 10.984375 13.199218-4.25 76.515624 15.347657 31.304688 37.09375 63.199219 57.929688 85.039063 14.945312-2.660156 27.792969-4.015625 38.253906-4.015625 17.824219 0 28.636719 4.109375 33.035156 12.550781 3.636719 7.019531 2.128907 15.199219-4.46875 24.320313zm0 0"/><path d="m187.789062 502.855469v91.433593c25.207032 0 45.710938-20.503906 45.710938-45.71875 0-25.210937-20.511719-45.714843-45.710938-45.714843zm0 0"/><path d="m-6.5 457.144531v182.855469h434.289062v-182.855469zm91.429688 114.285157h-22.859376v34.28125c0 6.3125-5.117187 11.433593-11.425781 11.433593-6.308593 0-11.429687-5.121093-11.429687-11.433593v-114.28125c0-6.308594 5.121094-11.429688 11.429687-11.429688h34.285157c25.210937 0 45.714843 20.503906 45.714843 45.710938 0 25.21875-20.511719 45.71875-45.714843 45.71875zm102.859374 45.714843h-11.433593c-6.308594 0-11.425781-5.121093-11.425781-11.433593v-114.28125c0-6.308594 5.117187-11.429688 11.425781-11.429688h11.433593c37.816407 0 68.566407 30.75 68.566407 68.570312 0 37.816407-30.765625 68.574219-68.566407 68.574219zm182.855469-80c6.308594 0 11.425781 5.117188 11.425781 11.425781 0 6.308594-5.117187 11.429688-11.425781 11.429688h-57.144531v45.710938c0 6.3125-5.121094 11.433593-11.429688 11.433593-6.308593 0-11.425781-5.121093-11.425781-11.433593v-114.28125c0-6.308594 5.117188-11.429688 11.425781-11.429688h68.574219c6.308594 0 11.425781 5.121094 11.425781 11.429688 0 6.308593-5.117187 11.425781-11.425781 11.425781h-57.144531v34.289062zm0 0"/><path d="m84.929688 502.855469h-22.859376v45.714843h22.859376c12.605468 0 22.859374-10.25 22.859374-22.859374 0-12.601563-10.253906-22.855469-22.859374-22.855469zm0 0"/></svg>
-                              
-                        <span class="h6 mb-0 ml-2">Download Prasanthi Nilayam Map</span>
-                        </a>
-                      </li>
-                      <!-- <li class="d-flex align-items-center pt-2 pb-0">
-                          <a data-toggle="modal" data-target="#subscribe-image-modal" href="#">
-                              <svg class="icon" version="1.1" id="Capa_1" x="0px" y="0px"
-                              viewBox="0 0 487.601 487.601" style="enable-background:new 0 0 487.601 487.601;" xml:space="preserve">
-                           <g>
-                             <g id="XMLID_1736_">
-                               <path id="XMLID_1737_" d="M379,229.65c-25.6,0-46.3,20.8-46.3,46.3c0,6.1,5,11.1,11.1,11.1s11.1-5,11.1-11.1
-                                 c0-13.3,10.9-24.2,24.2-24.2c6.1,0,11.1-5,11.1-11.1C390.1,234.55,385.1,229.65,379,229.65z"/>
-                               <path id="XMLID_1738_" d="M454.5,197.75c-2.7-2.6-5.6-5.1-8.6-7.5l0,0l-41-34.8c-15.8-11.2-34.6-18.3-55-19.7l2.2,2.2l-24.9-25
-                                 H327c-6.9-6.3-16.2-10.2-26.3-10.2c-17.4,0-32.1,11.3-37.1,27c-5-3.2-10.8-5.1-17.1-5.5c-1-0.1-2.1-0.1-3.1-0.1
-                                 c-7.1,0-13.7,2.1-19.3,5.6c-5.1-15.6-19.8-26.9-37.1-26.9c-10.1,0-19.3,3.8-26.3,10.2h-0.2l-24.9,25l2.2-2.2
-                                 c-20.4,1.4-39.3,8.6-55,19.7l-41,34.8l0,0c-3,2.3-5.9,4.8-8.6,7.5C12.7,217.65,0,245.35,0,276.05c0,60,48.8,108.8,108.8,108.8
-                                 c55.4,0,101.3-41.7,107.9-95.4c8,4.6,17.3,7.2,27.1,7.2c9.9,0,19.1-2.6,27.1-7.2c6.7,53.6,52.5,95.3,107.9,95.3
-                                 c60,0,108.8-48.8,108.8-108.8C487.7,245.25,475,217.55,454.5,197.75z M108.8,350.25c-41,0-74.2-33.2-74.2-74.2
-                                 s33.2-74.2,74.2-74.2s74.2,33.2,74.2,74.2C183.1,316.95,149.8,350.25,108.8,350.25z M243.9,265.85c-13.3,0-24.1-10.8-24.1-24.1
-                                 c0-13.3,10.8-24.1,24.1-24.1c13.3,0,24.1,10.8,24.1,24.1C268,255.05,257.2,265.85,243.9,265.85z M379,350.25
-                                 c-41,0-74.2-33.2-74.2-74.2s33.2-74.2,74.2-74.2s74.2,33.2,74.2,74.2C453.2,316.95,420,350.25,379,350.25z"/>
-                               <path id="XMLID_1745_" d="M108.8,229.65c-25.6,0-46.3,20.8-46.3,46.3c0,6.1,5,11.1,11.1,11.1c6.1,0,11.1-5,11.1-11.1
-                                 c0-13.3,10.9-24.2,24.2-24.2c6.1,0,11.1-5,11.1-11.1C119.9,234.55,114.9,229.65,108.8,229.65z"/>
-                             </g>
-                           </g>
-                           
-                           </svg>    
-                        <span class="h6 mb-0 ml-2">Tour Prasanthi Nilayam</span>
-                        </a>
-
-                        
-
-                      </li> -->
-                      
-                      <li class="d-flex align-items-center pt-2 pb-0">
-                        <a data-toggle="modal" data-target="#subscribe-image-modal" href="#">
-                          <img src="assets/img/sai/tour-btn.png" alt="tour"/>
-                        </a>
-
-                        <div class="modal fade" id="subscribe-image-modal" tabindex="-1" role="dialog" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                              <div class="modal-content bg-darkblue text-light border-0">
-                                
-                                <div class="modal-body">
-                                      <div class="row">
-                                        <div class="col-12">
-                                            <video class="plyr" poster="" playsinline controls>
-                                              <source src="assets/video/sai/Virtual Prasanthi Tour.mp4" type="video/mp4">
-                                            </video>
-                                        </div>
-
-                                      </div>                             
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                      </li>
-
-
-
-                      
-                    </ul>
-                   
-
-                  </div>              
-              </div>
-          </div>
-          <div class="col-lg-8 d-flex " >
-              <div class="card card-body rounded-0 bg-white mb-0">
-                  <div class="mb-0 flex-grow-1  ">
-                  <h2 class="h5 mb-3 text-darkblue ff-avenir">Places of Interest and their visiting hours</h2>
-                  <div class="row">
-                     
-                      <div class="col-md-6 mb-3">
-                          <div class="avatar-author align-items-center text-small">
-                              <img src="assets/img/sai/places1.jpg" alt="Avatar" class="avatar avatar-lg"/>
-                              <div class="ml-2">
-                                <p class="m-0 text-darkblue">Shivalayam -Bhagawan's Birth Place- Gopuram Road Outside Ashram</p>
-                                <p class="m-0 text-secondary">10.00 A.M to 12.00 Noon</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-md-6 mb-3">
-                          <div class="avatar-author align-items-center text-small">
-                              <img src="assets/img/sai/places2.jpg" alt="Avatar" class="avatar avatar-lg"/>
-                              <div class="ml-2">
-                                <p class="m-0 text-darkblue">Chaitanya Jyothi Museum (closed on Mondays)</p>
-                                <p class="m-0 text-secondary">10.00 A.M. to 12.00 P.M & <br> 3.00 P.M to 5.00 P.M</p>
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="col-md-6 mb-3">
-                          <div class="avatar-author align-items-center text-small">
-                              <img src="assets/img/sai/places3.jpg" alt="Avatar" class="avatar avatar-lg"/>
-                              <div class="ml-2">
-                                <p class="m-0 text-darkblue">Sri Sathya Sai Space Theater - Planetarium</p>
-                                <p class="m-0 text-secondary">Entry upto 10.30 am only.</p>
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="col-md-6 mb-3">
-                          <div class="avatar-author align-items-center text-small">
-                              <img src="assets/img/sai/places4.jpg" alt="Avatar" class="avatar avatar-lg"/>
-                              <div class="ml-2">
-                                <p class="m-0 text-darkblue">Sri Sathya Sai International Centre for Sports - Indoor Stadium</p>
-                                <p class="m-0 text-secondary">10.00 A.M to 11.30 A.M</p>
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="col-md-6 mb-3">
-                          <div class="avatar-author align-items-center text-small">
-                              <img src="assets/img/sai/places5.jpg" alt="Avatar" class="avatar avatar-lg"/>
-                              <div class="ml-2">
-                                <p class="m-0 text-darkblue">Sanathana Samskruti Museum (Wednesday Holiday)</p>
-                                <p class="m-0 text-secondary">10.00 A.M to 12.00 Noon</p>
-                              </div>
-                          </div>
-                      </div>
-
-                      <div class="col-md-6 mb-3">
-                          <div class="avatar-author align-items-center text-small">
-                              <img src="assets/img/sai/places6.jpg" alt="Avatar" class="avatar avatar-lg"/>
-                              <div class="ml-2">
-                                <p class="m-0 text-darkblue">Tour of Super Specialty Hospital (Sunday Holiday)</p>
-                                <p class="m-0 text-secondary">12.00 Noon to 2.00 P.M</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-12"><a href="#" class="btn btn-sm btn-primary rounded-pill">View All</a></div>
-                      
-                      
-                  </div>
-                  
-                  <!-- <table class="table table-bordered text-small">
-                      
-                      <tbody>
-                        <tr>
-                          <td><p>Shivalayam -Bhagawan's Birth Place- Gopuram Road Outside Ashram</p></td>
-                          <td>10.00 A.M to 12.00 Noon</td>
-                        </tr>
-                        <tr>
-                          <td>Chaitanya Jyothi Museum (closed on Mondays)</td>
-                          <td>10.00 A.M. to 12.00 P.M and 3.00 P.M to 5.00 P.M</td>
-                        </tr>
-                        <tr>
-                        <td>Sri Sathya Sai Space Theater - Planetarium</td>
-                        <td>Daily shows in English, Hindi and Telugu using headphones. Entry upto 10.30 am only.</td>
-                        </tr>
-                        <tr>
-                        <td>Sanathana Samskruti Museum (Wednesday Holiday)</td>
-                        <td>10.00 A.M to 12.00 Noon</td>
-                        </tr>
-                        <tr>
-                        <td>Divine Parents Samadhi - Samadhi Road - Outside Ashram</td>
-                        <td>9.30 A.M to 11.30 A.M &
-                            4.30 P.M to 6.30 P.M</td>
-                        </tr>
-                        <tr>
-                        <td>Tour of Super Specialty Hospital(Sunday Holiday)</td>
-                        <td>	12.00 Noon to 2.00 P.M</td>
-                        </tr>
-                        <tr>
-                        <td>Film Shows on Bhagawan Sri Sathya Sai Baba - Satsangh Hall Opp. Shopping Complex</td>
-                        <td>8.00 P.M to 9.00 P.M</td>
-                        </tr>
-                          
-                      </tbody>
-                    </table> -->
-
-                    <!-- <div><a href="#" class="btn btn-sm btn-primary">View All</a></div> -->
-                  </div>
-                                     
-              </div>
-          </div>
-
-        </div>
-      </div>
     </section>
 
-    <section class="bg-white news-proj-sec">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-1">
-          <div class="col-xl-8 col-lg-9">
-              <h2 class="h1 text-center text-darkblue ff-avenir">News & Projects</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center mb-5">
-          <div class="col-xl-11">
-            <ul class="nav justify-content-center" role="tablist">
-              <li class="col-md-2 mx-1">
-                <a class="nav-link btn btn-blue1 active" href="#saas-tab-1" data-toggle="tab" role="tab" aria-controls="saas-tab-1" aria-selected="true">
-                 News
-                </a>
-              </li>
-              <li class="col-md-2 mx-1">
-                <a class="nav-link btn btn-blue1" href="#saas-tab-2" data-toggle="tab" role="tab" aria-controls="saas-tab-2" aria-selected="false">
-                  
-                  Water Projects
-                </a>
-              </li>
-              <li class="col-md-2 mx-1">
-                <a class="nav-link btn btn-blue1" href="#saas-tab-3" data-toggle="tab" role="tab" aria-controls="saas-tab-3" aria-selected="false">
-                  
-                  Press Releases
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-xl-12" data-aos="fade-up">
-            <div class="tab-content text-darkblue">
-              <div class="tab-pane fade show active" id="saas-tab-1" role="tabpanel" aria-labelledby="saas-tab-1">
-                <div class="row">
-                  <div class="col-md-6 col-lg-4 px-md-2 px-4 mb-3 mb-md-0 aos-init aos-animate d-flex" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card rounded-0 shadow-lg">
-                      <a href="#" class="news-img-container">
-                        <img src="assets/img/sai/news1.jpg" alt="Image" class="card-img-top rounded-0"/>
-                      </a>
-                      <div class="card-body align-items-start">
-                        <div class="mb-3">
-                          <h5 class="ff-avenir">SAI Summer Series in Prasanthi Nilayam: 17 - 21 July</h5>
-                        </div>
-                        <p>
-                          SSIO is introducing a new initiative – SAI (Self-Awareness and Inspiration) Summer
-                          Series: An international retreat in Prasanthi Nilayam...
-                        </p>
-                        <a class="hover-arrow text-darkblue" href="#">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4 px-md-2 px-4 mb-3 mb-md-0 aos-init aos-animate d-flex" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card rounded-0 shadow-lg">
-                      <a href="#" class="news-img-container">
-                        <img src="assets/img/sai/news2.jpg" alt="Image" class="card-img-top rounded-0"/>
-                      </a>
-                      <div class="card-body align-items-start">
-                        <div class="mb-3">
-                          <h5 class="ff-avenir">Joint Statement by SSIO, SSSCT and SSSSO India</h5>
-                        </div>
-                        <p>
-                          Joint statement by the Sathya Sai International Organisation, Sri Sathya Sai Central
-                          Trust and Sri Sathya Sai Service Organisation of India.
-                        </p>
-                        <a class="hover-arrow text-darkblue" href="#">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4 px-md-2 px-4 mb-3 mb-md-0 aos-init aos-animate d-flex" data-aos="fade-up" data-aos-delay="500">
-                    <div class="card rounded-0 shadow-lg">
-                      <a href="#">
-                        <img src="assets/img/sai/news4.jpg" alt="Image" class="card-img-top rounded-0"/>
-                      </a>
-                      <div class="card-body align-items-start">
-                        <div class="mb-3">
-                          <h5 class="ff-avenir">Orientation Manual for SSIO Officers</h5>
-                        </div>
-                        <p>
-                          The Orientation Programme for all incoming and continuing SSIO officers at local, national and international levels is available now.
-                        </p>
-                        <a class="hover-arrow text-darkblue" href="#">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="saas-tab-2" role="tabpanel" aria-labelledby="saas-tab-2">
-                <div class="row">
-                  <div class="col-md-6 col-lg-4 px-md-2 px-4 mb-3 mb-md-0 aos-init aos-animate d-flex" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card rounded-0 shadow-lg">
-                      <a href="#">
-                        <img src="assets/img/sai/news1.jpg" alt="Image" class="card-img-top rounded-0">
-                      </a>
-                      <div class="card-body align-items-start">
-                        <div class="mb-3">
-                          <h5 class="ff-avenir">SAI Summer Series in Prasanthi Nilayam: 17 - 21 July</h5>
-                        </div>
-                        <p>
-                          SSIO is introducing a new initiative – SAI (Self-Awareness and Inspiration) Summer
-                          Series: An international retreat in Prasanthi Nilayam...
-                        </p>
-                        <a class="hover-arrow text-darkblue" href="#">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4 px-md-2 px-4 mb-3 mb-md-0 aos-init aos-animate d-flex" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card rounded-0 shadow-lg">
-                      <a href="#">
-                        <img src="assets/img/sai/news2.jpg" alt="Image" class="card-img-top rounded-0"/>
-                      </a>
-                      <div class="card-body align-items-start">
-                        <div class="mb-3">
-                          <h5 class="ff-avenir">Joint Statement by SSIO, SSSCT and SSSSO India</h5>
-                        </div>
-                        <p>
-                          Joint statement by the Sathya Sai International Organisation, Sri Sathya Sai Central
-                          Trust and Sri Sathya Sai Service Organisation of India.
-                        </p>
-                        <a class="hover-arrow text-darkblue" href="#">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4 px-md-2 px-4 mb-3 mb-md-0 aos-init aos-animate d-flex" data-aos="fade-up" data-aos-delay="500">
-                    <div class="card rounded-0 shadow-lg">
-                      <a href="#">
-                        <img src="assets/img/sai/news4.jpg" alt="Image" class="card-img-top rounded-0"/>
-                      </a>
-                      <div class="card-body align-items-start">
-                        <div class="mb-3">
-                          <h5 class="ff-avenir">Orientation Manual for SSIO Officers</h5>
-                        </div>
-                        <p>
-                          The Orientation Programme for all incoming and continuing SSIO officers at local, national and international levels is available now.
-                        </p>
-                        <a class="hover-arrow text-darkblue" href="#">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                   </div>
-              </div>
-              <div class="tab-pane fade" id="saas-tab-3" role="tabpanel" aria-labelledby="saas-tab-3">
-                <div class="row">
-                  <div class="col-md-6 col-lg-4 px-md-2 px-4 mb-3 mb-md-0 aos-init aos-animate d-flex" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card rounded-0 shadow-lg">
-                      <a href="#">
-                        <img src="assets/img/sai/news1.jpg" alt="Image" class="card-img-top rounded-0"/>
-                      </a>
-                      <div class="card-body align-items-start">
-                        <div class="mb-3">
-                          <h5 class="ff-avenir">SAI Summer Series in Prasanthi Nilayam: 17 - 21 July</h5>
-                        </div>
-                        <p>
-                          SSIO is introducing a new initiative – SAI (Self-Awareness and Inspiration) Summer
-                          Series: An international retreat in Prasanthi Nilayam...
-                        </p>
-                        <a class="hover-arrow text-darkblue" href="#">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4 px-md-2 px-4 mb-3 mb-md-0 aos-init aos-animate d-flex" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card rounded-0 shadow-lg">
-                      <a href="#">
-                        <img src="assets/img/sai/news2.jpg" alt="Image" class="card-img-top rounded-0"/>
-                      </a>
-                      <div class="card-body align-items-start">
-                        <div class="mb-3">
-                          <h5 class="ff-avenir">Joint Statement by SSIO, SSSCT and SSSSO India</h5>
-                        </div>
-                        <p>
-                          Joint statement by the Sathya Sai International Organisation, Sri Sathya Sai Central
-                          Trust and Sri Sathya Sai Service Organisation of India.
-                        </p>
-                        <a class="hover-arrow text-darkblue" href="#">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4 px-md-2 px-4 mb-3 mb-md-0 aos-init aos-animate d-flex" data-aos="fade-up" data-aos-delay="500">
-                    <div class="card rounded-0 shadow-lg">
-                      <a href="#">
-                        <img src="assets/img/sai/news4.jpg" alt="Image" class="card-img-top rounded-0"/>
-                      </a>
-                      <div class="card-body align-items-start">
-                        <div class="mb-3">
-                          <h5 class="ff-avenir">Orientation Manual for SSIO Officers</h5>
-                        </div>
-                        <p>
-                          The Orientation Programme for all incoming and continuing SSIO officers at local, national and international levels is available now.
-                        </p>
-                        <a class="hover-arrow text-darkblue" href="#">Read More</a>
-                      </div>
-                    </div>
-                  </div>
-                   </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-        <section class="bg-primary-alt">
-            <div class="container pb-0">
-              <div class="row justify-content-center text-center mb-5">
-                <div class="col-xl-10 col-lg-9">
-                  <h2 class="h1 mx-xl-6 text-darkblue ff-avenir">Sri Sathya Sai Central Trust</h2>
-                  <p class="text-darkblue">
-                    Sri Sathya Sai Central Trust was founded by Bhagawan Sri Sathya Sai Baba on 2nd September, 1972. Under Bhagawan's guidance, the Trust has been undertaking a number of welfare activities such as providing free education at school and university levels, delivering quality medical care at primary, secondary and tertiary levels completely free of charge, supply of pure drinking water in various regions of the state of Andhra Pradesh and the metropolitan city of Chennai.
-                  </p>
-                </div>
-              </div>
-              <div class="row justify-content-center text-center">
-                <div class="col-md-4 mb-3 mb-4 mb-md-0 " >
-                    <img src="assets/img/sai/education.svg" alt="Avatar" class="icon icon-lg mb-2"/>
-                  <span class="display-4 text-count-blue  d-block" data-countup="" data-start="1" data-end="500" data-duration="3" data-grouping="true" data-suffix="+">500</span>
-                  
-                  <span class="h6 text-count-blue">Education Projects</span>
-                </div>
-                <div class="col-md-4 mb-3 mb-4 mb-md-0 " data-aos="fade-up" data-aos-delay="200">
-                    <img src="assets/img/sai/heart.svg" alt="Avatar" class="icon icon-lg mb-2"/>
-                  <span class="display-4 text-count-blue  d-block" data-countup="" data-start="100" data-end="650" data-duration="3" data-grouping="true" data-suffix="+">650+</span>
-                  
-                  <span class="h6 text-count-blue ">Healthcare Projects</span>
-                </div>
-                <div class="col-md-4 mb-3 mb-4 mb-md-0 " data-aos="fade-up" data-aos-delay="300">
-                    <img src="assets/img/sai/medical-kit.svg" alt="Avatar" class="icon icon-lg mb-2"/>
-                  <span class="display-4 text-count-blue  d-block" data-countup="" data-start="200" data-end="600" data-duration="3" data-grouping="true" data-suffix="+">600</span>
-                  
-                  <span class="h6 text-count-blue ">Socialcare Projects</span>
-                </div>
-              </div>
+<!-- <section class="bg-darkblue o-hidden has-divider">
+        <div class="container pb-4 text-light">
+          <div class="row justify-content-center text-center mb-5">
+            <div class="col-xl-8 col-lg-9">
+              <h2 class="display-4 mx-xl-6">Sai Experiences</h2>
               
             </div>
-           
-          </section>
-
+          </div>
+        </div>
+        <div class="controls-light arrows-inside highlight-selected mb-6" data-flickity='{ "autoPlay": true, "imagesLoaded": true, "wrapAround": true }'>
           
-
-            <!-- <section class="bg-darkblue o-hidden has-divider">
-                <div class="container pb-4 text-light">
-                  <div class="row justify-content-center text-center mb-1">
-                    <div class="col-xl-8 col-lg-9">
-                            <h2 class="h1 text-center text-white ff-source-serif-semi-bold">Sai Experiences</h2>
-                      <p class="lead">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
-                      </p>
+          <div class="carousel-cell col-xl-5 col-lg-4 col-md-5 col-9 pb-1">
+              <div class="card card-body">
+                <div class="mb-3 mb-md-1">
+                  <img src="assets/img/sai/atal.jpg" alt="Avatar" class="avatar avatar-lg">
+                </div>
+                <div class="flex-grow-1 pt-md-3">
+                  <h5>
+                    &ldquo;The Sri Sathya Sai Edu care Programme must be implemented in the very fundamentals of the education policy of the country.&rdquo;
+                  </h5>
+                </div>
+                <div class="avatar-author d-block">
+                  <h6> Atal Bihari Vajpayee </h6>
+                  <span>Former Prime Minister of India</span>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell col-xl-5 col-lg-4 col-md-5 col-9 pb-1">
+                <div class="card card-body">
+                  <div class="mb-3 mb-md-1">
+                    <img src="assets/img/sai/abdul-kalam.jpg" alt="Avatar" class="avatar avatar-lg">
+                  </div>
+                  <div class="flex-grow-1 pt-md-3">
+                    <h5>
+                      &ldquo;Health care is medical care, education and nutrition. You all are doing all the three. An anti-ballistic missile has been launched by Baba against poverty through education, water and healthcare.&rdquo;
+                    </h5>
+                  </div>
+                  <div class="avatar-author d-block">
+                    <h6> DR. A.P.J Abdul Kalam </h6>
+                    <span>Former President of India</span>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-cell col-xl-5 col-lg-4 col-md-5 col-9 pb-1">
+                  <div class="card card-body">
+                    <div class="mb-3 mb-md-1">
+                      <img src="assets/img/sai/venkatraman.jpg" alt="Avatar" class="avatar avatar-lg">
+                    </div>
+                    <div class="flex-grow-1 pt-md-3">
+                      <h5>
+                        &ldquo;There is something special about the intangible atmosphere of this place. Every teacher seems to know intuitively that the institute of higher learning is also a venue of higher behaviour and a seat of higher understanding.&rdquo;
+                      </h5>
+                    </div>
+                    <div class="avatar-author d-block">
+                      <h6>R.Venkataraman</h6>
+                      <span>Former President of India</span>
                     </div>
                   </div>
                 </div>
-                <div class="controls-light arrows-inside highlight-selected mb-6" data-flickity='{ "autoPlay": true, "imagesLoaded": true, "wrapAround": true }'>
-                  
-                  <div class="carousel-cell col-xl-5 col-lg-4 col-md-5 col-9 pb-1">
-                      <div class="card card-body">
-                        <div class="mb-3 mb-md-1">
-                          <img src="assets/img/sai/atal.jpg" alt="Avatar" class="avatar avatar-lg">
-                        </div>
-                        <div class="flex-grow-1 pt-md-3">
-                          <h5>
-                            &ldquo;The Sri Sathya Sai Edu care Programme must be implemented in the very fundamentals of the education policy of the country.&rdquo;
-                          </h5>
-                        </div>
-                        <div class="avatar-author d-block">
-                          <h6> Atal Bihari Vajpayee </h6>
-                          <span>Former Prime Minister of India</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-cell col-xl-5 col-lg-4 col-md-5 col-9 pb-1">
-                        <div class="card card-body">
-                          <div class="mb-3 mb-md-1">
-                            <img src="assets/img/sai/abdul-kalam.jpg" alt="Avatar" class="avatar avatar-lg">
-                          </div>
-                          <div class="flex-grow-1 pt-md-3">
-                            <h5>
-                              &ldquo;Health care is medical care, education and nutrition. You all are doing all the three. An anti-ballistic missile has been launched by Baba against poverty through education, water and healthcare.&rdquo;
-                            </h5>
-                          </div>
-                          <div class="avatar-author d-block">
-                            <h6> DR. A.P.J Abdul Kalam </h6>
-                            <span>Former President of India</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="carousel-cell col-xl-5 col-lg-4 col-md-5 col-9 pb-1">
-                          <div class="card card-body">
-                            <div class="mb-3 mb-md-1">
-                              <img src="assets/img/sai/venkatraman.jpg" alt="Avatar" class="avatar avatar-lg">
-                            </div>
-                            <div class="flex-grow-1 pt-md-3">
-                              <h5>
-                                &ldquo;There is something special about the intangible atmosphere of this place. Every teacher seems to know intuitively that the institute of higher learning is also a venue of higher behaviour and a seat of higher understanding.&rdquo;
-                              </h5>
-                            </div>
-                            <div class="avatar-author d-block">
-                              <h6>R.Venkataraman</h6>
-                              <span>Former President of India</span>
-                            </div>
-                          </div>
-                        </div>
-          
-                </div>
-                <div class="divider ">
-                  <svg class="" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
-                    <path d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
-                  </svg>
-                </div>
-              </section> -->
+  
+        </div>
+        <div class="divider">
+          <svg class="" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+            <path d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+          </svg>
+        </div>
+      </section> -->
 
-              <section class="o-hidden has-divider bg-white">
-                <div class="container pb-1">
-                  <div class="row justify-content-center text-center mb-1">
-                    <div class="col-xl-8 col-lg-9">
-                            <h2 class="h1 text-center text-darkblue ff-avenir">Sai Experiences</h2>
-                      <!-- <p class="lead text-darkblue">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.
-                      </p> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="controls-light arrows-inside highlight-selected mb-6" data-flickity='{ "autoPlay": true, "imagesLoaded": true, "wrapAround": true }'>
-                  
-                  <div class="carousel-cell col-xl-5 col-lg-4 col-md-5 col-9 pb-1">
-                      <div class="card card-body">
-                        <div class="mb-3 mb-md-1">
-                          <img src="assets/img/sai/atal.jpg" alt="Avatar" class="avatar avatar-lg"/>
-                        </div>
-                        <div class="flex-grow-1 pt-md-3">
-                          <h5 class="text-darkblue">
-                            &ldquo;The Sri Sathya Sai Edu care Programme must be implemented in the very fundamentals of the education policy of the country.&rdquo;
-                          </h5>
-                        </div>
-                        <div class="avatar-author d-block">
-                          <h6> Atal Bihari Vajpayee </h6>
-                          <span>Former Prime Minister of India</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-cell col-xl-5 col-lg-4 col-md-5 col-9 pb-1">
-                        <div class="card card-body">
-                          <div class="mb-3 mb-md-1">
-                            <img src="assets/img/sai/abdul-kalam.jpg" alt="Avatar" class="avatar avatar-lg"/>
-                          </div>
-                          <div class="flex-grow-1 pt-md-3">
-                            <h5 class="text-darkblue">
-                              &ldquo;Health care is medical care, education and nutrition. You all are doing all the three. An anti-ballistic missile has been launched by Baba against poverty through education, water and healthcare.&rdquo;
-                            </h5>
-                          </div>
-                          <div class="avatar-author d-block">
-                            <h6> DR. A.P.J Abdul Kalam </h6>
-                            <span>Former President of India</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="carousel-cell col-xl-5 col-lg-4 col-md-5 col-9 pb-1">
-                          <div class="card card-body">
-                            <div class="mb-3 mb-md-1">
-                              <img src="assets/img/sai/venkatraman.jpg" alt="Avatar" class="avatar avatar-lg"/>
-                            </div>
-                            <div class="flex-grow-1 pt-md-3">
-                              <h5 class="text-darkblue">
-                                &ldquo;There is something special about the intangible atmosphere of this place. Every teacher seems to know intuitively that the institute of higher learning is also a venue of higher behaviour and a seat of higher understanding.&rdquo;
-                              </h5>
-                            </div>
-                            <div class="avatar-author d-block">
-                              <h6>R.Venkataraman</h6>
-                              <span>Former President of India</span>
-                            </div>
-                          </div>
-                        </div>
-          
-                </div>
-                <!-- <div class="divider ">
-                  <svg class="" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
-                    <path d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
-                  </svg>
-                </div> -->
-              </section>
-
-
+      
 
         <section class="bg-primary-alt">
             <div class="container">
               <div class="row">
                 <div class="col text-center">
-                    <h2 class="h1 mx-xl-6 text-darkblue ff-avenir">Find Prasanthi Nilayam on the map</h2>
-                    
+                    <h2 class="h1 mx-xl-6 text-darkblue">Find Prasanthi Nilayam on the map</h2>
                 </div>
               </div>
               <div class="row">
                 <div class="col">
-                  <div class="min-vh-50 w-100 shadow-3d" style="position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d967.1233539641985!2d77.810906!3d14.165854000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x772e1d032ea6c6d4!2sSri+Sathya+Sai+Prasanthi+Nilayam!5e0!3m2!1sen!2sin!4v1557229058274!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                  <div class="min-vh-50 w-100 rounded shadow-3d" style="position: relative; overflow: hidden;"><div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.487836435956!2d77.80531661464539!3d14.166181391372854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb164c96b661e15%3A0x9eaf3eda04307d6c!2sPrasanthi+Nilayam!5e0!3m2!1sen!2sin!4v1556019761001!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></div>
                 </div>
                 </div>
               </div>
 
               <div class="row mt-4 text-center">
                   <div class="col-sm-4 mb-3 mb-sm-0">
-                    <h3 class="h2 text-darkblue ff-avenir">Visit</h3>
-                    <span class="lead text-darkblue">
+                    <h3 class="h2 text-darkblue">Visit</h3>
+                    <span class="lead">
                         Puttaparthi, Andhra Pradesh 515134
                     </span>
                   </div>
                   <div class="col-sm-4 mb-3 mb-sm-0">
-                    <h3 class="h2 text-darkblue ff-avenir">Email</h3>
-                    <a href="#" class="lead text-darkblue">info@sathyasai.org</a>
+                    <h3 class="h2 text-darkblue">Email</h3>
+                    <span class="lead">info@sathyasai.org</span>
                   </div>
                   <div class="col-sm-4 mb-3 mb-sm-0">
-                    <h3 class="h2 text-darkblue ff-avenir">Call</h3>
-                    <a href="tel:+918555289799" class="lead text-darkblue">
+                    <h3 class="h2 text-darkblue">Call</h3>
+                    <span class="lead">
                         +91 8555 289799
-                    </a>
+                    </span>
                     
                   </div>
                 </div>
@@ -1230,182 +533,144 @@ body{
           
 
     <footer class="pb-4 bg-darkblue text-light" id="footer">
-        <div class="container">
+      <div class="container">
         
-            <div class="row mb-4">
-              <div class="col-6 col-lg-4 col-xl-4">
-                <h5 class="text-blue2 ff-avenir">About Sathya Sai Trust</h5>
-                <ul class="nav flex-column">
-                  <li class="nav-item">
-                  <a href="#" class="nav-link">About the Organisation</a>
-                  </li>
-                  <li class="nav-item">
-                  <a href="#" class="nav-link">Healthcare</a>
-                  </li>
-                  <li class="nav-item">
-                  <a href="#" class="nav-link">Young Adults</a>
-                  </li>
-                  <li class="nav-item">
-                  <a href="#" class="nav-link">Sathya Sai Centres</a>
-                  </li>
-                  <li class="nav-item">
-                  <a href="#" class="nav-link">Education</a>
-                  </li>
-                  <li class="nav-item">
-                  <a href="#" class="nav-link">Humanitarian Relief</a>
-                  </li>
-                  <li class="nav-item">
-                  <a href="#" class="nav-link">Community Service</a>
-                  </li>
-                  <li class="nav-item">
-                  <a href="#" class="nav-link">Interfaith Activities</a>
-                  </li>
-                   </ul>
-              </div>
-    
-              <div class="col-6 col-lg-4 col-xl-4">
-                  <h5 class="text-blue2 ff-avenir">Resources</h5>
-                  <ul class="nav flex-column">
-                    <li class="nav-item">
-                    <a href="#" class="nav-link">Videos</a>
-                    </li>
-                    <li class="nav-item">
-                    <a href="#" class="nav-link">eBooks</a>
-                    </li>
-                    <li class="nav-item">
-                    <a href="#" class="nav-link">Guidelines</a>
-                    </li>
-                    <li class="nav-item">
-                    <a href="#" class="nav-link">Official Logo</a>
-                    </li>
-                    <li class="nav-item">
-                    <a href="#" class="nav-link">Sadhana of Love</a>
-                    </li>
-                    <li class="nav-item">
-                    <a href="#" class="nav-link">Tenth World Conference Proceedings</a>
-                    </li>
-                    <li class="nav-item">
-                    <a href="#" class="nav-link">Annual Report</a>
-                    </li>
-                    <li class="nav-item">
-                    <a href="#" class="nav-link">Sanathana Sarathi</a>
-                    </li>
-                     </ul>
-                </div>
-                <div class="col-6 col-lg-4 col-xl-4">
-                    <h5 class="text-blue2 ff-avenir">Quick Links</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                        <a href="#" class="nav-link">Notice regarding Donations to SSSCT</a>
-                        </li>
-                        <li class="nav-item">
-                        <a href="#" class="nav-link">SSSCT Annual Report 2018 - Download</a>
-                        </li>
-                        <li class="nav-item">
-                        <a href="#" class="nav-link">Advisory to Devotees</a>
-                        </li>
-                        <li class="nav-item">
-                        <a href="#" class="nav-link">Online Accommodation Booking</a>
-                        </li>
-                        <li class="nav-item">
-                        <a href="#" class="nav-link">Public Caution Notice</a>
-                        </li>
-                      </ul>
-
-                    <h5 class="mt-2 text-blue2 ff-avenir">Zone & Country Websites</h5>
-                    <select class="form-control jump-list col-10" id="sel1" name="formal" onchange="javascript:handleSelect(this)">
-                        <option value="">- Select a country -</option>
-                        <option value="http://www.sathyasai.org.ar/">Argentina</option>
-                        <option value="http://www.saiaustralia.org.au/">Australia and Papua New Guinea</option>
-                        <option value="http://www.sathyasai.at/">Austria</option>
-                        <option value="http://www.sathyasai.be/">Belgium</option>
-                        <option value="http://www.sathyasai.org.br/">Brazil</option>
-                        <option value="http://www.sathyasai.ca/">Canada</option>
-                        <option value="http://www.saibabachile.cl/">Chile</option>
-                        <option value="http://www.saiorg.hr/">Croatia</option>
-                        <option value="http://www.sathyasai.cz/">Czech Republic</option>
-                        <option value="http://www.sathyasai.dk/">Denmark</option>
-                        <option value="http://www.sathyasai.org.ec/">Ecuador</option>
-                        <option value="http://www.sathyasai.ee/">Estonia</option>
-                        <option value="http://www.sathyasaifiji.org/">Fiji</option>
-                        <option value="http://www.sathyasai-fi.org/">Finland</option>
-                        <option value="http://www.sathyasaifrance.org/">France</option>
-                        <option value="http://www.sathyasai.de/">Germany</option>
-                        <option value="http://www.saibaba.gr/">Greece</option>
-                        <option value="http://www.saibaba.org.hk/">Hong Kong</option>
-                        <option value="http://www.sathyasai.hu/">Hungary</option>
-                        <option value="http://sathyasai.org">India</option>
-                        <option value="http://www.sathyasaieire.org/">Ireland, Republic of</option>
-          
-                        <option value="http://sathyasai.org.il/">Israel</option>
-                        <option value="http://www.sathyasai.it/web/">Italy</option>
-                        <option value="https://www.sathyasai.or.jp/">Japan - Japanese Language</option>
-                        <option value="http://www.sathyasai.or.jp/english/">Japan - English Language</option>
-                        <option value="http://sathyasaicentrekenya.org/">Kenya</option>
-                        <option value="http://www.sathyasai.lv/">Latvia</option>
-                        <option value="http://www.sathyasai.lt/">Lithuania</option>
-                        <option value="http://saicouncil.org.my/">Malaysia - English Language</option>
-                        <option value="http://www.sca.org.my/">Malaysia - Chinese Language</option>
-                        <option value="http://www.saibabamauritius.org/">Mauritius</option>
-                        <option value="http://www.sathyasai.org.mx/">Mexico</option>
-                        <option value="http://srisathyasai.org.np/">Nepal</option>
-                        <option value="http://sathyasai.nl/home/">Netherlands</option>
-                        <option value="http://www.sathyasai.org.nz/">New Zealand</option>
-                        <option value="http://www.saibaba.no/">Norway</option>
-                        <option value="http://saibabaperu.org/">Peru</option>
-                        <option value="http://www.sathyasaiphilippines.org/">Philippines</option>
-                        <option value="http://www.sathyasai.org.pl/">Poland</option>
-                        <option value="http://www.saiorg.ru/">Russia</option>
-                        <option value="http://www.saiorgserbia.com/">Serbia</option>
-                        <option value="http://www.sathyasai.org.sg/">Singapore</option>
-                        <option value="http://www.sathyasai.sk/">Slovakia</option>
-                        <option value="http://www.saiorg.si/si/">Slovenia</option>
-                        <option value="http://www.srisathyasai.org.za/">South Africa</option>
-                        <option value="http://www.ssiosrilanka.org/">Sri Lanka</option>
-                        <option value="http://www.sathyasaiorg.se/">Sweden</option>
-                        <option value="http://www.sathyasai.ch/">Switzerland</option>
-                        <option value="http://www.sathyasaithailand.com/">Thailand and Vietnam</option>
-                        <option value="http://sai.org.ua/">Ukraine</option>
-                        <option value="http://www.srisathyasai.org.uk/">United Kingdom</option>
-                        <option value="http://sathyasai.us/">United States of America</option>
-                        <option value="http://www.sathyasai.org.uy/">Uruguay</option>
-                        <option value="http://new.saicaribbean.org/">West Indies</option>
-                        <option value="http://zone4sai.org/">Zone 4</option>
-                        <option value="http://www.sathyasai-zone6.org/">Zone 6</option>
-                        <option value="http://www.sathyasai-zone7.org/">Zone 7</option>
-                        <option value="http://www.sathyasaizone9a.org/">Zone 9A</option>
-                      </select>
-
-                      <!-- <div class="row mt-4">
-                        <div class="col-3">
-                            <img src="assets/img/sai/footer-logo.svg">
-                        </div>
-                        <div class="col-9">
-                            <p class="text-muted">© Sri Sathya Sai Central Trust,
-                                <br> Prasanthi Nilayam.
-                                <br> All rights reserved.
-                             </p>
-                        </div>
-                      </div> -->
-
-                      
-                      
-                  </div>
-              </div>
-              <div class="text-center py-5">
-                <img src="assets/img/sai/sathya-sai-signature.svg" class="col-8" alt="signature"/>
-              </div>
-
-              <div class="row justify-content-center pt-3">
-                  <div class="col col-md-auto text-center">
-                     <img src="assets/img/sai/footer-logo.svg" style="max-width: 20%;"/>
-                    <small class="text-muted">© Sri Sathya Sai Central Trust, Prasanthi Nilayam. All rights reserved.</a>
-                    </small>
-                  </div>
-              </div>
-            
-            
+        <div class="row mb-5">
+          <div class="col-6 col-lg-4 col-xl-4">
+            <h5>About Sathya Sai Trust</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+              <a href="#" class="nav-link">About the Organisation</a>
+              </li>
+              <li class="nav-item">
+              <a href="#" class="nav-link">Healthcare</a>
+              </li>
+              <li class="nav-item">
+              <a href="#" class="nav-link">Young Adults</a>
+              </li>
+              <li class="nav-item">
+              <a href="#" class="nav-link">Sathya Sai Centres</a>
+              </li>
+              <li class="nav-item">
+              <a href="#" class="nav-link">Education</a>
+              </li>
+              <li class="nav-item">
+              <a href="#" class="nav-link">Humanitarian Relief</a>
+              </li>
+              <li class="nav-item">
+              <a href="#" class="nav-link">Community Service</a>
+              </li>
+              <li class="nav-item">
+              <a href="#" class="nav-link">Interfaith Activities</a>
+              </li>
+               </ul>
           </div>
+
+          <div class="col-6 col-lg-4 col-xl-4">
+              <h5>Resources</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                <a href="#" class="nav-link">Videos</a>
+                </li>
+                <li class="nav-item">
+                <a href="#" class="nav-link">eBooks</a>
+                </li>
+                <li class="nav-item">
+                <a href="#" class="nav-link">Guidelines</a>
+                </li>
+                <li class="nav-item">
+                <a href="#" class="nav-link">Official Logo</a>
+                </li>
+                <li class="nav-item">
+                <a href="#" class="nav-link">Sadhana of Love</a>
+                </li>
+                <li class="nav-item">
+                <a href="#" class="nav-link">Tenth World Conference Proceedings</a>
+                </li>
+                <li class="nav-item">
+                <a href="#" class="nav-link">Annual Report</a>
+                </li>
+                <li class="nav-item">
+                <a href="#" class="nav-link">Sanathana Sarathi</a>
+                </li>
+                 </ul>
+            </div>
+            <div class="col-6 col-lg-4 col-xl-4">
+                <h5>Zone & Country Websites</h5>
+                <select class="form-control jump-list col-10" id="sel1" name="formal" onchange="javascript:handleSelect(this)">
+                    <option value="">- Select a country -</option>
+                    <option value="http://www.sathyasai.org.ar/">Argentina</option>
+                    <option value="http://www.saiaustralia.org.au/">Australia and Papua New Guinea</option>
+                    <option value="http://www.sathyasai.at/">Austria</option>
+                    <option value="http://www.sathyasai.be/">Belgium</option>
+                    <option value="http://www.sathyasai.org.br/">Brazil</option>
+                    <option value="http://www.sathyasai.ca/">Canada</option>
+                    <option value="http://www.saibabachile.cl/">Chile</option>
+                    <option value="http://www.saiorg.hr/">Croatia</option>
+                    <option value="http://www.sathyasai.cz/">Czech Republic</option>
+                    <option value="http://www.sathyasai.dk/">Denmark</option>
+                    <option value="http://www.sathyasai.org.ec/">Ecuador</option>
+                    <option value="http://www.sathyasai.ee/">Estonia</option>
+                    <option value="http://www.sathyasaifiji.org/">Fiji</option>
+                    <option value="http://www.sathyasai-fi.org/">Finland</option>
+                    <option value="http://www.sathyasaifrance.org/">France</option>
+                    <option value="http://www.sathyasai.de/">Germany</option>
+                    <option value="http://www.saibaba.gr/">Greece</option>
+                    <option value="http://www.saibaba.org.hk/">Hong Kong</option>
+                    <option value="http://www.sathyasai.hu/">Hungary</option>
+                    <option value="http://sathyasai.org">India</option>
+                    <option value="http://www.sathyasaieire.org/">Ireland, Republic of</option>
+      
+                    <option value="http://sathyasai.org.il/">Israel</option>
+                    <option value="http://www.sathyasai.it/web/">Italy</option>
+                    <option value="https://www.sathyasai.or.jp/">Japan - Japanese Language</option>
+                    <option value="http://www.sathyasai.or.jp/english/">Japan - English Language</option>
+                    <option value="http://sathyasaicentrekenya.org/">Kenya</option>
+                    <option value="http://www.sathyasai.lv/">Latvia</option>
+                    <option value="http://www.sathyasai.lt/">Lithuania</option>
+                    <option value="http://saicouncil.org.my/">Malaysia - English Language</option>
+                    <option value="http://www.sca.org.my/">Malaysia - Chinese Language</option>
+                    <option value="http://www.saibabamauritius.org/">Mauritius</option>
+                    <option value="http://www.sathyasai.org.mx/">Mexico</option>
+                    <option value="http://srisathyasai.org.np/">Nepal</option>
+                    <option value="http://sathyasai.nl/home/">Netherlands</option>
+                    <option value="http://www.sathyasai.org.nz/">New Zealand</option>
+                    <option value="http://www.saibaba.no/">Norway</option>
+                    <option value="http://saibabaperu.org/">Peru</option>
+                    <option value="http://www.sathyasaiphilippines.org/">Philippines</option>
+                    <option value="http://www.sathyasai.org.pl/">Poland</option>
+                    <option value="http://www.saiorg.ru/">Russia</option>
+                    <option value="http://www.saiorgserbia.com/">Serbia</option>
+                    <option value="http://www.sathyasai.org.sg/">Singapore</option>
+                    <option value="http://www.sathyasai.sk/">Slovakia</option>
+                    <option value="http://www.saiorg.si/si/">Slovenia</option>
+                    <option value="http://www.srisathyasai.org.za/">South Africa</option>
+                    <option value="http://www.ssiosrilanka.org/">Sri Lanka</option>
+                    <option value="http://www.sathyasaiorg.se/">Sweden</option>
+                    <option value="http://www.sathyasai.ch/">Switzerland</option>
+                    <option value="http://www.sathyasaithailand.com/">Thailand and Vietnam</option>
+                    <option value="http://sai.org.ua/">Ukraine</option>
+                    <option value="http://www.srisathyasai.org.uk/">United Kingdom</option>
+                    <option value="http://sathyasai.us/">United States of America</option>
+                    <option value="http://www.sathyasai.org.uy/">Uruguay</option>
+                    <option value="http://new.saicaribbean.org/">West Indies</option>
+                    <option value="http://zone4sai.org/">Zone 4</option>
+                    <option value="http://www.sathyasai-zone6.org/">Zone 6</option>
+                    <option value="http://www.sathyasai-zone7.org/">Zone 7</option>
+                    <option value="http://www.sathyasaizone9a.org/">Zone 9A</option>
+                  </select>
+                  <p class="text-muted mt-4">© Sri Sathya Sai Central Trust,
+                      <br> Prasanthi Nilayam.
+                      <br> All rights reserved.
+                    </p>
+              </div>
+
+          
+          
+        </div>
+        
+        
+      </div>
     </footer>
     <a href="#" class="btn back-to-top btn-primary btn-round" data-smooth-scroll data-aos="fade-up" data-aos-anchor="section:last-of-type" data-aos-mirror="true" data-aos-once="false">
       <svg class="icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
