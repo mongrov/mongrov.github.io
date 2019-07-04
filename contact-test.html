@@ -567,19 +567,47 @@
               "Email: " + $('#email_1').val() + '\n' +
               "Message: " + $('#message_1').val();
         console.log(text);
-        $.ajax({
-            url: 'https://corp.mongrov.com/hooks/njerMfehKP3QgoLac/qmYtJKp9HCJJ9zHAwi67B99WGoPMX2gkmsdQHfWtnFoG59rG',
-            type: 'post',
-            crossDomain: true,
-            data: {"text": text},
-            headers: {
-                "Content-Type": 'application/json'  //for object property name, use quoted notation shown in second
-            },
-            dataType: 'json',
-            success: function (data) {
-                console.info(data);
+        // $.ajax({
+        //     url: 'https://corp.mongrov.com/hooks/njerMfehKP3QgoLac/qmYtJKp9HCJJ9zHAwi67B99WGoPMX2gkmsdQHfWtnFoG59rG',
+        //     type: 'post',
+        //     crossDomain: true,
+        //     data: {"text": text},
+        //     headers: {
+        //         "Content-Type": 'application/json'  //for object property name, use quoted notation shown in second
+        //     },
+        //     dataType: 'json',
+        //     success: function (data) {
+        //         console.info(data);
+        //     }
+        // });
+
+        // var http_request;
+        // http_request = new XMLHttpRequest();
+        // http_request.onreadystatechange = function () { /* .. */ };
+        // http_request.open("POST", "https://corp.mongrov.com/hooks/njerMfehKP3QgoLac/qmYtJKp9HCJJ9zHAwi67B99WGoPMX2gkmsdQHfWtnFoG59rG");
+        // // http_request.withCredentials = true;
+        // http_request.setRequestHeader("Content-Type", "application/json");
+        // http_request.send({"text": text});
+
+        var xhrObject = new XMLHttpRequest();
+
+        xhrObject.onreadystatechange = function() {
+          if (xhrObject.readyState === 4) {
+            if (xhrObject.status === 200 || xhrObject.status === 304) {
+              
+              // Success! Do stuff with data.
+              console.log(xhrObject.responseText); 
+              
             }
-        });
+          }
+        };
+
+        xhrObject.open(
+          "POST", 
+          "https://corp.mongrov.com/hooks/njerMfehKP3QgoLac/qmYtJKp9HCJJ9zHAwi67B99WGoPMX2gkmsdQHfWtnFoG59rG", 
+          true
+        );
+        xhrObject.send({"text": text});
       });
       </script>
 
