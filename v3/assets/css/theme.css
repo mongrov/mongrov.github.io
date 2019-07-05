@@ -13526,7 +13526,86 @@ article table {
   left: 50%;
   position: absolute; }
 
+.roverz_img {
+  width: 120px;
+  margin-bottom: 20px;
+  display: block; }
+
+span#fork {
+  background: #FFF;
+  color: #0099FF;
+  width: 30px;
+  display: block;
+  float: right;
+  margin-left: 10px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  text-align: center; }
+
+span#star {
+  background: #FFF;
+  color: #0099FF;
+  width: 30px;
+  display: block;
+  float: right;
+  margin-left: 10px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  text-align: center; }
+
+.btn-violet {
+  background-color: #5432bd; }
+
 .logo {
   width: 200px; }
+
+.about-bg {
+  background-color: #339AFF !important; }
+
+.messaging-bg {
+  background-color: #59C5CF !important; }
+
+.conferencing-bg {
+  background-color: #896bff !important; }
+
+.taskboard-bg {
+  background-color: #20AF87 !important; }
+
+.geotracking-bg {
+  background-color: #3BC2FF !important; }
+
+.opensource-bg {
+  background-color: #5E4DD6 !important; }
+
+.contact-bg {
+  background-color: #00B8FF !important; }
+
+.navbar[data-overlay].scrolled, .navbar[data-sticky="top"].scrolled {
+  z-index: 1040; }
+
+@media only screen and (max-width: 767px) {
+  .school-banner-img, .teamwork-banner-img, .about-banner-img, .opensource-banner-img, .community-banner-img, .contact-banner-img, .messaging-banner-img, .conferencing-banner-img, .task-banner-img, .geo-banner-img {
+    display: none; }
+  #school-page .school-bg, #teamwork .teamwork-bg {
+    text-align: center; }
+  #school-page .btn-lg, #school-page .btn-group-lg > .btn, #teamwork .btn-lg, #teamwork .btn-group-lg > .btn {
+    font-size: 16px;
+    margin-bottom: 10px; }
+  .play-appstore-cont {
+    justify-content: center; } }
+
+/** Uday styles starts here **/
+.teamwork-bg {
+  background-color: #3a69da !important; }
+
+.school-bg {
+  background-color: #00B8FF !important; }
+
+.community-bg {
+  background-color: #20af87 !important; }
+
+/** Uday styles Ends here **/
 
 /*# sourceMappingURL=theme.css.map */
