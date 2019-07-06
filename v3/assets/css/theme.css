@@ -13529,7 +13529,7 @@ article table {
 .roverz_img {
   width: 120px;
   margin-bottom: 20px;
-  display: block; }
+  display: inline-block; }
 
 span#fork {
   background: #FFF;
