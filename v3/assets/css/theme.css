@@ -13594,7 +13594,9 @@ span#star {
     font-size: 16px;
     margin-bottom: 10px; }
   .play-appstore-cont {
-    justify-content: center; } }
+    justify-content: center; }
+  .rocketchat-widget {
+    display: none; } }
 
 /** Uday styles starts here **/
 .teamwork-bg {
