@@ -13670,4 +13670,30 @@ section .nav-link.btn-blue1:not(.active):not(.disabled):not(:hover) {
   background: #004071;
   border-bottom-color: rgba(0, 0, 0, 0); }
 
+.border-radius-100 {
+  border-radius: 100px !important; }
+
+.text-orange {
+  color: #D64329 !important; }
+
+.border-pink {
+  border-color: #F7B6D0 !important; }
+
+.border-heading:after {
+  width: 170px;
+  height: 1px;
+  content: ' ';
+  background: #D64329;
+  display: block;
+  margin-top: 12px; }
+
+.text-grey-blue {
+  color: #484D56 !important; }
+
+.border-grey {
+  border-color: #937A8B !important; }
+
+.bg-grey {
+  background: #E3E4E5 !important; }
+
 /*# sourceMappingURL=theme.css.map */
