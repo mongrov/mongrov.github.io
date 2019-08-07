@@ -13687,6 +13687,22 @@ section .nav-link.btn-blue1:not(.active):not(.disabled):not(:hover) {
   display: block;
   margin-top: 12px; }
 
+.border-heading-center:after {
+  width: 170px;
+  height: 1px;
+  content: ' ';
+  background: #D64329;
+  display: block;
+  margin: 10px auto; }
+
+.border-heading-sm:after {
+  width: 90px;
+  height: 1px;
+  content: ' ';
+  background: #D64329;
+  display: block;
+  margin-top: 5px; }
+
 .text-grey-blue {
   color: #484D56 !important; }
 
@@ -13695,5 +13711,11 @@ section .nav-link.btn-blue1:not(.active):not(.disabled):not(:hover) {
 
 .bg-grey {
   background: #E3E4E5 !important; }
+
+.radiosai-logo {
+  max-width: 50%; }
+
+.sticky-top {
+  top: 8rem !important; }
 
 /*# sourceMappingURL=theme.css.map */
