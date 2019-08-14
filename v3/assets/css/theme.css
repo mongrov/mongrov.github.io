@@ -13608,6 +13608,23 @@ span#star {
 .community-bg {
   background-color: #20af87 !important; }
 
+.flickity-page-dots {
+  bottom: 1.875rem !important;
+  left: 82px !important; }
+
+.process-circle.bg-primary {
+  background: #fff !important; }
+
 /** Uday styles Ends here **/
+.home-double-color-bg {
+  background: linear-gradient(to right, #4ca0ff 0%, #4ca0ff 50%, #5fc47e 50%, #5fc47e 100%); }
+
+.process-icon-left {
+  position: absolute;
+  left: -83px; }
+
+.process-icon-right {
+  position: absolute;
+  right: -83px; }
 
 /*# sourceMappingURL=theme.css.map */
