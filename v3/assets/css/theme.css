@@ -13627,4 +13627,7 @@ span#star {
   position: absolute;
   right: -83px; }
 
+.width-100 {
+  width: 100% !important; }
+
 /*# sourceMappingURL=theme.css.map */
