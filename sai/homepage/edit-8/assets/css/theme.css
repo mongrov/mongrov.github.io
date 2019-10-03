@@ -13735,7 +13735,7 @@ section .nav-link.btn-blue1:not(.active):not(.disabled):not(:hover) {
   z-index: 9999999;
   bottom: 0;
   background: #FFF;
-  padding: 3% 5%;
+  padding: 1% 0%;
   width: 100%;
   display: none; }
 
