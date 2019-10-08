@@ -13770,4 +13770,17 @@ a.banner-icon:hover svg.icon.icon-light * {
 a.banner-icon:hover h5.text-light {
   color: #ff9800 !important; }
 
+.border-heading-center:after {
+  width: 170px;
+  height: 1px;
+  content: ' ';
+  background: #D64329;
+  display: block;
+  margin-top: 12px;
+  margin: 0 auto;
+  margin-top: 10px; }
+
+.max-width-50 {
+  max-width: 50% !important; }
+
 /*# sourceMappingURL=theme.css.map */
