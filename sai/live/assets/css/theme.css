@@ -13783,4 +13783,11 @@ a.banner-icon:hover h5.text-light {
 .max-width-50 {
   max-width: 50% !important; }
 
+.event-date {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: #005fa7d6;
+  padding: 0 12px; }
+
 /*# sourceMappingURL=theme.css.map */
