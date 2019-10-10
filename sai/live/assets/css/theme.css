@@ -13790,4 +13790,15 @@ a.banner-icon:hover h5.text-light {
   background: #005fa7d6;
   padding: 0 12px; }
 
+.left-circle {
+  top: 330px;
+  left: 10%; }
+
+.right-circle {
+  top: 330px;
+  right: 10%; }
+
+.projects-heading {
+  border-bottom: 7px solid #004071; }
+
 /*# sourceMappingURL=theme.css.map */
