@@ -13801,4 +13801,16 @@ a.banner-icon:hover h5.text-light {
 .projects-heading {
   border-bottom: 7px solid #004071; }
 
+.data-mobile {
+  display: none; }
+
+.data-desktop {
+  display: flex; }
+
+@media only screen and (max-width: 640px) {
+  .data-desktop {
+    display: none; }
+  .data-mobile {
+    display: flex; } }
+
 /*# sourceMappingURL=theme.css.map */
