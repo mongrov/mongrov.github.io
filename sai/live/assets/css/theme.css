@@ -13765,10 +13765,10 @@ a.banner-icon {
   cursor: default; }
 
 a.banner-icon:hover svg.icon.icon-light * {
-  fill: #FF9800 !important; }
+  fill: #F4B6D1 !important; }
 
 a.banner-icon:hover h5.text-light {
-  color: #ff9800 !important; }
+  color: #F4B6D1 !important; }
 
 .border-heading-center:after {
   width: 170px;
@@ -13812,5 +13812,8 @@ a.banner-icon:hover h5.text-light {
     display: none; }
   .data-mobile {
     display: flex; } }
+
+a.card.pinkhover:hover h6 {
+  color: #F4B6D1; }
 
 /*# sourceMappingURL=theme.css.map */
