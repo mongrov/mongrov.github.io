@@ -11,7 +11,9 @@
     <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
-    
+     <!--Zoom Slider-->
+     <link rel="stylesheet" type="text/css" href="zoomslider/zoom-dist/zoomslider.css" />
+     <script type="text/javascript" src="zoomslider/demo/js/modernizr-2.6.2.min.js"></script>
     <style>
 
 @font-face {
@@ -45,6 +47,72 @@ body{
 .ff-source-serif-semi-bold {
   font-family: 'SourceSerifPro-Semibold' !important;
 }
+
+
+/** Zoom Slider styles **/
+
+		/* Basic styling */
+
+		code {
+			display: block;
+			background-color: #eee;
+			padding: 2em;
+			overflow: scroll;
+			white-space: nowrap;
+		}
+		.body {
+			max-width: 800px;
+			padding: 40px;
+			margin: 0 auto;
+		}
+		.meta {
+			margin: 0 0 40px 0;
+			font-size: 0.8em;
+		}
+		.properties-table {
+			width: 100%;
+			padding: 0;
+			border-spacing: 0;
+			margin-top: 2em;
+			font-size: .85em;
+			background-color: #eee;
+		}
+		.properties-table th, .properties-table td {
+			text-align: left;
+			padding: 10px;
+		}
+		.properties-table th {
+			border-bottom: 1px solid #333;
+			line-height: 2;
+		}
+    .zs-bullets {
+    display: none;
+}
+		/* End Basic styling */
+
+		
+		#demo-1 {
+			position: relative; /* can either be relative, absolute or fixed. If position is not set (i.e. static), it would be set to "relative" by script */
+			overflow: hidden; /* to bound the empty top space created by inner element's top margin */
+			width: 100%;
+			min-height: 400px;
+			background-color: #999;
+		}
+		.demo-inner-content {
+			position: relative; /* if position is not set, the script will set it to 'relative'. */
+			z-index: 2; /* if z-index is not set, the script will set it to '2'. */
+			margin: 180px auto;
+			padding: 40px;
+			max-width: 600px;
+			color: #fff;
+			text-align: center;
+			font-size: 1.5em;
+		}
+		.demo-inner-content h1 {
+			font-size: 2.5em;
+			margin: 0;
+		}
+    /** Zoom Slider styles Ends **/
 
 </style>
 
@@ -102,12 +170,12 @@ body{
                                 <a href="sai-prasanthi-nilayam.html" class="nav-link text-light">Prasanthi Nilayam</a>
                             </li>
                             <li class="nav-item">
-                                  <a href="sai-prasanthi-nilayam.html" class="nav-link text-light">Radio Sai</a>
+                                  <a href="http://media.radiosai.org/www/" class="nav-link text-light" target="_blank" >Radio Sai</a>
                             </li>
                            <li class="nav-item dropdown">
                               <a href="sai-get-involved.html" class="nav-link text-light">Get Involved</a>
                             </li>
-                            <li class="nav-item dropdown">
+                            <!-- <li class="nav-item dropdown">
                               <a href="javascript:;" class="nav-link text-light search-icon1" data-toggle="modal" data-target="#sign-in-modal">
                                 <svg class="icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                   <title>Icon For Search</title>
@@ -119,7 +187,7 @@ body{
                                 </svg>
                               </a>
                               
-                            </li>
+                            </li> -->
 
                             
                     </ul>
@@ -128,15 +196,17 @@ body{
       </nav>
     </div>
 
-    <section class="controls-inside controls-light p-0 bg-primary-3" data-flickity='{ "imagesLoaded": true, "autoPlay": true, "wrapAround": true }'>
-      <div class="carousel-cell py-3 min-vh-100">
-          <img src="assets/img/sai/projects_bg.jpg" alt="Image" class="bg-image"/>
-         
-      </div>
-    <div class="carousel-cell py-3 min-vh-100">
-      <img src="assets/img/sai/organisation-banner1.jpg" alt="Image" class="bg-image"/>
-      </div>
-</section>
+    <div id="demo-1" data-zs-src='["zoomslider/demo/photos/sai-banner1.jpg",  "zoomslider/demo/photos/sai-banner2.jpg", "zoomslider/demo/photos/sai-banner5.jpg", "zoomslider/demo/photos/sai-banner6.jpg"]' data-zs-overlay="plain">
+      <div class="row justify-content-center align-items-center min-vh-100">
+          <div class="col-lg-8">
+            <div class="text-center text-light">
+              <h1 class="display-3 text-light ff-source-serif-semi-bold"> Help Ever Hurt Never</h1>
+            </div>
+            
+          </div>
+
+        </div>
+    </div>
 
         <!-- <section class="bg-primary-3 text-light has-divider" data-overlay="" style="padding-top: 69.075px !important;">
           <img src="assets/img/sai/projects_bg.jpg" alt="Image" class="bg-image">
@@ -1134,6 +1204,12 @@ c1.708,1.715,2.563,3.905,2.563,6.567v63.953h63.953c2.663,0,4.853,0.859,6.57,2.57
     </div>
   </div>
   <!--Search Model Ends here-->
+
+   <!-- Zoom SLider-->
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script type="text/javascript" src="zoomslider/zoom-dist/jquery.zoomslider.min.js"></script>
+ <!-- Zoom SLider Ends-->
+
     <!-- Required vendor scripts (Do not remove) -->
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/popper.min.js"></script>
@@ -1192,6 +1268,13 @@ c1.708,1.715,2.563,3.905,2.563,6.567v63.953h63.953c2.663,0,4.853,0.859,6.57,2.57
   }(window, document, "script", "ga"), ga("create", "UA-113300163-1"), ga("send", "pageview");
 </script>
 <!-- Google Analytics Ends-->
+<script type="text/javascript">
+  function handleSelect(elm)
+  {
+    // window.location = elm.value ;
+    window.open(elm.value, '_blank');
+  }
+</script>
 
   </body>
 

@@ -114,7 +114,7 @@
                             <a href="sai-prasanthi-nilayam.html" class="nav-link text-light">Prasanthi Nilayam</a>
                         </li>
                         <li class="nav-item">
-                              <a href="sai-prasanthi-nilayam.html" class="nav-link text-light">Radio Sai</a>
+                              <a href="http://media.radiosai.org/www/" class="nav-link text-light" target="_blank" >Radio Sai</a>
                         </li>
                        <li class="nav-item dropdown">
                           <a href="sai-get-involved.html" class="nav-link text-light">Get Involved</a>
@@ -630,7 +630,13 @@
       }(window, document, "script", "ga"), ga("create", "UA-113300163-1"), ga("send", "pageview");
     </script>
     <!-- Google Analytics Ends-->
-
+    <script type="text/javascript">
+      function handleSelect(elm)
+      {
+        // window.location = elm.value ;
+        window.open(elm.value, '_blank');
+      }
+    </script>
 
   </body>
 
