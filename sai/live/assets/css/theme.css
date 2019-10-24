@@ -13811,7 +13811,9 @@ a.banner-icon:hover h5.text-light {
   .data-desktop {
     display: none; }
   .data-mobile {
-    display: flex; } }
+    display: flex; }
+  iframe#vid_frame {
+    width: 100%; } }
 
 a.card.pinkhover:hover h6 {
   color: #F4B6D1; }
