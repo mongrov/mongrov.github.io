@@ -1,0 +1,2234 @@
+<!doctype html>
+<html lang="en">
+    <head>
+                <meta charset="utf-8">
+                <title>Sri Sathya Sai Central Trust</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="description" content="Sri Sathya Sai Central Trust was founded by Bhagawan Sri Sathya Sai Baba on 2nd September, 1972. Under Bhagawan's guidance, the Trust has been undertaking a number of welfare activities such as providing free education at school and university levels, delivering quality medical care at primary, secondary and tertiary levels completely free of charge, supply of pure drinking water in various regions of the state of Andhra Pradesh and the metropolitan city of Chennai.">
+                <meta name="keywords" content="Sathya Sai Baba Official website, Bhagavan Sri Sathya Sai Baba, Sathya Sai baba teachings, abode of Bhagavan Baba, gurus in India, avatars, selfless service, seva, ngo, non-governmental organization, sai baba, Sai Bhajans, Sri Sathya Sai Central trust, Official Sathya sai baba, sai baba official, prasanthi nilayam, sai baba miracles, sai devotees experience"/>
+            
+                <!-- <link href="assets/css/theme-saas.css" rel="stylesheet" type="text/css" media="all" /> -->
+                <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+                <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
+                <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
+
+                 
+
+               
+
+
+<style>
+        /*!
+         * FullCalendar v3.9.0
+         * Docs & License: https://fullcalendar.io/
+         * (c) 2018 Adam Shaw
+         */
+         .fc {
+          direction: ltr;
+          text-align: left; }
+        
+        .fc-rtl {
+          text-align: right; }
+        
+       
+        
+        /* Colors
+        --------------------------------------------------------------------------------------------------*/
+        .fc-highlight {
+          /* when user is selecting cells */
+          background: #bce8f1;
+          opacity: .3; }
+        
+        .fc-bgevent {
+          /* default look for background events */
+          background: #8fdf82;
+          opacity: .3; }
+        
+        .fc-nonbusiness {
+          /* default look for non-business-hours areas */
+          /* will inherit .fc-bgevent's styles */
+          background: rgba(52,40,104,.05); }
+        
+        /* Buttons (styled <button> tags, normalized to work cross-browser)
+        --------------------------------------------------------------------------------------------------*/
+        .fc button {
+          /* force height to include the border and padding */
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          /* dimensions */
+          margin: 0;
+          height: auto;
+          padding: 0 .6em;
+          /* text & cursor */
+          font-size: 1em;
+          /* normalize */
+          white-space: nowrap;
+          cursor: pointer; }
+        
+        /* Firefox has an annoying inner border */
+        .fc button::-moz-focus-inner {
+          margin: 0;
+          padding: 0; }
+        
+        .fc-state-default {
+          /* non-theme */
+          border: 1px solid; }
+        
+        .fc-state-default.fc-corner-left {
+          /* non-theme */
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px; }
+        
+        .fc-state-default.fc-corner-right {
+          /* non-theme */
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px; }
+        
+        /* icons in buttons */
+        .fc button .fc-icon {
+          /* non-theme */
+          position: relative;
+          top: -0.05em;
+          /* seems to be a good adjustment across browsers */
+          margin: 0 .2em;
+          vertical-align: middle; }
+        
+        /*
+          button states
+          borrowed from twitter bootstrap (http://twitter.github.com/bootstrap/)
+        */
+        .fc-state-default {
+          background-color: #f5f5f5;
+          background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+          background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+          background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+          background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+          background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+          background-repeat: repeat-x;
+          border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+          border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+          color: #333;
+          text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); }
+        
+        .fc-state-hover,
+        .fc-state-down,
+        .fc-state-active,
+        .fc-state-disabled {
+          color: #333333;
+          background-color: #e6e6e6; }
+        
+        .fc-state-hover {
+          color: #333333;
+          text-decoration: none;
+          background-position: 0 -15px;
+          -webkit-transition: background-position 0.1s linear;
+          -moz-transition: background-position 0.1s linear;
+          -o-transition: background-position 0.1s linear;
+          transition: background-position 0.1s linear; }
+        
+        .fc-state-down,
+        .fc-state-active {
+          background-color: #cccccc;
+          background-image: none;
+          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); }
+        
+        .fc-state-disabled {
+          cursor: default;
+          background-image: none;
+          opacity: 0.65;
+          box-shadow: none; }
+        
+        /* Buttons Groups
+        --------------------------------------------------------------------------------------------------*/
+        .fc-button-group {
+          display: inline-block; }
+        
+        /*
+        every button that is not first in a button group should scootch over one pixel and cover the
+        previous button's border...
+        */
+        .fc .fc-button-group > * {
+          /* extra precedence b/c buttons have margin set to zero */
+          float: left;
+          margin: 0 0 0 -1px; }
+        
+        .fc .fc-button-group > :first-child {
+          /* same */
+          margin-left: 0; }
+        
+        /* Popover
+        --------------------------------------------------------------------------------------------------*/
+        .fc-popover {
+          position: absolute;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
+        
+        .fc-popover .fc-header {
+          /* TODO: be more consistent with fc-head/fc-body */
+          padding: 2px 4px; }
+        
+        .fc-popover .fc-header .fc-title {
+          margin: 0 2px; }
+        
+        .fc-popover .fc-header .fc-close {
+          cursor: pointer; }
+        
+        .fc-ltr .fc-popover .fc-header .fc-title,
+        .fc-rtl .fc-popover .fc-header .fc-close {
+          float: left; }
+        
+        .fc-rtl .fc-popover .fc-header .fc-title,
+        .fc-ltr .fc-popover .fc-header .fc-close {
+          float: right; }
+        
+        /* Misc Reusable Components
+        --------------------------------------------------------------------------------------------------*/
+        .fc-divider {
+          border-style: solid;
+          border-width: 1px; }
+        
+        hr.fc-divider {
+          height: 0;
+          margin: 0;
+          padding: 0 0 2px;
+          /* height is unreliable across browsers, so use padding */
+          border-width: 1px 0; }
+        
+        .fc-clear {
+          clear: both; }
+        
+        .fc-bg,
+        .fc-bgevent-skeleton,
+        .fc-highlight-skeleton,
+        .fc-helper-skeleton {
+          /* these element should always cling to top-left/right corners */
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0; }
+        
+        .fc-bg {
+          bottom: 0;
+          /* strech bg to bottom edge */ }
+        
+        .fc-bg table {
+          height: 100%;
+          /* strech bg to bottom edge */ }
+        
+        /* Tables
+        --------------------------------------------------------------------------------------------------*/
+        .fc table {
+          width: 100%;
+          box-sizing: border-box;
+          /* fix scrollbar issue in firefox */
+          table-layout: fixed;
+          border-collapse: collapse;
+          border-spacing: 0;
+          font-size: 1em;
+          /* normalize cross-browser */ }
+        
+        .fc th {
+          text-align: center; }
+        
+        .fc th,
+        .fc td {
+          border-style: solid;
+          border-width: 1px 1px 0 1px !important;
+          padding: 0;
+          border-color: #eee;
+          vertical-align: top;
+        }
+        
+        .fc td.fc-today {
+          border-style: double;
+          /* overcome neighboring borders */ }
+        
+        /* Internal Nav Links
+        --------------------------------------------------------------------------------------------------*/
+        a[data-goto] {
+          cursor: pointer; }
+        
+        a[data-goto]:hover {
+          text-decoration: underline; }
+        
+        /* Fake Table Rows
+        --------------------------------------------------------------------------------------------------*/
+        .fc .fc-row {
+          /* extra precedence to overcome themes w/ .ui-widget-content forcing a 1px border */
+          /* no visible border by default. but make available if need be (scrollbar width compensation) */
+          border-style: solid;
+          border-width: 0; }
+        
+        .fc-row table {
+          /* don't put left/right border on anything within a fake row.
+             the outer tbody will worry about this */
+          border-left: 0 hidden transparent;
+          border-right: 0 hidden transparent;
+          /* no bottom borders on rows */
+          border-bottom: 0 hidden transparent; }
+        
+        .fc-row:first-child table {
+          border-top: 0 hidden transparent;
+          /* no top border on first row */ }
+        
+        /* Day Row (used within the header and the DayGrid)
+        --------------------------------------------------------------------------------------------------*/
+        .fc-row {
+          position: relative;
+          background: #ffffff;
+        }
+        
+        .fc-row .fc-bg {
+          z-index: 1; }
+        
+        /* highlighting cells & background event skeleton */
+        .fc-row .fc-bgevent-skeleton,
+        .fc-row .fc-highlight-skeleton {
+          bottom: 0;
+          /* stretch skeleton to bottom of row */ }
+        
+        .fc-row .fc-bgevent-skeleton table,
+        .fc-row .fc-highlight-skeleton table {
+          height: 100%;
+          /* stretch skeleton to bottom of row */ }
+        
+        .fc-row .fc-highlight-skeleton td,
+        .fc-row .fc-bgevent-skeleton td {
+          border-color: transparent; }
+        
+        .fc-row .fc-bgevent-skeleton {
+          z-index: 2; }
+        
+        .fc-row .fc-highlight-skeleton {
+          z-index: 3; }
+        
+        /*
+        row content (which contains day/week numbers and events) as well as "helper" (which contains
+        temporary rendered events).
+        */
+        .fc-row .fc-content-skeleton {
+          position: relative;
+          z-index: 4;
+          padding-bottom: 2px;
+          /* matches the space above the events */ }
+        
+        .fc-row .fc-helper-skeleton {
+          z-index: 5; }
+        
+        .fc .fc-row .fc-content-skeleton table,
+        .fc .fc-row .fc-content-skeleton td,
+        .fc .fc-row .fc-helper-skeleton td {
+          /* see-through to the background below */
+          /* extra precedence to prevent theme-provided backgrounds */
+          background: none;
+          /* in case <td>s are globally styled */
+          border-color: transparent;
+          padding: .5rem .5rem;
+        }
+        
+        .fc-row .fc-content-skeleton td,
+        .fc-row .fc-helper-skeleton td {
+          /* don't put a border between events and/or the day number */
+          border-bottom: 0; }
+        
+        .fc-row .fc-content-skeleton tbody td,
+        .fc-row .fc-helper-skeleton tbody td {
+          /* don't put a border between event cells */
+          border-top: 0; }
+        
+        /* Scrolling Container
+        --------------------------------------------------------------------------------------------------*/
+        .fc-scroller {
+          -webkit-overflow-scrolling: touch; }
+        
+        /* TODO: move to agenda/basic */
+        .fc-scroller > .fc-day-grid,
+        .fc-scroller > .fc-time-grid {
+          position: relative;
+          /* re-scope all positions */
+          width: 100%;
+          /* hack to force re-sizing this inner element when scrollbars appear/disappear */ }
+        
+        /* Global Event Styles
+        --------------------------------------------------------------------------------------------------*/
+        .fc-event {
+          position: relative;
+          /* for resize handle and other inner positioning */
+          display: block;
+          /* make the <a> tag block */
+          font-size: 12px;
+          line-height: 1.3;
+          letter-spacing: 0.02em;
+          border-radius: 3px;
+          font-weight: 500;
+          border: 1px solid #ddd;
+          -webkit-box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.05);
+          -moz-box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.05);
+          /* default BORDER color */ }
+        
+        .fc-event,
+        .fc-event-dot {
+          background-color: #ffffff;
+          color: #5d5386;
+          position: relative;
+          /* default BACKGROUND color */ }
+        .fc-event:before,
+        .fc-event-dot:before{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 50px;
+            height: 100%;
+            border-left: 3px solid #5d5386;
+            border-bottom: 3px solid #5d5386;
+            -webkit-border-radius: 3px 0px 0px 3px;
+            -moz-border-radius: 3px 0px 0px 3px;
+            border-radius: 3px 0px 0px 3px;
+        }
+        .fc-event .fc-title {
+            font-weight: 500;
+        }
+        .fc-event i{
+            font-size: 26px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .fc-event,
+        .fc-event:hover {
+          color: #fff;
+          /* default TEXT color */
+          text-decoration: none;
+          /* if <a> has an href */ }
+        
+        .fc-event[href],
+        .fc-event.fc-draggable {
+          cursor: pointer;
+          /* give events with links and draggable events a hand mouse pointer */ }
+        
+        .fc-not-allowed,
+        .fc-not-allowed .fc-event {
+          /* to override an event's custom cursor */
+          cursor: not-allowed; }
+        
+        .fc-event .fc-bg {
+          /* the generic .fc-bg already does position */
+          z-index: 1;
+          background: #fff;
+          opacity: .25; }
+        
+        .fc-event .fc-content {
+            color: #2c304d;
+            position: relative;
+            z-index: 2;
+            padding: 8px;
+        }
+        
+        /* resizer (cursor AND touch devices) */
+        .fc-event .fc-resizer {
+          position: absolute;
+          z-index: 4; }
+        
+        /* resizer (touch devices) */
+        .fc-event .fc-resizer {
+          display: none; }
+        
+        .fc-event.fc-allow-mouse-resize .fc-resizer,
+        .fc-event.fc-selected .fc-resizer {
+          /* only show when hovering or selected (with touch) */
+          display: block; }
+        
+        /* hit area */
+        .fc-event.fc-selected .fc-resizer:before {
+          /* 40x40 touch area */
+          content: "";
+          position: absolute;
+          z-index: 9999;
+          /* user of this util can scope within a lower z-index */
+          top: 50%;
+          left: 50%;
+          width: 40px;
+          height: 40px;
+          margin-left: -20px;
+          margin-top: -20px; }
+        
+        /* Event Selection (only for touch devices)
+        --------------------------------------------------------------------------------------------------*/
+        .fc-event.fc-selected {
+          z-index: 9999 !important;
+          /* overcomes inline z-index */
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
+        
+        .fc-event.fc-selected.fc-dragging {
+          box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3); }
+        
+        /* Horizontal Events
+        --------------------------------------------------------------------------------------------------*/
+        /* bigger touch area when selected */
+        .fc-h-event.fc-selected:before {
+          content: "";
+          position: absolute;
+          z-index: 3;
+          /* below resizers */
+          top: -10px;
+          bottom: -10px;
+          left: 0;
+          right: 0; }
+        
+        /* events that are continuing to/from another week. kill rounded corners and butt up against edge */
+        .fc-ltr .fc-h-event.fc-not-start,
+        .fc-rtl .fc-h-event.fc-not-end {
+          margin-left: 0;
+          border-left-width: 0;
+          padding-left: 1px;
+          /* replace the border with padding */
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0; }
+        
+        .fc-ltr .fc-h-event.fc-not-end,
+        .fc-rtl .fc-h-event.fc-not-start {
+          margin-right: 0;
+          border-right-width: 0;
+          padding-right: 1px;
+          /* replace the border with padding */
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0; }
+        
+        /* resizer (cursor AND touch devices) */
+        /* left resizer  */
+        .fc-ltr .fc-h-event .fc-start-resizer,
+        .fc-rtl .fc-h-event .fc-end-resizer {
+          cursor: w-resize;
+          left: -1px;
+          /* overcome border */ }
+        
+        /* right resizer */
+        .fc-ltr .fc-h-event .fc-end-resizer,
+        .fc-rtl .fc-h-event .fc-start-resizer {
+          cursor: e-resize;
+          right: -1px;
+          /* overcome border */ }
+        
+        /* resizer (mouse devices) */
+        .fc-h-event.fc-allow-mouse-resize .fc-resizer {
+          width: 7px;
+          top: -1px;
+          /* overcome top border */
+          bottom: -1px;
+          /* overcome bottom border */ }
+        
+        /* resizer (touch devices) */
+        .fc-h-event.fc-selected .fc-resizer {
+          /* 8x8 little dot */
+          border-radius: 4px;
+          border-width: 1px;
+          width: 6px;
+          height: 6px;
+          border-style: solid;
+          border-color: inherit;
+          background: #fff;
+          /* vertically center */
+          top: 50%;
+          margin-top: -4px; }
+        
+        /* left resizer  */
+        .fc-ltr .fc-h-event.fc-selected .fc-start-resizer,
+        .fc-rtl .fc-h-event.fc-selected .fc-end-resizer {
+          margin-left: -4px;
+          /* centers the 8x8 dot on the left edge */ }
+        
+        /* right resizer */
+        .fc-ltr .fc-h-event.fc-selected .fc-end-resizer,
+        .fc-rtl .fc-h-event.fc-selected .fc-start-resizer {
+          margin-right: -4px;
+          /* centers the 8x8 dot on the right edge */ }
+        
+        /* DayGrid events
+        ----------------------------------------------------------------------------------------------------
+        We use the full "fc-day-grid-event" class instead of using descendants because the event won't
+        be a descendant of the grid when it is being dragged.
+        */
+        .fc-day-grid-event {
+          margin: 1px 2px 0;
+          /* spacing between events and edges */
+          padding: 0; }
+        
+        tr:first-child > td > .fc-day-grid-event {
+          margin-top: 2px;
+          /* a little bit more space before the first event */ }
+        
+        .fc-day-grid-event.fc-selected:after {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          /* same z-index as fc-bg, behind text */
+          /* overcome the borders */
+          top: -1px;
+          right: -1px;
+          bottom: -1px;
+          left: -1px;
+          /* darkening effect */
+          background: #000;
+          opacity: .25; }
+        
+        .fc-day-grid-event .fc-content {
+          /* force events to be one-line tall */
+          white-space: nowrap;
+          overflow: hidden; }
+        
+        .fc-day-grid-event .fc-time {
+          font-weight: bold; }
+        
+        /* resizer (cursor devices) */
+        /* left resizer  */
+        .fc-ltr .fc-day-grid-event.fc-allow-mouse-resize .fc-start-resizer,
+        .fc-rtl .fc-day-grid-event.fc-allow-mouse-resize .fc-end-resizer {
+          margin-left: -2px;
+          /* to the day cell's edge */ }
+        
+        /* right resizer */
+        .fc-ltr .fc-day-grid-event.fc-allow-mouse-resize .fc-end-resizer,
+        .fc-rtl .fc-day-grid-event.fc-allow-mouse-resize .fc-start-resizer {
+          margin-right: -2px;
+          /* to the day cell's edge */ }
+        
+        /* Event Limiting
+        --------------------------------------------------------------------------------------------------*/
+        /* "more" link that represents hidden events */
+        a.fc-more {
+          margin: 1px 3px;
+          font-size: .85em;
+          cursor: pointer;
+          text-decoration: none; }
+        
+        a.fc-more:hover {
+          text-decoration: underline; }
+        
+        .fc-limited {
+          /* rows and cells that are hidden because of a "more" link */
+          display: none; }
+        
+        /* popover that appears when "more" link is clicked */
+        .fc-day-grid .fc-row {
+          z-index: 1;
+          /* make the "more" popover one higher than this */ }
+        
+        .fc-more-popover {
+          z-index: 2;
+          width: 220px; }
+        
+        .fc-more-popover .fc-event-container {
+          padding: 10px; }
+        
+        /* Now Indicator
+        --------------------------------------------------------------------------------------------------*/
+        .fc-now-indicator {
+          position: absolute;
+          border: 0 solid red; }
+        
+        /* Utilities
+        --------------------------------------------------------------------------------------------------*/
+        .fc-unselectable {
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          -webkit-touch-callout: none;
+          -webkit-tap-highlight-color: transparent; }
+        
+        /*
+        TODO: more distinction between this file and common.css
+        */
+        /* Colors
+        --------------------------------------------------------------------------------------------------*/
+        .fc-unthemed th,
+        .fc-unthemed td,
+        .fc-unthemed thead,
+        .fc-unthemed tbody,
+        .fc-unthemed .fc-divider,
+        .fc-unthemed .fc-row,
+        .fc-unthemed .fc-content,
+        .fc-unthemed .fc-popover,
+        .fc-unthemed .fc-list-view,
+        .fc-unthemed .fc-list-heading td {
+          border-color: #ddd; }
+        
+        .fc-unthemed .fc-popover {
+          background-color: #fff; }
+        
+        .fc-unthemed .fc-divider,
+        .fc-unthemed .fc-popover .fc-header,
+        .fc-unthemed .fc-list-heading td {
+          background: #eee; }
+        
+        .fc-unthemed .fc-popover .fc-header .fc-close {
+          color: #666; }
+        
+        .fc-unthemed td.fc-today {
+          background: #fcf8e3; }
+        
+        .fc-unthemed .fc-disabled-day {
+          background: #d7d7d7;
+          opacity: .3; }
+        
+        /* Icons (inline elements with styled text that mock arrow icons)
+        --------------------------------------------------------------------------------------------------*/
+        .fc-icon {
+          display: inline-block;
+          height: 1em;
+          line-height: 1em;
+          font-size: 1em;
+          text-align: center;
+          overflow: hidden;
+          font-family: "Courier New", Courier, monospace;
+          /* don't allow browser text-selection */
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none; }
+        
+        /*
+        Acceptable font-family overrides for individual icons:
+          "Arial", sans-serif
+          "Times New Roman", serif
+        
+        NOTE: use percentage font sizes or else old IE chokes
+        */
+        .fc-icon:after {
+          position: relative; }
+        
+        .fc-icon-left-single-arrow:after {
+          content: "\2039";
+          font-weight: bold;
+          font-size: 200%;
+          top: -7%; }
+        
+        .fc-icon-right-single-arrow:after {
+          content: "\203A";
+          font-weight: bold;
+          font-size: 200%;
+          top: -7%; }
+        
+        .fc-icon-left-double-arrow:after {
+          content: "\AB";
+          font-size: 160%;
+          top: -7%; }
+        
+        .fc-icon-right-double-arrow:after {
+          content: "\BB";
+          font-size: 160%;
+          top: -7%; }
+        
+        .fc-icon-left-triangle:after {
+          content: "\25C4";
+          font-size: 125%;
+          top: 3%; }
+        
+        .fc-icon-right-triangle:after {
+          content: "\25BA";
+          font-size: 125%;
+          top: 3%; }
+        
+        .fc-icon-down-triangle:after {
+          content: "\25BC";
+          font-size: 125%;
+          top: 2%; }
+        
+        .fc-icon-x:after {
+          content: "\D7";
+          font-size: 200%;
+          top: 6%; }
+        
+        /* Popover
+        --------------------------------------------------------------------------------------------------*/
+        .fc-unthemed .fc-popover {
+          border-width: 1px;
+          border-style: solid; }
+        
+        .fc-unthemed .fc-popover .fc-header .fc-close {
+          font-size: .9em;
+          margin-top: 2px; }
+        
+        /* List View
+        --------------------------------------------------------------------------------------------------*/
+        .fc-unthemed .fc-list-item:hover td {
+          background-color: #f5f5f5; }
+        
+        /* Colors
+        --------------------------------------------------------------------------------------------------*/
+        .ui-widget .fc-disabled-day {
+          background-image: none; }
+        
+        /* Popover
+        --------------------------------------------------------------------------------------------------*/
+        .fc-popover > .ui-widget-header + .ui-widget-content {
+          border-top: 0;
+          /* where they meet, let the header have the border */ }
+        
+        /* Global Event Styles
+        --------------------------------------------------------------------------------------------------*/
+        .ui-widget .fc-event {
+          /* overpower jqui's styles on <a> tags. TODO: more DRY */
+          color: #fff;
+          /* default TEXT color */
+          text-decoration: none;
+          /* if <a> has an href */
+          /* undo ui-widget-header bold */
+          font-weight: normal; }
+        
+        /* TimeGrid axis running down the side (for both the all-day area and the slot area)
+        --------------------------------------------------------------------------------------------------*/
+        .ui-widget td.fc-axis {
+          font-weight: normal;
+          /* overcome bold */ }
+        
+        /* TimeGrid Slats (lines that run horizontally)
+        --------------------------------------------------------------------------------------------------*/
+        .fc-time-grid .fc-slats .ui-widget-content {
+          background: none;
+          /* see through to fc-bg */ }
+        
+        .fc.fc-bootstrap3 a {
+          text-decoration: none; }
+        
+        .fc.fc-bootstrap3 a[data-goto]:hover {
+          text-decoration: underline; }
+        
+        .fc-bootstrap3 hr.fc-divider {
+          border-color: inherit; }
+        
+        .fc-bootstrap3 .fc-today.alert {
+          border-radius: 0; }
+        
+        /* Popover
+        --------------------------------------------------------------------------------------------------*/
+        .fc-bootstrap3 .fc-popover .panel-body {
+          padding: 0; }
+        
+        /* TimeGrid Slats (lines that run horizontally)
+        --------------------------------------------------------------------------------------------------*/
+        .fc-bootstrap3 .fc-time-grid .fc-slats table {
+          /* some themes have background color. see through to slats */
+          background: none; }
+        
+        .fc.fc-bootstrap4 a {
+          text-decoration: none; }
+        
+        .fc.fc-bootstrap4 a[data-goto]:hover {
+          text-decoration: underline; }
+        
+        .fc-bootstrap4 hr.fc-divider {
+          border-color: inherit; }
+        
+        .fc-bootstrap4 .fc-today.alert {
+          border-radius: 0; }
+        
+        .fc-bootstrap4 a.fc-event:not([href]):not([tabindex]) {
+          color: #5d5386; }
+        
+        .fc-bootstrap4 .fc-popover.card {
+          position: absolute; }
+        
+        /* Popover
+        --------------------------------------------------------------------------------------------------*/
+        .fc-bootstrap4 .fc-popover .card-body {
+          padding: 0; }
+        
+        /* TimeGrid Slats (lines that run horizontally)
+        --------------------------------------------------------------------------------------------------*/
+        .fc-bootstrap4 .fc-time-grid .fc-slats table {
+          /* some themes have background color. see through to slats */
+          background: none; }
+        
+        /* Toolbar
+        --------------------------------------------------------------------------------------------------*/
+        .fc-toolbar {
+          text-align: center; }
+        
+          .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 1em;
+    align-items: center;
+    margin-top: 23px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+        
+        .fc-toolbar.fc-footer-toolbar {
+          margin-top: 1em; }
+        
+        .fc-toolbar .fc-left {
+          float: left; }
+        
+        .fc-toolbar .fc-right {
+          float: right; }
+        
+        .fc-toolbar .fc-center {
+          display: inline-block; }
+        
+        .fc button {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            height: auto;
+            padding: 0 1rem;
+            font-size: 1rem;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        
+        /* the things within each left/right/center section */
+        .fc .fc-toolbar > * > * {
+          /* extra precedence to override button border margins */
+          float: left;
+          margin-left: .75em; }
+        
+        /* the first thing within each left/center/right section */
+        .fc .fc-toolbar > * > :first-child {
+          /* extra precedence to override button border margins */
+          margin-left: 0; }
+        
+        /* title text */
+        .fc-toolbar h2 {
+          margin: 0;
+          font-size: 15px;
+          font-weight: 700;
+        }
+        
+        /* button layering (for border precedence) */
+        .fc-toolbar button {
+          position: relative; }
+        
+        .fc-toolbar .fc-state-hover,
+        .fc-toolbar .ui-state-hover {
+          z-index: 2; }
+        
+        .fc-toolbar .fc-state-down {
+          z-index: 3; }
+        
+        .fc-toolbar .fc-state-active,
+        .fc-toolbar .ui-state-active {
+          z-index: 4; }
+        
+        .fc-toolbar button:focus {
+          z-index: 5; }
+        
+        /* View Structure
+        --------------------------------------------------------------------------------------------------*/
+        /* undo twitter bootstrap's box-sizing rules. normalizes positioning techniques */
+        /* don't do this for the toolbar because we'll want bootstrap to style those buttons as some pt */
+        .fc-view-container *,
+        .fc-view-container *:before,
+        .fc-view-container *:after {
+          -webkit-box-sizing: content-box;
+          -moz-box-sizing: content-box;
+          box-sizing: content-box; }
+        
+        .fc-view,
+        .fc-view > table {
+          /* so dragged elements can be above the view's main element */
+          position: relative;
+          z-index: 1; }
+        
+        /* BasicView
+        --------------------------------------------------------------------------------------------------*/
+        /* day row structure */
+        .fc-basicWeek-view .fc-content-skeleton,
+        .fc-basicDay-view .fc-content-skeleton {
+          /* there may be week numbers in these views, so no padding-top */
+          padding-bottom: 1em;
+          /* ensure a space at bottom of cell for user selecting/clicking */ }
+        
+        .fc-basic-view .fc-body .fc-row {
+          min-height: 4em;
+          /* ensure that all rows are at least this tall */ }
+        
+        /* a "rigid" row will take up a constant amount of height because content-skeleton is absolute */
+        .fc-row.fc-rigid {
+          overflow: hidden; }
+        
+        .fc-row.fc-rigid .fc-content-skeleton {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0; }
+        
+        /* week and day number styling */
+        .fc-day-top.fc-other-month {
+          opacity: 0.3; }
+        
+        .fc-basic-view .fc-week-number,
+        .fc-basic-view .fc-day-number {
+          padding: 2px;
+          color: rgba(52,40,104,.8);
+          font-size: 15px;
+          font-weight: 400;
+        }
+        
+        .fc-basic-view th.fc-week-number,
+        .fc-basic-view th.fc-day-number {
+          padding: 0 2px;
+          /* column headers can't have as much v space */ }
+        
+        .fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
+          float: right; }
+        
+        .fc-rtl .fc-basic-view .fc-day-top .fc-day-number {
+          float: left; }
+        
+        .fc-ltr .fc-basic-view .fc-day-top .fc-week-number {
+          float: left;
+          border-radius: 0 0 3px 0; }
+        
+        .fc-rtl .fc-basic-view .fc-day-top .fc-week-number {
+          float: right;
+          border-radius: 0 0 0 3px; }
+        
+        .fc-basic-view .fc-day-top .fc-week-number {
+          min-width: 1.5em;
+          text-align: center;
+          background-color: #f2f2f2;
+          color: #808080; }
+        
+        /* when week/day number have own column */
+        .fc-basic-view td.fc-week-number {
+          text-align: center; }
+        
+        .fc-basic-view td.fc-week-number > * {
+          /* work around the way we do column resizing and ensure a minimum width */
+          display: inline-block;
+          min-width: 1.25em; }
+        
+        /* AgendaView all-day area
+        --------------------------------------------------------------------------------------------------*/
+        .fc-agenda-view .fc-day-grid {
+          position: relative;
+          z-index: 2;
+          /* so the "more.." popover will be over the time grid */ }
+        
+        .fc-agenda-view .fc-day-grid .fc-row {
+          min-height: 3em;
+          /* all-day section will never get shorter than this */ }
+        
+        .fc-agenda-view .fc-day-grid .fc-row .fc-content-skeleton {
+          padding-bottom: 1em;
+          /* give space underneath events for clicking/selecting days */ }
+        
+        /* TimeGrid axis running down the side (for both the all-day area and the slot area)
+        --------------------------------------------------------------------------------------------------*/
+        .fc .fc-axis {
+          /* .fc to overcome default cell styles */
+          vertical-align: middle;
+          padding: 0 4px;
+          white-space: nowrap; }
+        
+        .fc-ltr .fc-axis {
+          text-align: right; }
+        
+        .fc-rtl .fc-axis {
+          text-align: left; }
+        
+        /* TimeGrid Structure
+        --------------------------------------------------------------------------------------------------*/
+        .fc-time-grid-container,
+        .fc-time-grid {
+          /* so slats/bg/content/etc positions get scoped within here */
+          position: relative;
+          z-index: 1; }
+        
+        .fc-time-grid {
+          min-height: 100%;
+          /* so if height setting is 'auto', .fc-bg stretches to fill height */ }
+        
+        .fc-time-grid table {
+          /* don't put outer borders on slats/bg/content/etc */
+          border: 0 hidden transparent; }
+        
+        .fc-time-grid > .fc-bg {
+          z-index: 1; }
+        
+        .fc-time-grid .fc-slats,
+        .fc-time-grid > hr {
+          /* the <hr> AgendaView injects when grid is shorter than scroller */
+          position: relative;
+          z-index: 2; }
+        
+        .fc-time-grid .fc-content-col {
+          position: relative;
+          /* because now-indicator lives directly inside */ }
+        
+        .fc-time-grid .fc-content-skeleton {
+          position: absolute;
+          z-index: 3;
+          top: 0;
+          left: 0;
+          right: 0; }
+        
+        /* divs within a cell within the fc-content-skeleton */
+        .fc-time-grid .fc-business-container {
+          position: relative;
+          z-index: 1; }
+        
+        .fc-time-grid .fc-bgevent-container {
+          position: relative;
+          z-index: 2; }
+        
+        .fc-time-grid .fc-highlight-container {
+          position: relative;
+          z-index: 3; }
+        
+        .fc-time-grid .fc-event-container {
+          position: relative;
+          z-index: 4; }
+        
+        .fc-time-grid .fc-now-indicator-line {
+          z-index: 5; }
+        
+        .fc-time-grid .fc-helper-container {
+          /* also is fc-event-container */
+          position: relative;
+          z-index: 6; }
+        
+        /* TimeGrid Slats (lines that run horizontally)
+        --------------------------------------------------------------------------------------------------*/
+        .fc-time-grid .fc-slats td {
+          height: 1.5em;
+          border-bottom: 0;
+          /* each cell is responsible for its top border */ }
+        
+        .fc-time-grid .fc-slats .fc-minor td {
+          border-top-style: dotted; }
+        
+        /* TimeGrid Highlighting Slots
+        --------------------------------------------------------------------------------------------------*/
+        .fc-time-grid .fc-highlight-container {
+          /* a div within a cell within the fc-highlight-skeleton */
+          position: relative;
+          /* scopes the left/right of the fc-highlight to be in the column */ }
+        
+        .fc-time-grid .fc-highlight {
+          position: absolute;
+          left: 0;
+          right: 0;
+          /* top and bottom will be in by JS */ }
+        
+        /* TimeGrid Event Containment
+        --------------------------------------------------------------------------------------------------*/
+        .fc-ltr .fc-time-grid .fc-event-container {
+          /* space on the sides of events for LTR (default) */
+          margin: 0 2.5% 0 2px; }
+        
+        .fc-rtl .fc-time-grid .fc-event-container {
+          /* space on the sides of events for RTL */
+          margin: 0 2px 0 2.5%; }
+        
+        .fc-time-grid .fc-event,
+        .fc-time-grid .fc-bgevent {
+          position: absolute;
+          z-index: 1;
+          /* scope inner z-index's */ }
+        
+        .fc-time-grid .fc-bgevent {
+          /* background events always span full width */
+          left: 0;
+          right: 0; }
+        
+        /* Generic Vertical Event
+        --------------------------------------------------------------------------------------------------*/
+        .fc-v-event.fc-not-start {
+          /* events that are continuing from another day */
+          /* replace space made by the top border with padding */
+          border-top-width: 0;
+          padding-top: 1px;
+          /* remove top rounded corners */
+          border-top-left-radius: 0;
+          border-top-right-radius: 0; }
+        
+        .fc-v-event.fc-not-end {
+          /* replace space made by the top border with padding */
+          border-bottom-width: 0;
+          padding-bottom: 1px;
+          /* remove bottom rounded corners */
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0; }
+        
+        /* TimeGrid Event Styling
+        ----------------------------------------------------------------------------------------------------
+        We use the full "fc-time-grid-event" class instead of using descendants because the event won't
+        be a descendant of the grid when it is being dragged.
+        */
+        .fc-time-grid-event {
+          overflow: hidden;
+          /* don't let the bg flow over rounded corners */ }
+        
+        .fc-time-grid-event.fc-selected {
+          /* need to allow touch resizers to extend outside event's bounding box */
+          /* common fc-selected styles hide the fc-bg, so don't need this anyway */
+          overflow: visible; }
+        
+        .fc-time-grid-event.fc-selected .fc-bg {
+          display: none;
+          /* hide semi-white background, to appear darker */ }
+        
+        .fc-time-grid-event .fc-content {
+          overflow: hidden;
+          /* for when .fc-selected */ }
+        
+        .fc-time-grid-event .fc-time,
+        .fc-time-grid-event .fc-title {
+          padding: 0 1px; }
+        
+        .fc-time-grid-event .fc-time {
+          font-size: .85em;
+          white-space: nowrap; }
+        
+        /* short mode, where time and title are on the same line */
+        .fc-time-grid-event.fc-short .fc-content {
+          /* don't wrap to second line (now that contents will be inline) */
+          white-space: nowrap; }
+        
+        .fc-time-grid-event.fc-short .fc-time,
+        .fc-time-grid-event.fc-short .fc-title {
+          /* put the time and title on the same line */
+          display: inline-block;
+          vertical-align: top; }
+        
+        .fc-time-grid-event.fc-short .fc-time span {
+          display: none;
+          /* don't display the full time text... */ }
+        
+        .fc-time-grid-event.fc-short .fc-time:before {
+          content: attr(data-start);
+          /* ...instead, display only the start time */ }
+        
+        .fc-time-grid-event.fc-short .fc-time:after {
+          content: "\A0-\A0";
+          /* seperate with a dash, wrapped in nbsp's */ }
+        
+        .fc-time-grid-event.fc-short .fc-title {
+          font-size: .85em;
+          /* make the title text the same size as the time */
+          padding: 0;
+          /* undo padding from above */ }
+        
+        /* resizer (cursor device) */
+        .fc-time-grid-event.fc-allow-mouse-resize .fc-resizer {
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 8px;
+          overflow: hidden;
+          line-height: 8px;
+          font-size: 11px;
+          font-family: monospace;
+          text-align: center;
+          cursor: s-resize; }
+        
+        .fc-time-grid-event.fc-allow-mouse-resize .fc-resizer:after {
+          content: "="; }
+        
+        /* resizer (touch device) */
+        .fc-time-grid-event.fc-selected .fc-resizer {
+          /* 10x10 dot */
+          border-radius: 5px;
+          border-width: 1px;
+          width: 8px;
+          height: 8px;
+          border-style: solid;
+          border-color: inherit;
+          background: #fff;
+          /* horizontally center */
+          left: 50%;
+          margin-left: -5px;
+          /* center on the bottom edge */
+          bottom: -5px; }
+        
+        /* Now Indicator
+        --------------------------------------------------------------------------------------------------*/
+        .fc-time-grid .fc-now-indicator-line {
+          border-top-width: 1px;
+          left: 0;
+          right: 0; }
+        
+        /* arrow on axis */
+        .fc-time-grid .fc-now-indicator-arrow {
+          margin-top: -5px;
+          /* vertically center on top coordinate */ }
+        
+        .fc-ltr .fc-time-grid .fc-now-indicator-arrow {
+          left: 0;
+          /* triangle pointing right... */
+          border-width: 5px 0 5px 6px;
+          border-top-color: transparent;
+          border-bottom-color: transparent; }
+        
+        .fc-rtl .fc-time-grid .fc-now-indicator-arrow {
+          right: 0;
+          /* triangle pointing left... */
+          border-width: 5px 6px 5px 0;
+          border-top-color: transparent;
+          border-bottom-color: transparent; }
+        
+        /* List View
+        --------------------------------------------------------------------------------------------------*/
+        /* possibly reusable */
+        .fc-event-dot {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          border-radius: 5px; }
+        
+        /* view wrapper */
+        .fc-rtl .fc-list-view {
+          direction: rtl;
+          /* unlike core views, leverage browser RTL */ }
+        
+        .fc-list-view {
+          border-width: 1px;
+          border-style: solid; }
+        
+        /* table resets */
+        .fc .fc-list-table {
+          table-layout: auto;
+          /* for shrinkwrapping cell content */ }
+        
+        .fc-list-table td {
+          border-width: 1px 0 0;
+          padding: 8px 14px; }
+        
+        .fc-list-table tr:first-child td {
+          border-top-width: 0; }
+        
+        /* day headings with the list */
+        .fc-list-heading {
+          border-bottom-width: 1px; }
+        
+        .fc-list-heading td {
+          font-weight: bold; }
+        
+        .fc-ltr .fc-list-heading-main {
+          float: left; }
+        
+        .fc-ltr .fc-list-heading-alt {
+          float: right; }
+        
+        .fc-rtl .fc-list-heading-main {
+          float: right; }
+        
+        .fc-rtl .fc-list-heading-alt {
+          float: left; }
+        
+        /* event list items */
+        .fc-list-item.fc-has-url {
+          cursor: pointer;
+          /* whole row will be clickable */ }
+        
+        .fc-list-item-marker,
+        .fc-list-item-time {
+          white-space: nowrap;
+          width: 1px; }
+        
+        /* make the dot closer to the event title */
+        .fc-ltr .fc-list-item-marker {
+          padding-right: 0; }
+        
+        .fc-rtl .fc-list-item-marker {
+          padding-left: 0; }
+        
+        .fc-list-item-title a {
+          /* every event title cell has an <a> tag */
+          text-decoration: none;
+          color: inherit; }
+        
+        .fc-list-item-title a[href]:hover {
+          /* hover effect only on titles with hrefs */
+          text-decoration: underline; }
+        
+        /* message when no events */
+        .fc-list-empty-wrap2 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0; }
+        
+        .fc-list-empty-wrap1 {
+          width: 100%;
+          height: 100%;
+          display: table; }
+        
+        .fc-list-empty {
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center; }
+        
+        .fc-unthemed .fc-list-empty {
+          /* theme will provide own background */
+          background-color: #eee; }
+        
+        
+        .fc th.fc-day-header{
+            padding: 11px 7px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .fc-day.fc-today{
+            background: rgba(52,40,104,.03);
+        }
+        .fc-day.alert-info{
+            background: rgba(52,40,104,.03);
+        }
+        
+        .datepicker{
+            z-index: 123456;
+        }
+        
+        .card{
+          border: 0;
+          background: transparent;
+        }
+        h2{
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 22px;
+          text-align: center;
+          letter-spacing: 1px;
+          font-family: 'Montserrat', sans-serif;
+          color: #002147;
+          margin-bottom: 20px;
+        }
+        .calendar-cont .btn{
+          font-size: 15px !important;
+          text-transform: uppercase;
+          font-weight: 700;
+          letter-spacing: 2.5px;
+          font-family: 'Nunito', sans-serif;
+          box-shadow: none !important;
+          border: 0;
+          padding: 10px 20px !important;
+        }
+        .calendar-cont .btn:focus{
+          box-shadow: none;
+        }
+        .calendar-cont .btn.btn-primary{
+          background: #002147;
+          color: #ffffff;
+        }
+        .form-group label{
+          font-weight: 600;
+          letter-spacing: 0.010em;
+          font-size: 18px;
+          margin-bottom: 5px;
+        }
+        .modal-body{
+          background: #F3F5F9;
+          border-radius: 10px;
+        }
+        .modal-body h4{
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 18px;
+          letter-spacing: 1px;
+          font-family: 'Montserrat', sans-serif;
+          color: #002147;
+          margin-bottom: 20px;
+        }
+        .modal-body .form-control{
+          box-shadow: none;
+          height: 50px;
+        }   
+        
+        </style>
+
+           <!--Calendar Ends Slider--> 
+                <!--Zoom Slider-->
+    <link rel="stylesheet" type="text/css" href="zoomslider/zoom-dist/zoomslider.css" />
+    <script type="text/javascript" src="zoomslider/demo/js/modernizr-2.6.2.min.js"></script>
+
+                <style>
+                    @font-face {
+                font-family: 'SourceSerifPro-Regular';
+                src: url('assets/sai-fonts/SourceSerifPro-Regular.eot?#iefix') format('embedded-opentype'),  url('assets/sai-fonts/SourceSerifPro-Regular.woff') format('woff'), url('assets/sai-fonts/SourceSerifPro-Regular.ttf')  format('truetype'), url('assets/sai-fonts/SourceSerifPro-Regular.svg#SourceSerifPro-Regular') format('svg');
+                font-weight: normal;
+                font-style: normal;
+              }
+              @font-face {
+                font-family: 'SourceSerifPro-Semibold';
+                src: url('assets/sai-fonts/SourceSerifPro-Semibold.eot?#iefix') format('embedded-opentype'),  url('assets/sai-fonts/SourceSerifPro-Semibold.woff') format('woff'), url('assets/sai-fonts/SourceSerifPro-Semibold.ttf')  format('truetype'), url('assets/sai-fonts/SourceSerifPro-Semibold.svg#SourceSerifPro-Semibold') format('svg');
+                font-weight: normal;
+                font-style: normal;
+              }
+              
+              @font-face {
+                font-family: 'Roboto-Regular';
+                src: url('../assets/sai-fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),  url('assets/sai-fonts/Roboto-Regular.woff') format('woff'), url('assets/sai-fonts/Roboto-Regular.ttf')  format('truetype'), url('assets/sai-fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+                font-weight: normal;
+                font-style: normal;
+              }
+              
+              body{
+                  font-family: 'Roboto-Regular' !important;
+              }
+              
+              section:not(.text-light) .nav-link, footer:not(.text-light) .nav-link {
+                  color: #FFFFFF;
+              }
+              
+              .ff-source-serif-pro {
+                font-family: 'SourceSerifPro-Regular' !important;
+              }
+              
+              .ff-source-serif-semi-bold {
+                font-family: 'SourceSerifPro-Semibold' !important;
+              }
+              
+/** Zoom Slider styles **/
+
+		/* Basic styling */
+
+		code {
+			display: block;
+			background-color: #eee;
+			padding: 2em;
+			overflow: scroll;
+			white-space: nowrap;
+		}
+		.body {
+			max-width: 800px;
+			padding: 40px;
+			margin: 0 auto;
+		}
+		.meta {
+			margin: 0 0 40px 0;
+			font-size: 0.8em;
+		}
+		.properties-table {
+			width: 100%;
+			padding: 0;
+			border-spacing: 0;
+			margin-top: 2em;
+			font-size: .85em;
+			background-color: #eee;
+		}
+		.properties-table th, .properties-table td {
+			text-align: left;
+			padding: 10px;
+		}
+		.properties-table th {
+			border-bottom: 1px solid #333;
+			line-height: 2;
+		}
+    .zs-bullets {
+    display: none;
+}
+		/* End Basic styling */
+
+		
+		#demo-1 {
+			position: relative; /* can either be relative, absolute or fixed. If position is not set (i.e. static), it would be set to "relative" by script */
+			overflow: hidden; /* to bound the empty top space created by inner element's top margin */
+			width: 100%;
+			min-height: 400px;
+			background-color: #999;
+		}
+		.demo-inner-content {
+			position: relative; /* if position is not set, the script will set it to 'relative'. */
+			z-index: 2; /* if z-index is not set, the script will set it to '2'. */
+			margin: 180px auto;
+			padding: 40px;
+			max-width: 600px;
+			color: #fff;
+			text-align: center;
+			font-size: 1.5em;
+		}
+		.demo-inner-content h1 {
+			font-size: 2.5em;
+			margin: 0;
+		}
+    /** Zoom Slider styles Ends **/
+
+                </style>
+            
+              </head>
+
+  <body>
+  
+    <div class="navbar-container " style="min-height: 69.075px; margin-bottom: -69.075px;">
+      <nav class="navbar navbar-expand-lg navbar-dark transparent-nav" data-overlay="" data-sticky="top" style="max-width: 1052.8px; top: 0px;">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img class="logo-img" src="assets/img/sai/logo1.svg" alt="Leap"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z" fill="#212529"></path>
+            </svg>
+
+          </button>
+          <div class="collapse navbar-collapse justify-content-end">
+            <div class="py-2 py-lg-0">
+                <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a href="sai-sri-sathya-sai-baba.html" class="nav-link dropdown-toggle text-light" data-hover="true" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">Sri Sathya Sai Baba</a>
+                            <div class="dropdown-menu row">
+                                <div class="col-auto" data-dropdown-content>
+                                  <div class="card card-sm card-body shadow-sm p-0">
+                                    <a href="sai-life-history-history.html" class="dropdown-item border-bottom py-2 px-3">His Life</a>
+                                    <a href="sai-his-messages-writings.html" class="dropdown-item border-bottom py-2 px-3">His Messages</a>
+                                    <a href="sai-his-works.html" class="dropdown-item border-bottom py-2 px-3">His Works</a>
+                                  </div>
+                                </div>
+                              </div>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a href="#" class="nav-link dropdown-toggle text-light" data-hover="true" data-toggle="dropdown-grid" aria-expanded="false" aria-haspopup="true">The Trust</a>
+                              <div class="dropdown-menu row">
+                                <div class="col-auto" data-dropdown-content>
+                                  <div class="card card-sm card-body shadow-sm p-0">
+                                    <a href="sai-about-trust.html" class="dropdown-item border-bottom py-2 px-3">About</a>
+                                    <a href="sai-projects.html" class="dropdown-item border-bottom py-2 px-3">Projects</a>
+                                    <a href="sai-abodes.html" class="dropdown-item border-bottom py-2 px-3">Sai Abodes</a>
+                                    <a href="sai-advisory.html" class="dropdown-item py-2 px-3">Advisory & Notices</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+    
+                            <li class="nav-item dropdown">
+                                  <a href="sai-events.html" class="nav-link text-light">Events</a>
+                                  
+                            </li>
+                            <li class="nav-item">
+                                <a href="sai-prasanthi-nilayam.html" class="nav-link text-light">Prasanthi Nilayam</a>
+                            </li>
+                            <li class="nav-item">
+                                  <a href="http://media.radiosai.org/www/" class="nav-link text-light" target="_blank" >Radio Sai</a>
+                            </li>
+                           <li class="nav-item dropdown">
+                              <a href="sai-get-involved.html" class="nav-link text-light">Get Involved</a>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                              <a href="javascript:;" class="nav-link text-light search-icon1" data-toggle="modal" data-target="#sign-in-modal">
+                                <svg class="icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                  <title>Icon For Search</title>
+                                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <rect opacity="0" x="0" y="0" width="24" height="24"></rect>
+                                    <path d="M14.2928932,16.7071068 C13.9023689,16.3165825 13.9023689,15.6834175 14.2928932,15.2928932 C14.6834175,14.9023689 15.3165825,14.9023689 15.7071068,15.2928932 L19.7071068,19.2928932 C20.0976311,19.6834175 20.0976311,20.3165825 19.7071068,20.7071068 C19.3165825,21.0976311 18.6834175,21.0976311 18.2928932,20.7071068 L14.2928932,16.7071068 Z" fill="#000000" fill-rule="nonzero" ></path>
+                                    <path d="M11,16 C13.7614237,16 16,13.7614237 16,11 C16,8.23857625 13.7614237,6 11,6 C8.23857625,6 6,8.23857625 6,11 C6,13.7614237 8.23857625,16 11,16 Z M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z" fill="#000000" fill-rule="nonzero"></path>
+                                  </g>
+                                </svg>
+                              </a>
+                              
+                            </li> -->
+
+                            
+                    </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="demo-1" data-zs-src='["zoomslider/demo/photos/events-banner1.jpg",  "zoomslider/demo/photos/events-banner2.jpg", "zoomslider/demo/photos/events-banner3.jpg", "zoomslider/demo/photos/events-banner4.jpg"]' data-zs-overlay="plain">
+      <div class="row justify-content-center align-items-center min-vh-100">
+          <div class="col-lg-8">
+            <div class="text-center text-light">
+              <h1 class="display-3 text-light ff-source-serif-semi-bold"> Events </h1>
+            </div>
+            
+          </div>
+          
+
+        </div>
+    </div>
+
+
+    <section class="pt-5 bg-primary-alt">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+                <h2 class="h1 text-darkblue ff-source-serif-semi-bold border-heading text-left">Events</h2>
+            </div>
+            <div class="col-md-6 text-right">
+                    <a class="btn btn-primary" href="sai-events.html">Change to List View</a>
+            </div>
+          </div>
+          <div class="row calendar-cont">
+              <div class="col-md-12">
+                    <div class="p-0">
+                            <!-- <h2 class="mb-4 text-darkblue ff-source-serif-semi-bold">Events Calendar</h2> -->
+                            <div class="card">
+                              <div class="card-body p-0">
+                                <div id="calendar"></div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <!-- calendar modal -->
+                          <div id="modal-view-event" class="modal modal-top fade calendar-modal">
+                                  <div class="modal-dialog modal-dialog-centered">
+                                      <div class="modal-content">
+                                          <div class="modal-body">
+                                              <h4 class="modal-title"><span class="event-icon"></span><span class="event-title"></span></h4>
+                                              <div class="event-body"></div>
+                                          </div>
+                                          <div class="modal-footer">
+                                              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          
+                          <div id="modal-view-event-add" class="modal modal-top fade calendar-modal">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <form id="add-event">
+                                  <div class="modal-body">
+                                  <h4>Add Event Detail</h4>        
+                                    <div class="form-group">
+                                      <label>Event name</label>
+                                      <input type="text" class="form-control" name="ename">
+                                    </div>
+                                    <div class="form-group">
+                                      <label>Event Date</label>
+                                      <input type='text' class="datetimepicker form-control" name="edate">
+                                    </div>        
+                                    <div class="form-group">
+                                      <label>Event Description</label>
+                                      <textarea class="form-control" name="edesc"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                      <label>Event Color</label>
+                                      <select class="form-control" name="ecolor">
+                                        <option value="fc-bg-default">fc-bg-default</option>
+                                        <option value="fc-bg-blue">fc-bg-blue</option>
+                                        <option value="fc-bg-lightgreen">fc-bg-lightgreen</option>
+                                        <option value="fc-bg-pinkred">fc-bg-pinkred</option>
+                                        <option value="fc-bg-deepskyblue">fc-bg-deepskyblue</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group">
+                                      <label>Event Icon</label>
+                                      <select class="form-control" name="eicon">
+                                        <option value="circle">circle</option>
+                                        <option value="cog">cog</option>
+                                        <option value="group">group</option>
+                                        <option value="suitcase">suitcase</option>
+                                        <option value="calendar">calendar</option>
+                                      </select>
+                                    </div>        
+                                </div>
+                                  <div class="modal-footer">
+                                  <button type="submit" class="btn btn-primary" >Save</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>        
+                                </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+              </div>
+          </div>
+        </div>
+    </section>
+
+    
+    <footer class="pb-4 bg-darkblue text-light" id="footer">
+      <div class="container">
+      
+          <div class="row mb-4">
+            <div class="col-6 col-lg-4 col-xl-4">
+              <h5 class="text-pink">About Sathya Sai Trust</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                <a href="sai-about-trust.html" class="nav-link">Vision &amp; Mission</a>
+                </li>
+                <li class="nav-item">
+                <a href="sai-about-trust.html" class="nav-link">Board of Trustees</a>
+                </li>
+                <li class="nav-item">
+                <a href="sai-projects.html#water" class="nav-link">Water Projects</a>
+                </li>
+                <li class="nav-item">
+                <a href="https://psg.sssihms.org.in" class="nav-link">Super Speciality Hospital Prasanthigram</a>
+                </li>
+                <li class="nav-item">
+                <a href="https://sssihms.org" class="nav-link">Super Speciality Hospital Bangalore</a>
+                </li>
+                <li class="nav-item">
+                <a href="http://www.sssmh.org.in/index.php" class="nav-link">Mobile Hospital</a>
+                </li>
+                <li class="nav-item">
+                <a href="http://sssgh.org" class="nav-link">General Hospital</a>
+                </li>
+                <li class="nav-item">
+                <a href="https://www.sssihl.edu.in" class="nav-link">Sri Sathya Sai Institute of Higher Learning</a>
+                </li>
+                <li class="nav-item">
+                  <a href="http://media.radiosai.org/www/" class="nav-link">Radiosai</a>
+                  </li>
+                 </ul>
+            </div>
+  
+            <div class="col-6 col-lg-4 col-xl-4">
+                <h5 class="text-pink">Resources</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                  <a href="https://www.youtube.com/channel/UCJxHxs-4-O7qmlWgBn8pvsQ" class="nav-link">Videos</a>
+                  </li>
+                  <li class="nav-item">
+                  <a href="http://www.sathyasai.org/media/ebooks" class="nav-link">eBooks</a>
+                  </li>
+                  <li class="nav-item">
+                  <a href="https://saireflections.org/journals/PastEditions.php" class="nav-link">Sanathana Sarathi</a>
+                  </li>
+                  <li class="nav-item">
+                  <a href="sai-about-trust.html#annual-report" class="nav-link">Annual Report</a>
+                  </li>
+                  <li class="nav-item">
+                  <a href="http://www.sathyasai.org/about-us/organisation/guidelines" class="nav-link">Guidelines</a>
+                  </li>
+                  <li class="nav-item">
+                  <a href="sai-advisory.html" class="nav-link">Official Logo</a>
+                  </li>
+                  <li class="nav-item">
+                  <a href="http://www.sathyasai.org/sadhana-of-love" class="nav-link">Sadhana of Love</a>
+                  </li>
+                  <li class="nav-item">
+                  <a href="http://www.sathyasai.org/events/wc2015/proceedings" class="nav-link">Tenth World Conference Proceedings</a>
+                  </li>
+                   </ul>
+              </div>
+              <div class="col-6 col-lg-4 col-xl-4">
+                  <h5 class="text-pink">Quick Links</h5>
+                  <ul class="nav flex-column">
+                      <li class="nav-item">
+                      <a href="http://srisathyasai.org.in/Pdf/SSSCT-NOTICE_22-02-2019.pdf" class="nav-link">Notice regarding Donations to SSSCT</a>
+                      </li>
+                      <li class="nav-item">
+                      <a href="http://srisathyasai.org.in/Pdf/SSSCT%20AR_2017-18%20-%20FULL%20REPORT.pdf" class="nav-link">SSSCT Annual Report 2018 - Download</a>
+                      </li>
+                      <li class="nav-item">
+                      <a href="http://www.srisathyasai.org.in/Pdf/Important%20Note%20from%20SSSCT_17-01-2019.pdf" class="nav-link">Advisory to Devotees</a>
+                      </li>
+                      <li class="nav-item">
+                      <a href="sai-prasanthi-nilayam.html" class="nav-link">Online Accommodation Booking</a>
+                      </li>
+                      <li class="nav-item">
+                      <a href="http://srisathyasai.org.in/Pdf/PUBLIC%20CAUTION%20NOTICE_14-07-2018.pdf" class="nav-link">Public Caution Notice</a>
+                      </li>
+                    </ul>
+
+                  <h5 class="mt-2 text-pink">Zone & Country Websites</h5>
+                  <select class="form-control jump-list col-10" id="sel1" name="formal" onchange="javascript:handleSelect(this)">
+                      <option value="">- Select a country -</option>
+                      <option value="http://saiuniverse.sathyasai.org/">International organisation1</option>
+                      <option value="https://www.valuestransform.org/">International organisation2</option>
+                      <option value="https://ssssoindia.org/">National organisation</option>
+                      <option value="http://www.sathyasai.org.ar/">Argentina</option>
+                      <option value="http://www.saiaustralia.org.au/">Australia and Papua New Guinea</option>
+                      <option value="http://www.sathyasai.at/">Austria</option>
+                      <option value="http://www.sathyasai.be/">Belgium</option>
+                      <option value="http://www.sathyasai.org.br/">Brazil</option>
+                      <option value="http://www.sathyasai.ca/">Canada</option>
+                      <option value="http://www.saibabachile.cl/">Chile</option>
+                      <option value="http://www.saiorg.hr/">Croatia</option>
+                      <option value="http://www.sathyasai.cz/">Czech Republic</option>
+                      <option value="http://www.sathyasai.dk/">Denmark</option>
+                      <option value="http://www.sathyasai.org.ec/">Ecuador</option>
+                      <option value="http://www.sathyasai.ee/">Estonia</option>
+                      <option value="http://www.sathyasaifiji.org/">Fiji</option>
+                      <option value="http://www.sathyasai-fi.org/">Finland</option>
+                      <option value="http://www.sathyasaifrance.org/">France</option>
+                      <option value="http://www.sathyasai.de/">Germany</option>
+                      <option value="http://www.saibaba.gr/">Greece</option>
+                      <option value="http://www.saibaba.org.hk/">Hong Kong</option>
+                      <option value="http://www.sathyasai.hu/">Hungary</option>
+                      <option value="http://sathyasai.org">India</option>
+                      <option value="http://www.sathyasaieire.org/">Ireland, Republic of</option>
+        
+                      <option value="http://sathyasai.org.il/">Israel</option>
+                      <option value="http://www.sathyasai.it/web/">Italy</option>
+                      <option value="https://www.sathyasai.or.jp/">Japan - Japanese Language</option>
+                      <option value="http://www.sathyasai.or.jp/english/">Japan - English Language</option>
+                      <option value="http://sathyasaicentrekenya.org/">Kenya</option>
+                      <option value="http://www.sathyasai.lv/">Latvia</option>
+                      <option value="http://www.sathyasai.lt/">Lithuania</option>
+                      <option value="http://saicouncil.org.my/">Malaysia - English Language</option>
+                      <option value="http://www.sca.org.my/">Malaysia - Chinese Language</option>
+                      <option value="http://www.saibabamauritius.org/">Mauritius</option>
+                      <option value="http://www.sathyasai.org.mx/">Mexico</option>
+                      <option value="http://srisathyasai.org.np/">Nepal</option>
+                      <option value="http://sathyasai.nl/home/">Netherlands</option>
+                      <option value="http://www.sathyasai.org.nz/">New Zealand</option>
+                      <option value="http://www.saibaba.no/">Norway</option>
+                      <option value="http://saibabaperu.org/">Peru</option>
+                      <option value="http://www.sathyasaiphilippines.org/">Philippines</option>
+                      <option value="http://www.sathyasai.org.pl/">Poland</option>
+                      <option value="http://www.saiorg.ru/">Russia</option>
+                      <option value="http://www.saiorgserbia.com/">Serbia</option>
+                      <option value="http://www.sathyasai.org.sg/">Singapore</option>
+                      <option value="http://www.sathyasai.sk/">Slovakia</option>
+                      <option value="http://www.saiorg.si/si/">Slovenia</option>
+                      <option value="http://www.srisathyasai.org.za/">South Africa</option>
+                      <option value="http://www.ssiosrilanka.org/">Sri Lanka</option>
+                      <option value="http://www.sathyasaiorg.se/">Sweden</option>
+                      <option value="http://www.sathyasai.ch/">Switzerland</option>
+                      <option value="http://www.sathyasaithailand.com/">Thailand and Vietnam</option>
+                      <option value="http://sai.org.ua/">Ukraine</option>
+                      <option value="http://www.srisathyasai.org.uk/">United Kingdom</option>
+                      <option value="http://sathyasai.us/">United States of America</option>
+                      <option value="http://www.sathyasai.org.uy/">Uruguay</option>
+                      <option value="http://new.saicaribbean.org/">West Indies</option>
+                      <option value="http://zone4sai.org/">Zone 4</option>
+                      <option value="http://www.sathyasai-zone6.org/">Zone 6</option>
+                      <option value="http://www.sathyasai-zone7.org/">Zone 7</option>
+                      <option value="http://www.sathyasaizone9a.org/">Zone 9A</option>
+                    </select>
+
+                    <!-- <div class="row mt-4">
+                      <div class="col-3">
+                          <img src="assets/img/sai/footer-logo.svg">
+                      </div>
+                      <div class="col-9">
+                          <p class="text-muted">© Sri Sathya Sai Central Trust,
+                              <br> Prasanthi Nilayam.
+                              <br> All rights reserved.
+                           </p>
+                      </div>
+                    </div> -->
+
+                    
+                    
+                </div>
+            </div>
+            <div class="text-center py-5">
+              <img src="assets/img/sai/sathya-sai-signature.svg" class="col-md-8" alt="signature"/>
+            </div>
+
+            <div class="row justify-content-center pt-3">
+              <div class="col col-md-auto text-center">
+                <img src="assets/img/sai/footer-logo.svg" style="max-width: 20%;">
+                <p class="text-muted d-block text-small my-2">Official website of Sri Sathya Sai</p>
+                <small class="text-muted">© Sri Sathya Sai Central Trust, Prasanthi Nilayam. All rights reserved.
+                </small>
+              </div>
+          </div>
+          
+          
+        </div>
+  </footer>
+    <a href="#" class="btn back-to-top btn-primary btn-round" data-smooth-scroll data-aos="fade-up" data-aos-anchor="section:last-of-type" data-aos-mirror="true" data-aos-once="false">
+      <svg class="icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <title>Icon For Arrow-up</title>
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <polygon points="0 0 24 0 24 24 0 24" opacity="0"></polygon>
+          <rect fill="#000000" x="11" y="5" width="2" height="14" rx="1"></rect>
+          <path d="M6.70710678,12.7071068 C6.31658249,13.0976311 5.68341751,13.0976311 5.29289322,12.7071068 C4.90236893,12.3165825 4.90236893,11.6834175 5.29289322,11.2928932 L11.2928932,5.29289322 C11.6714722,4.91431428 12.2810586,4.90106866 12.6757246,5.26284586 L18.6757246,10.7628459 C19.0828436,11.1360383 19.1103465,11.7686056 18.7371541,12.1757246 C18.3639617,12.5828436 17.7313944,12.6103465 17.3242754,12.2371541 L12.0300757,7.38413782 L6.70710678,12.7071068 Z"
+          fill="#000000" fill-rule="nonzero"></path>
+        </g>
+      </svg>
+    </a>
+
+     <!--Search Model Starts here-->
+  <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <svg class="icon bg-dark" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.2426 6.34311L6.34309 16.2426C5.95257 16.6331 5.95257 17.2663 6.34309 17.6568C6.73362 18.0473 7.36678 18.0473 7.75731 17.6568L17.6568 7.75732C18.0473 7.36679 18.0473 6.73363 17.6568 6.34311C17.2663 5.95258 16.6331 5.95258 16.2426 6.34311Z"
+              fill="#212529" />
+              <path d="M17.6568 16.2426L7.75734 6.34309C7.36681 5.95257 6.73365 5.95257 6.34313 6.34309C5.9526 6.73362 5.9526 7.36678 6.34313 7.75731L16.2426 17.6568C16.6331 18.0473 17.2663 18.0473 17.6568 17.6568C18.0474 17.2663 18.0474 16.6331 17.6568 16.2426Z" fill="#212529"
+              />
+            </svg>
+
+          </button>
+          <div class="m-xl-4 m-3">
+           
+            <form>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon-1">
+                        <svg class="icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <title>Icon For Search</title>
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <rect opacity="0" x="0" y="0" width="24" height="24"></rect>
+                            <path d="M14.2928932,16.7071068 C13.9023689,16.3165825 13.9023689,15.6834175 14.2928932,15.2928932 C14.6834175,14.9023689 15.3165825,14.9023689 15.7071068,15.2928932 L19.7071068,19.2928932 C20.0976311,19.6834175 20.0976311,20.3165825 19.7071068,20.7071068 C19.3165825,21.0976311 18.6834175,21.0976311 18.2928932,20.7071068 L14.2928932,16.7071068 Z" fill="#000000" fill-rule="nonzero" ></path>
+                            <path d="M11,16 C13.7614237,16 16,13.7614237 16,11 C16,8.23857625 13.7614237,6 11,6 C8.23857625,6 6,8.23857625 6,11 C6,13.7614237 8.23857625,16 11,16 Z M11,18 C7.13400675,18 4,14.8659932 4,11 C4,7.13400675 7.13400675,4 11,4 C14.8659932,4 18,7.13400675 18,11 C18,14.8659932 14.8659932,18 11,18 Z" fill="#000000" fill-rule="nonzero"></path>
+                          </g>
+                        </svg>
+                      </span>
+                    </div>
+                    <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon-1">
+                  </div>
+            
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Search Model Ends here-->
+<!-- Zoom SLider-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="zoomslider/zoom-dist/jquery.zoomslider.min.js"></script>
+<!-- Zoom SLider Ends-->
+  <!-- Required vendor scripts (Do not remove) -->
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/popper.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+    <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+   
+    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+    <!-- Isotope (masonry layouts and filtering) -->
+    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+    <!-- jarallax (parallax effect and video backgrounds) -->
+    <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
+    <!-- jQuery Countdown (displays countdown text to a specified date) -->
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <!-- jQuery smartWizard facilitates steppable wizard content -->
+    <script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
+    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+    <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
+    <!-- Prism (displays formatted code boxes) -->
+    <script type="text/javascript" src="assets/js/prism.js"></script>
+    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+    <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
+    <!-- Smooth scroll (animation to links in-page)-->
+    <script type="text/javascript" src="assets/js/smooth-scroll.polyfills.min.js"></script>
+    <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+    <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+    <!-- Typed text (animated typing effect)-->
+    <script type="text/javascript" src="assets/js/typed.min.js"></script>
+    <!-- Required theme scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/theme.js"></script>
+    <!-- Removes page load animation when window is finished loading -->
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        document.querySelector('body').classList.add('loaded');
+      });
+    </script>
+
+    <!-- Google Analytics starts-->
+    <script>
+      ! function(e, a, t, n, g, c)
+      {
+        e.GoogleAnalyticsObject = n, e.ga || (e.ga = function()
+        {
+          (e.ga.q = e.ga.q || []).push(arguments)
+        }), e.ga.l = +new Date, g = a.createElement(t), c = a.getElementsByTagName(t)[0], g.src = "https://www.google-analytics.com/analytics.js", c.parentNode.insertBefore(g, c)
+      }(window, document, "script", "ga"), ga("create", "UA-113300163-1"), ga("send", "pageview");
+    </script>
+    <!-- Google Analytics Ends-->
+    <script type="text/javascript">
+      function handleSelect(elm)
+      {
+        // window.location = elm.value ;
+        window.open(elm.value, '_blank');
+      }
+    </script>
+
+     <!-- <Calendar Styles starts here -->
+            <!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" /> -->
+            <link rel="stylesheet" type="text/css" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css" />
+            <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.css" />
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.css" /> -->
+            
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+                <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.js"></script>
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.js"></script>
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.js"></script>
+    <!-- <Calendar Styles starts here -->
+
+            <script>
+                    jQuery(document).ready(function(){
+              jQuery('.datetimepicker').datepicker({
+                  timepicker: true,
+                  language: 'en',
+                  range: true,
+                  multipleDates: true,
+                      multipleDatesSeparator: " - "
+                });
+              jQuery("#add-event").submit(function(){
+                  alert("Submitted");
+                  var values = {};
+                  $.each($('#add-event').serializeArray(), function(i, field) {
+                      values[field.name] = field.value;
+                  });
+                  console.log(
+                    values
+                  );
+              });
+            });
+            
+            (function () {    
+                'use strict';
+                // ------------------------------------------------------- //
+                // Calendar
+                // ------------------------------------------------------ //
+                jQuery(function() {
+                    // page is ready
+                    jQuery('#calendar').fullCalendar({
+                        themeSystem: 'bootstrap4',
+                        // emphasizes business hours
+                        businessHours: false,
+                        defaultView: 'month',
+                        // event dragging & resizing
+                        editable: true,
+                        // header
+                        header: {
+                            left: 'title',
+                            center: 'month,agendaWeek,agendaDay',
+                            right: 'today prev,next'
+                        },
+                        events: [
+                            {
+                                title: 'SAI Summer Series',
+                                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                                start: '2019-10-07',
+                                end: '2019-10-07',
+                                className: 'fc-bg-default',
+                               
+                            },
+                            {
+                                title: 'Joint Statement by SSIO, SSSCT and SSSSO India',
+                                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                                start: '2019-10-12',
+                                end: '2019-10-12',
+                                className: 'fc-bg-deepskyblue',
+                                // icon : "cog",
+                                allDay: true
+                            },
+                            {
+                                title: 'Orientation Manual for SSIO Officers',
+                                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                                start: '2019-10-26',
+                                end: '2019-10-26',
+                                className: 'fc-bg-pinkred',
+                                // icon : "group",
+                                allDay: true
+                            },
+                            {
+                                title: 'SSSSO India',
+                                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                                start: '2019-11-12',
+                                className: 'fc-bg-lightgreen',
+                                // icon : "suitcase"
+                            },
+                            {
+                                title: 'Conference',
+                                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                                start: '2019-11-16',
+                                end: '2019-11-17',
+                                className: 'fc-bg-blue',
+                                // icon : "calendar"
+                            },
+                            {
+                                title: 'Sai Sai',
+                                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                                start: '2019-08-13',
+                                end: '2019-08-14',
+                                className: 'fc-bg-default',
+                                // icon : "child"
+                            },
+                            {
+                                title: 'Birthday',
+                                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                                start: '2019-09-13',
+                                end: '2019-09-14',
+                                className: 'fc-bg-default',
+                                // icon : "birthday-cake"
+                            },
+                            {
+                                title: 'Prasanthi nilayam',
+                                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                                start: '2019-10-01T09:30:00',
+                                end: '2019-10-01T11:45:00',
+                                className: 'fc-bg-default',
+                                // icon : "glass",
+                                allDay: false
+                            },
+                            {
+                                title: 'Conference',
+                                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                                start: '2019-10-16T09:30:00',
+                                end: '2019-10-16T11:45:00',
+                                className: 'fc-bg-default',
+                                // icon : "glass",
+                                allDay: false
+                            },
+                            
+            
+                            {
+                                title: 'Meeting',
+                                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                                start: '2019-12-15T20:00:00',
+                                end: '2019-12-15T22:30:00',
+                                className: 'fc-bg-default',
+                                // icon : "cutlery",
+                                allDay: false
+                            },
+                            {
+                                title: 'Shooting',
+                                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                                start: '2019-08-25',
+                                end: '2019-08-25',
+                                className: 'fc-bg-blue',
+                                // icon : "camera"
+                            },
+                            {
+                                title: 'Go Space :)',
+                                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                                start: '2019-12-27',
+                                end: '2019-12-27',
+                                className: 'fc-bg-default',
+                                // icon : "rocket"
+                            },
+                            {
+                                title: 'Joint Statement',
+                                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu pellentesque nibh. In nisl nulla, convallis ac nulla eget, pellentesque pellentesque magna.',
+                                start: '2019-12-29T11:30:00',
+                                end: '2019-12-29T012:30:00',
+                                className: 'fc-bg-blue',
+                                // icon : "medkit",
+                                allDay: false
+                            }
+                        ],
+                        eventRender: function(event, element) {
+                            if(event.icon){
+                                element.find(".fc-title").prepend("<i class='fa fa-"+event.icon+"'></i>");
+                            }
+                          },
+                        dayClick: function() {
+                            jQuery('#modal-view-event-add1').modal();
+                        },
+                        eventClick: function(event, jsEvent, view) {
+                                jQuery('.event-icon').html("<i class='fa fa-"+event.icon+"'></i>");
+                                jQuery('.event-title').html(event.title);
+                                jQuery('.event-body').html(event.description);
+                                jQuery('.eventUrl').attr('href',event.url);
+                                jQuery('#modal-view-event').modal();
+                        },
+                    })
+                });
+              
+            })(jQuery);
+                    </script>
+
+
+  </body>
+
+</html>
