@@ -13851,4 +13851,10 @@ img.bg-img:before {
 .navbar-dark {
   border-bottom: none !important; }
 
+.flickity-prev-next-button {
+  margin: 0 25px; }
+
+.round-corner {
+  border-radius: 0.625rem !important; }
+
 /*# sourceMappingURL=theme.css.map */
