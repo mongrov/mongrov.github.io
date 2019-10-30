@@ -13857,4 +13857,11 @@ img.bg-img:before {
 .round-corner {
   border-radius: 0.625rem !important; }
 
+.tran {
+  -webkit-transform: translate(575px, -400px);
+          transform: translate(575px, -400px); }
+
+#demo-1 {
+  background-color: #F3F5FB !important; }
+
 /*# sourceMappingURL=theme.css.map */
