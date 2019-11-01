@@ -13864,11 +13864,4 @@ img.bg-img:before {
 #demo-1 {
   background-color: #F3F5FB !important; }
 
-/* tab color change when not active
-.nav-link:not(.active):not(.disabled):not(:hover), .nav-link:not(.active):not(.disabled):not(:hover){
-     background-color:transparent;
-     border:none;
-    color:gray;
-}*/
-
 /*# sourceMappingURL=theme.css.map */
