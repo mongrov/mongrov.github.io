@@ -13864,4 +13864,12 @@ img.bg-img:before {
 #demo-1 {
   background-color: #F3F5FB !important; }
 
+.post-contain {
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+
+.latestVideoEmbed {
+  min-height: 340px; }
+
 /*# sourceMappingURL=theme.css.map */
