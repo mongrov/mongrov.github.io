@@ -13872,4 +13872,18 @@ img.bg-img:before {
 .latestVideoEmbed {
   min-height: 340px; }
 
+.card-img-top {
+  max-height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.shorttitle {
+  height: 63px;
+  overflow: hidden; }
+
+.clamp {
+  margin-top: -6px;
+  height: 70px;
+  overflow: hidden; }
+
 /*# sourceMappingURL=theme.css.map */

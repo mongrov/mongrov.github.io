@@ -82,72 +82,75 @@ body{
 
         <section class="pt-5">
           <div class="container">
-             <div class="row">
+            <div class="row">
               <div class="col">
                   <h2 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">Latest News</h2>
               </div>
             </div>
-            <!--<div class="row">
-              <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+           <div class="row">
+              <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay ="300">
                 <div class="card">
-                  <a href="sai-article-detail.html">
-                    <img src="assets/img/sai/news1.jpg" alt="Image" class="card-img-top">
-                  </a>
+                  <!-- <a href="sai-article-detail.html"> -->
+                    <img id="post-thumbnail0" src="" alt="Image" class="card-img-top">
+                  <!-- </a> -->
                   <div class="card-body align-items-start">
                     <div class="mb-3">
-                      <h5 class="text-darkblue">SAI Summer Series in Prasanthi Nilayam: 17 - 21 July</h5>
+                      <h5 id="post-news0"class="text-darkblue shorttitle"></h5>
                     </div>
-                    <p>
-                      SSIO is introducing a new initiative – SAI (Self-Awareness and Inspiration) Summer
-                      Series: An international retreat in Prasanthi Nilayam...
+                    <p id="post-excerpt0"  class="clamp">
                     </p>
-                    <a class="hover-arrow text-darkblue" href="sai-article-detail.html">Read More</a>
+                    <a id="post-id0" class="hover-arrow text-darkblue" href="">Read More</a>
                   </div>
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
                 <div class="card">
-                  <a href="sai-article-detail.html">
-                    <img src="assets/img/sai/news2.jpg" alt="Image" class="card-img-top">
-                  </a>
+                  <!-- <a href="sai-article-detail.html"> -->
+                    <img  id="post-thumbnail1" src="" alt="Image" class="card-img-top">
+                  <!-- </a> -->
                   <div class="card-body align-items-start">
                     <div class="mb-3">
-                      <h5 class="text-darkblue">Joint Statement by SSIO, SSSCT and SSSSO India</h5>
+                      <h5 id="post-news1" class="text-darkblue  shorttitle"></h5>
                     </div>
-                    <p>
-                      Joint statement by the Sathya Sai International Organisation, Sri Sathya Sai Central
-                      Trust and Sri Sathya Sai Service Organisation of India.
+                    <p id="post-excerpt1" class="clamp">
+                     
                     </p>
-                    <a class="hover-arrow text-darkblue" href="sai-article-detail.html">Read More</a>
+                    <a id="post-id1" class="hover-arrow text-darkblue" href="">Read More</a>
                   </div>
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
                 <div class="card">
-                  <a href="sai-article-detail.html">
-                    <img src="assets/img/sai/news4.jpg" alt="Image" class="card-img-top">
-                  </a>
+                  <!-- <a href="sai-article-detail.html"> -->
+                    <img id="post-thumbnail2" src=""  alt="Image" class="card-img-top">
+                  <!-- </a> -->
                   <div class="card-body align-items-start">
                     <div class="mb-3">
-                      <h5 class="text-darkblue">Orientation Manual for SSIO Officers</h5>
+                      <h5 id="post-news2" class="text-darkblue  shorttitle"></h5>
                     </div>
-                    <p>
-                      The Orientation Programme for all incoming and continuing SSIO officers at local, national and international levels is available now.
+                    <p id="post-excerpt2"  class="clamp">
+                       
                     </p>
-                    <a class="hover-arrow text-darkblue" href="sai-article-detail.html">Read More</a>
+                    <a  id="post-id2" class="hover-arrow text-darkblue" href="">Read More</a>
                   </div>
                 </div>
               </div>
-               </div> -->
+               </div>
                
-                  <div id="post-content">
+                  <!-- <div id="post-content">
                     <object  width="100%" height="900px" style="min-height:550px;" data="https://community.sai.mongrov.com/"></object>
                   </div>
-
-                  <div id="post-content">
-                      <!-- <object  width="100%" height="900px" style="min-height:550px;" data="https://community.sai.mongrov.com/"></object> -->
-                     
-                    </div>
+                  <div id="post-news"  width="100%" height="550px" style="max-height:550px;">
+                    
+                  </div> -->
+                    <!-- <section>
+                    <button id = "btnGreet">Greet</button>
+                    <br/> <br/>
+                    <div id = "greetingDiv"> </div>
+                 </section> -->
+  
+                
+                  
     
   </body>
           </div>
@@ -317,6 +320,7 @@ body{
               /* Remove the attribute, and call this function once more: */
               elmnt.removeAttribute("w3-include-html");
               includeHTML();
+              loadNews();
             }
           }
           xhttp.open("GET", file, true);
@@ -326,10 +330,87 @@ body{
         }
       }
     }
+
+    function loadNews() {
+        // post-news
+        const name = {
+            "input": {
+                "terms": {
+                    "cat": "testcat1",
+                    "view": "top",
+                    "limit": 3,
+                    "itemsPerPage": 3
+                },
+                "enableCache": false,
+                "enableTotal": true
+            }
+          };
+        // $("#post-news").html('loading....');
+        $.ajax({url: "https://community.sai.mongrov.com/graphql",
+                  contentType: "application/json",type:'POST',
+                  data: JSON.stringify({ operationName:"multiPostQuery", query:`query multiPostQuery($input: MultiPostInput) {
+  posts(input: $input) {
+    results {
+      ...PostsList
+      __typename
+    }
+    totalCount
+    __typename
+  }
+}
+fragment PostsList on Post {
+  _id
+  title
+  url
+  postedAt
+  createdAt
+  excerpt
+  thumbnailUrl
+  __typename
+}`,
+variables: name }),
+
+                  success: function(result) {
+                    const totalCount = result.data.posts.totalCount;
+                    console.log('abcd',result.data.posts, totalCount);
+                    for (var i in result.data.posts.results)
+{
+
+      // var toAdd = document.createDocumentFragment();
+    var title = result.data.posts.results[i].title;
+
+    // console.log('ezhil title ',title);
+    
+    // p.innerHTML  = title;
+     $("#post-news"+i).html(title);
+     
+     
+
+      var excerpt = result.data.posts.results[i].excerpt;
+      $("#post-excerpt"+i).html(excerpt);
+      
+    var thumbnail = result.data.posts.results[i].thumbnailUrl;
+    $("#post-thumbnail"+i).attr("src", thumbnail);
+     var id = result.data.posts.results[i]._id;
+    $("#post-id"+i).attr("href", 'https://community.sai.mongrov.com/posts/'+id);
+    console.log('myid',id);
+}
+
+
+                    //  $("#post-news").html("<h1>"+ result.data.posts.+"</h1>");
+ console.log(JSON.stringify(result))
+}
+               });
+       }
+
     </script>
 
   <script>
     includeHTML();
+    loadNews();
+  </script>
+
+ <script type="text/javascript">
   </script>
 
 <!-- STATIC HEADER AND FOOTER ENDS HERE -->

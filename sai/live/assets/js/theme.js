@@ -814,21 +814,26 @@
       _proto.positionContainer = function positionContainer(offsetLeft) {
         if (this.container) {
           this.container.style.left = "-" + offsetLeft + "px";
+          console.log("offset-left" + offsetLeft);
         } else {
           throw new TypeError('No element matching .dropdown-menu.container found.');
         }
       };
 
       _proto.positionContent = function positionContent(windowWidth, offsetLeft) {
+        console.log("offsetLeft=" + offsetLeft + "windowWidth=" + windowWidth);
+
         if (this.content) {
           var leftValue; // let topValue;
 
           var contentRect = mrDropdownGrid.getDimensionsFromElement(this.content);
-          var contentWidth = contentRect.width; // If submenu, the left of the content needs to sit to the side of the trigger's content
+          var contentWidth = contentRect.width;
+          console.log("content-width" + contentWidth); // If submenu, the left of the content needs to sit to the side of the trigger's content
 
           if (this.isSubmenu) {
             this.getParentMenu();
-            var parentContent = mrDropdownGrid.getDimensionsFromElement(this.parentMenu.content); // Calculate X Offset
+            var parentContent = mrDropdownGrid.getDimensionsFromElement(this.parentMenu.content);
+            console.log("parent-content" + parentContent); // Calculate X Offset
 
             if (parentContent.offsetLeft + parentContent.width + contentWidth <= windowWidth) {
               // Submenu can fit next to parent menu
@@ -846,10 +851,12 @@
           } else {
             // Not a submenu, and there is room to fit normally and sit below trigger
             leftValue = offsetLeft;
+            console.log("leftValue" + leftValue);
           }
 
           var leftString = Math.round(leftValue) + "px";
           this.content.style.left = leftString;
+          console.log("left-string" + leftString);
         } else {
           throw new TypeError('No [data-dropdown-content] element was found.');
         }
