@@ -13889,4 +13889,117 @@ img.bg-img:before {
 .row .speaks {
   margin-top: 20px; }
 
+.tooltip_cust {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  cursor: default; }
+
+.tooltip_cust h3 {
+  margin: 12px 0; }
+
+.bottom_one {
+  min-width: 200px;
+  /*max-width:400px;*/
+  top: 100px;
+  left: 50%;
+  height: auto;
+  -webkit-transform: translate(-13%, 0);
+          transform: translate(-13%, 0);
+  padding: 10px;
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: normal;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  box-sizing: border-box;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  display: none;
+  opacity: 0.8;
+  text-align: left; }
+
+.bottom_one button {
+  opacity: 1; }
+
+.tooltip_cust:hover .bottom_one {
+  display: block;
+  width: 900px;
+  cursor: default; }
+
+.bottom_two {
+  min-width: 200px;
+  /*max-width:400px;*/
+  top: 100px;
+  left: 25%;
+  height: auto;
+  -webkit-transform: translate(-34%, 0);
+          transform: translate(-34%, 0);
+  padding: 10px;
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: normal;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  box-sizing: border-box;
+  display: none;
+  opacity: 0.8;
+  text-align: left; }
+
+.tooltip_cust:hover .bottom_two {
+  display: block;
+  width: 900px;
+  cursor: default; }
+
+.bottom_three {
+  min-width: 200px;
+  /*max-width:400px;*/
+  top: 100px;
+  right: 25%;
+  height: auto;
+  -webkit-transform: translate(38%, 0);
+          transform: translate(38%, 0);
+  padding: 10px;
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: normal;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  box-sizing: border-box;
+  display: none;
+  opacity: 0.8;
+  text-align: left; }
+
+.tooltip_cust:hover .bottom_three {
+  display: block;
+  width: 900px;
+  cursor: default; }
+
+.bottom_four {
+  min-width: 200px;
+  /*max-width:400px;*/
+  top: 100px;
+  right: 50%;
+  height: auto;
+  -webkit-transform: translate(15%, 0);
+          transform: translate(15%, 0);
+  padding: 10px;
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: normal;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  box-sizing: border-box;
+  display: none;
+  opacity: 0.8;
+  text-align: left; }
+
+.tooltip_cust:hover .bottom_four {
+  display: block;
+  width: 900px;
+  cursor: default; }
+
 /*# sourceMappingURL=theme.css.map */
