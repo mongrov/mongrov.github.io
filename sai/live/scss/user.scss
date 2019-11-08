@@ -1,0 +1,596 @@
+// 
+// 
+// user.scss
+//
+// Place your own custom CSS or SCSS rules below this line, these rules will override any Bootstrap and theme variables.
+
+.logo-img {
+    width: auto;
+    height: 65px;
+ }
+
+ .btn-primary {
+    color: #fff;
+    background-color: #004071;
+    border-color: #004071;
+}
+
+.btn-steel-blue {
+    color: #004071;
+    background: #3396CE;
+    border-color: #3396CE;
+}
+
+.btn-steel-blue.nav-link.btn.active {
+    color: #004071;
+    background: #3396CE;
+    border-color: #3396CE;
+}
+
+.btn-yellow {
+    color: #004071;
+    background-color: #FEDD73;
+    border-color: #FEDD73;
+}
+
+.btn-yellow.nav-link.btn.active  {
+    color: #004071;
+    background-color: #FEDD73;
+    border-color: #FEDD73;
+}
+nav[data-overlay].navbar-toggled-show.navbar-dark {
+    background: #004071 !important;
+}
+
+
+
+.btn-pink {
+    color: #004071;
+    background-color: #F4B6D1;
+    border-color: #F4B6D1;
+}
+.btn-pink.nav-link.btn.active {
+    color: #004071;
+    background-color: #F4B6D1;
+    border-color: #F4B6D1;
+}
+.text-edu {
+    color: #109BCD !important;
+}
+.text-yellow {
+    color: #ffb912 !important;
+}
+.text-pink-dark {
+    color: #EC6597 !important;
+}
+.services-cont {
+    border-radius: 10px;
+    background: #FFFFFF;
+    padding-bottom: 5px;
+}
+
+.bg-black {
+    background-color: #000000 !important;
+}
+footer .nav-link:not(.active):not(.disabled):not(:hover) {
+    opacity: 1;
+}
+
+button.plyr__control--overlaid {
+    background: #004071;
+}
+.plyr--full-ui input[type='range'] {
+    color: #004071;
+}
+.plyr--video .plyr__control:hover {
+    background: #004071;
+}
+svg.icon * {
+    fill: #004071;
+}
+.navbar-toggler:hover, .navbar-toggler:focus {
+    outline: none;
+}
+.p-lead {
+    font-size: 1.15em;
+    // font-weight: bold !important;
+}
+.bg-darkblue{
+    background: #004071 !important;
+  }
+svg.bg-darkblue *{
+    fill: #004071;
+}
+.text-darkblue {
+    color: #004071 !important;
+}
+  
+  .text-pink {
+    color: #F4B6D1 !important;
+  }
+svg.bg-light * {
+    fill: #f8f9fa !important;
+}
+
+
+ 
+  
+  .bg-stupi {
+      background:#FDEEF4 url(assets/img/sai/stupi.png);
+      background-size: 550px;
+      background-repeat: no-repeat;
+      background-position: -60px 60px;
+  }
+
+  .bg-pink {
+    background: #F4B6D1 !important;
+  }
+
+ #thought-slider [data-flickity].controls-light .flickity-page-dots .dot {
+    background: #004071;
+}
+
+#thought.header-desktop-app .row:last-of-type {
+    margin-bottom: -35.5rem;
+    z-index: 2;
+    position: relative;
+    margin-top: 140px !important;
+}
+
+#thought.header-desktop-app + section {
+    padding-top: 0;
+    position: relative;
+    z-index: -111;
+    min-height: 500px;
+}
+
+.news-img-container {
+    display: block;
+    overflow: hidden;
+    max-height: 210px;
+}
+
+.bg-stupi1 {
+    background: #e8f8ff url(assets/img/sai/stupi.png);
+    background-size: 550px;
+    background-repeat: no-repeat;
+    background-position: -60px 60px;
+}
+
+.bg-lightblue {
+    background: #e8f8ff !important;
+}
+
+.btn-blue1.nav-link.btn.active {
+    color: #FFFFFF;
+    background-color: #004071;
+    border-color: #004071;
+    border-radius: 30px;
+}
+
+section .nav-link.btn-blue1:not(.active):not(.disabled):not(:hover) {
+    opacity: 1;
+    color: #004071;
+    border-color: #dee2e6;
+    background: #f8f9fa;
+    border-radius: 30px;
+}
+.nav-link.btn-blue1:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #004071;
+    border-color: #004071;
+    border-radius: 30px;
+}
+.text-blue1 {
+    color: #e8f8ff !important;
+}
+
+.text-count-blue {
+    color: #3755BE !important;
+}
+.text-blue2 {
+    color: #90ddff !important;
+}
+.navbar[data-sticky="top"].scrolled.navbar-dark {
+    background: #004071;
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.border-radius-100 {
+    border-radius: 100px !important;
+}
+.text-orange {
+    color: #D64329 !important;
+}
+.border-pink {
+border-color: #F7B6D0 !important;
+}
+
+.border-heading:after {
+    width: 170px;
+    height: 1px;
+    content: ' ';
+    background: #D64329;
+    display: block;
+    margin-top: 12px;
+}
+.border-heading-center:after {
+    width: 170px;
+    height: 1px;
+    content: ' ';
+    background: #D64329;
+    display: block;
+    margin: 10px auto;
+}
+
+.border-heading-sm:after {
+    width: 90px;
+    height: 1px;
+    content: ' ';
+    background: #D64329;
+    display: block;
+    margin-top: 5px;
+}
+
+
+.text-grey-blue {
+    color: #484D56 !important;
+}
+
+.border-grey {
+    border-color: #937A8B !important;
+    }
+
+.bg-grey {
+    background: #E3E4E5 !important;
+}
+
+.radiosai-logo {
+    max-width: 50%;
+}
+.sticky-top {
+    top: 8rem !important;
+}
+
+.banner-text {
+    background: #000000ad;
+    display: table;
+    padding: 20px;
+    float: right;
+}
+
+.reaching-prasanthinilayam {
+    position: fixed;
+    z-index: 9999999;
+    bottom: 0;
+    background: #FFF;
+    padding: 1% 0%;
+    width: 100%;
+    display: none;
+}
+
+@media only screen and (max-width:640px){
+    .reaching-prasanthinilayam {
+        display: block;
+    }
+}
+svg.icon.icon-light * {
+    fill: #FFFFFF !important;
+}
+.banner-stats {
+    background: #0000006a;
+}
+
+.search-icon {
+display: none;
+}
+.search-icon1{
+    display: block;
+ }
+
+@media only screen and (max-width:991px){
+    .search-icon {
+        display: block;
+        }
+    .search-icon1{
+            display: none;
+         }
+}
+
+a.banner-icon {
+    cursor: default;
+}
+
+a.banner-icon:hover svg.icon.icon-light * {
+    fill: #F4B6D1 !important;
+}
+
+a.banner-icon:hover h5.text-light {
+    color: #F4B6D1 !important;
+}
+
+.border-heading-center:after {
+    width: 170px;
+    height: 1px;
+    content: ' ';
+    background: #D64329;
+    display: block;
+    margin-top: 12px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.max-width-50 {
+    max-width: 50% !important;
+}
+
+.event-date {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: #005fa7d6;
+    padding: 0 12px;
+}
+
+.left-circle {
+    top: 330px;
+    left: 10%;
+}
+
+.right-circle {
+    top: 330px;
+    right: 10%;
+}
+.projects-heading {
+    border-bottom: 7px solid #004071;
+}
+
+.data-mobile {
+    display: none;
+}
+
+.data-desktop {
+    display: flex;
+}
+
+@media only screen and (max-width:640px){
+    .data-desktop {
+        display: none;
+    }
+
+    .data-mobile {
+        display: flex;
+    }
+    iframe#vid_frame {
+        width: 100%;
+    }
+}
+
+
+a.card.pinkhover:hover h6 {
+    color: #F4B6D1;
+}
+
+
+.bg-img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    
+    }
+    .bg-img:not([class*='absolute']) {
+      position: absolute; }
+    .bg-img + .card-body {
+      position: relative;
+      z-index: 1; }
+  
+  img.bg-img {
+    object-fit: cover; }
+
+   
+
+    img.bg-img:before {
+        background: linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,0));
+        content: "";
+        position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+      }
+//gradient navigation headers
+.transparent-nav  {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.25) 70%, rgba(0, 0, 0, 0.25) 50%,  rgba(0, 0, 0, 0) 100%) ;
+    }
+
+    .navbar-dark{
+        border-bottom:none !important;
+    }
+    
+.flickity-prev-next-button{
+    margin:0 25px;
+}
+//youtube video round corner 
+.round-corner{
+    border-radius: 0.625rem !important;
+}
+
+
+.tran{
+    
+    transform:translate(575px, -400px)
+
+}
+
+#demo-1{
+    background-color: #F3F5FB !important;
+}
+
+// /* tab color change when not active
+// .nav-link:not(.active):not(.disabled):not(:hover), .nav-link:not(.active):not(.disabled):not(:hover){
+//      background-color:transparent;
+//      border:none;
+//     color:gray;
+// }*/
+
+
+.post-contain{
+    width:100%;
+    height:auto;
+    overflow:hidden;
+}
+
+.latestVideoEmbed{
+    min-height:340px;
+}
+.card-img-top{
+    max-height: 220px;
+    object-fit: cover;
+}
+.shorttitle {
+    height: 63px;
+    overflow: hidden;
+}
+
+.clamp{
+        margin-top:-6px;
+        height:70px;
+        overflow: hidden;
+}
+
+.row .speaks {
+    margin-top: 20px;
+}
+
+// tooltip starts
+    
+.tooltip_cust {
+    display:inline-block;
+    position:relative;
+    text-align:center;
+    cursor:default;
+}
+
+.tooltip_cust h3 {margin:12px 0;}
+
+ .bottom_one {
+    min-width:200px;
+    /*max-width:400px;*/
+    top:100px;
+    left:50%;
+    height:auto;
+    transform:translate(-13%, 0);
+    padding:10px;
+    color:#ffffff;
+    background-color:#000000;
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    position:absolute;
+    // z-index:99999999;
+    box-sizing:border-box;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+    display:none;
+    opacity:0.8;
+    text-align:left;
+}
+
+.bottom_one button{
+    opacity:1;
+}
+
+.tooltip_cust:hover .bottom_one {
+    display:block;
+    width:900px;
+    cursor:default;
+}
+
+// .tooltip_cust:hover {
+//     color:#f4b6d1;
+// }
+
+.bottom_two {
+    min-width:200px;
+    /*max-width:400px;*/
+    top:100px;
+    left:25%;
+    height:auto;
+    transform:translate(-34%, 0);
+    padding:10px;
+    color:#ffffff;
+    background-color:#000000;
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    position:absolute;
+    // z-index:99999999;
+    box-sizing:border-box;
+    display:none;
+    opacity:0.8;
+    text-align:left;
+}
+
+.tooltip_cust:hover .bottom_two {
+    display:block;
+    width:900px;
+    cursor:default;
+}
+
+.bottom_three {
+    min-width:200px;
+    /*max-width:400px;*/
+    top:100px;
+    right:25%;
+    height:auto;
+    transform:translate(38%, 0);
+    padding:10px;
+    color:#ffffff;
+    background-color:#000000;
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    position:absolute;
+    // z-index:99999999;
+    box-sizing:border-box;
+    display:none;
+    opacity:0.8;
+    text-align:left;
+}
+
+.tooltip_cust:hover .bottom_three {
+    display:block;
+    width:900px;
+    cursor:default;
+}
+
+.bottom_four {
+    min-width:200px;
+    /*max-width:400px;*/
+    top:100px;
+    right:50%;
+    height:auto;
+    transform:translate(15%, 0);
+    padding:10px;
+    color:#ffffff;
+    background-color:#000000;
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    position:absolute;
+    // z-index:99999999;
+    box-sizing:border-box;
+    display:none;
+    opacity:0.8;
+    text-align:left;
+}
+
+.tooltip_cust:hover .bottom_four {
+    display:block;
+    width:900px;
+    cursor:default;
+}
+
+// tooltip ends
