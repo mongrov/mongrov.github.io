@@ -13630,4 +13630,29 @@ span#star {
 .width-100 {
   width: 100% !important; }
 
+.our-solution-slider .flickity-prev-next-button.previous, .our-solution-slider .flickity-prev-next-button.next {
+  display: none; }
+
+.our-solution-slider .flickity-page-dots {
+  left: 0 !important; }
+
+.our-solution-slider .icon {
+  flex-shrink: 0;
+  width: auto;
+  height: 3.5rem; }
+
+.solution-bg {
+  background: url(../img/mong/solution-bg.png) no-repeat;
+  background-size: contain; }
+
+.icon-big {
+  flex-shrink: 0;
+  width: auto;
+  height: 2.5rem; }
+
+.icon-big1 {
+  flex-shrink: 0;
+  width: auto;
+  height: 3.5rem; }
+
 /*# sourceMappingURL=theme.css.map */
