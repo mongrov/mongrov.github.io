@@ -13606,7 +13606,7 @@ span#star {
   background-color: #00B8FF !important; }
 
 .community-bg {
-  background-color: #20af87 !important; }
+  background-color: #3AD39E !important; }
 
 .flickity-page-dots {
   bottom: 1.875rem !important;
@@ -13654,5 +13654,8 @@ span#star {
   flex-shrink: 0;
   width: auto;
   height: 3.5rem; }
+
+.bg-primary-green {
+  background: #f3f8f5 !important; }
 
 /*# sourceMappingURL=theme.css.map */
