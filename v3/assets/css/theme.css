@@ -13658,4 +13658,14 @@ span#star {
 .bg-primary-green {
   background: #f3f8f5 !important; }
 
+.btn-white {
+  color: #1B1F3B;
+  background-color: #daebf8;
+  border-color: #daebf8; }
+
+.btn-white:hover {
+  color: #1B1F3B;
+  background-color: #fff;
+  border-color: #fff; }
+
 /*# sourceMappingURL=theme.css.map */
