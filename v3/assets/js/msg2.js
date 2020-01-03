@@ -23,7 +23,7 @@ var chatMessages = [{
   name: "ms3",
   avatarname:"S",
   myname:"Sam",
-  msg: " <div> <img class='float-left mr-2' src='v3/assets/img/mong/gift.png' width='60px' /> Your support as made <br> my job much easier.</div>",
+  msg: " <div> <img class='float-left mr-2' src='assets/img/mong/gift.png' width='60px' /> Your support as made <br> my job much easier.</div>",
   delay: 1000,
   align: "right",
   showTime: true,
