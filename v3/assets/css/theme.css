@@ -13683,6 +13683,18 @@ span#star {
 .lh-2 {
   line-height: 1.3 !important; }
 
+section {
+  overflow: hidden; }
+
+.hero-img {
+  margin-top: -150px;
+  z-index: -1; }
+
+@media only screen and (max-width: 768px) {
+  .hero-img {
+    margin-top: 20px;
+    z-index: 1; } }
+
 @media (min-width: 768px) {
   .header-desktop-app .row:last-of-type {
     margin-bottom: 0 !important; } }
