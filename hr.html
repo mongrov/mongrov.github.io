@@ -108,14 +108,6 @@
     <div class="col-xl-12 col-lg-8 col-md-9">
       <h1 class="display-3 lh-2">Develop a more employee-focused culture</h1>
       <p class="lead mb-md-6 mb-0">Employees who are engaged are more likely to improve customer relationships, <br>with a resulting 20% increase in bottom-line</p>
-      <!-- <div class="d-flex row justify-content-center mt-4">
-        <a class="col-lg-2 col-md-4 col-sm-5 col-5 d-block" href="https://play.google.com/store/apps/details?id=com.mongrov.app" target="_blank" rel="noopener">
-          <img src="v3/assets/img/mong/google-play-badge.svg" alt="Playstore" title="Playstore">
-        </a>
-        <a class="col-lg-2 col-md-4 col-sm-5 col-5 d-block" href="https://itunes.apple.com/us/app/mongrov/id1313167859?ls=1&mt=8" target="_blank" rel="noopener">
-          <img src="v3/assets/img/mong/app-store-badge.svg" alt="Appstore" title="Appstore">
-        </a>
-      </div> -->
       <img class="col-xl-11 hero-img" src="v3/assets/img/mong/hr-hero.png" alt="Image">  
     </div> 
   </div>
@@ -153,7 +145,7 @@
             <div class="col-xl-5 col-md-6" data-aos="fade-right">
               <h3 class="h2 text-center text-md-left">Listen & value every voice</h3>
               <p class="lead text-center text-md-left">
-                Make employee feel valued and included by instant feedback from frontline workforce to his enablers.</p>
+                Make the employee feel valued and included by instant feedback from the frontline workforce to his enablers.</p>
             </div>
             <div class="col-lg-auto col-md-6 mb-4 mb-md-0" data-aos="fade-left">
                 <div class="decoration position-relative">
@@ -245,7 +237,7 @@
               <h2 class="h1 text-center">Easy integrations</h2>
             </div>
           </div>
-          <div class="row">
+          <div class="row mb-6">
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
               <div class="card card-body align-items-center">
                   <img class="icon-round icon-lg mb-3 mb-md-4" src="v3/assets/img/mong/hr-integration-1.svg" alt="icon">
@@ -274,8 +266,19 @@
               </div>
             </div>
           </div>
+
+          <div class="card card-body border-0 o-hidden mb-0 bg-primary text-light">
+            <div class="position-relative d-flex flex-column flex-md-row justify-content-between align-items-center">
+              <div class="h3 text-center mb-md-0">Request case study</div>
+              <a href="javascript:;" data-toggle="modal" data-target="#human-resource" class="btn btn-lg btn-white">
+              Request </a>
+            </div>
+          </div>
+          </div>
+
         </div>
   </section>
+
 
     <section class="bg-primary-alt">
       <div class="container">
@@ -317,7 +320,7 @@
                 <img class="icon-round icon-lg mb-3 mb-md-4" src="v3/assets/img/mong/hr-benefits-4.svg" alt="icon">
               <h4 class="lh-2 text-center">Live <br>support</h4>
               <p class="text-center">
-                Let employees connect with your shared service organaization on any HR queries.
+                Let employees get connected with immediate support on any HR queries.
               </p>            
             </div>
           </div>
@@ -552,6 +555,72 @@
         </g>
       </svg>
     </a>
+
+
+    <!-- Modal starts here -->
+
+    <div class="modal fade" id="human-resource" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <svg class="icon bg-dark" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.2426 6.34311L6.34309 16.2426C5.95257 16.6331 5.95257 17.2663 6.34309 17.6568C6.73362 18.0473 7.36678 18.0473 7.75731 17.6568L17.6568 7.75732C18.0473 7.36679 18.0473 6.73363 17.6568 6.34311C17.2663 5.95258 16.6331 5.95258 16.2426 6.34311Z"
+                fill="#212529" />
+                <path d="M17.6568 16.2426L7.75734 6.34309C7.36681 5.95257 6.73365 5.95257 6.34313 6.34309C5.9526 6.73362 5.9526 7.36678 6.34313 7.75731L16.2426 17.6568C16.6331 18.0473 17.2663 18.0473 17.6568 17.6568C18.0474 17.2663 18.0474 16.6331 17.6568 16.2426Z" fill="#212529"
+                />
+              </svg>
+
+            </button>
+            <div class="m-3">
+             
+              <div class="text-center my-3">
+                <h4 class="h3 mb-1">Request case study</h4>
+               
+              </div>
+              <form action="https://formspree.io/hello@mongrov.com" method="POST">
+                <div class="form-group">
+                  <label class="mb-0">Name</label>
+                  <input type="text" class="form-control" name="Name" required>
+                </div>
+                <div class="form-group">
+                  <label class="mb-0">Email:</label>
+                  <input type="email" class="form-control" name="Email" required>
+                </div>
+                <div class="form-group">
+                  <label class="mb-0">What is the problem we are trying to slove?</label>
+                  <input type="text" class="form-control" name="Problem" required>
+                </div>
+                <div class="form-group">
+                  <label class="mb-0">How can we address the problem?</label>
+                  <input type="text" class="form-control" name="Solution" required>
+                </div>
+                <div class="form-group">
+                  <label class="mb-0">What are the viable options available to implement the solution?</label>
+                  <input type="text" class="form-control" name="Approach" required>
+                </div>
+                <button type="submit" class="btn btn-block btn-primary-3 btn-loading" data-loading-text="Sending">
+                  <svg class="icon" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>Icon For Loading</title>
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g>
+                        <polygon points="0 0 24 0 24 24 0 24" opacity="0"></polygon>
+                      </g>
+                      <path d="M12,4 L12,6 C8.6862915,6 6,8.6862915 6,12 C6,15.3137085 8.6862915,18 12,18 C15.3137085,18 18,15.3137085 18,12 C18,10.9603196 17.7360885,9.96126435 17.2402578,9.07513926 L18.9856052,8.09853149 C19.6473536,9.28117708 20,10.6161442 20,12 C20,16.418278 16.418278,20 12,20 C7.581722,20 4,16.418278 4,12 C4,7.581722 7.581722,4 12,4 Z"
+                      fill="#000000" fill-rule="nonzero" transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) "></path>
+                    </g>
+                  </svg>
+                  <span>Send</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal ends here -->
+
    
     <!-- Required vendor scripts (Do not remove) -->
     <script type="text/javascript" src="v3/assets/js/jquery.min.js"></script>
