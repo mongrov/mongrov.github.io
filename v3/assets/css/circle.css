@@ -56,7 +56,7 @@
   font-size: 240px;
 }
 .c100.small {
-  font-size: 90px;
+  font-size: 65px;
 }
 .c100 > span {
   position: absolute;
@@ -824,7 +824,7 @@
   width: 3.33em;
   line-height: 3.33em;
   font-size: 0.3em;
-  color: #307bbb;
+  color: #3A69DA;
 }
 .c100:hover:after {
   top: 0.04em;

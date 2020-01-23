@@ -13699,4 +13699,10 @@ section {
   .header-desktop-app .row:last-of-type {
     margin-bottom: 0 !important; } }
 
+.circle {
+  position: relative;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%; }
+
 /*# sourceMappingURL=theme.css.map */
