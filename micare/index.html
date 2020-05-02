@@ -40,6 +40,9 @@
     html {
       scroll-behavior: smooth;
     }
+    footer .nav-link:not(.active):not(.disabled):not(:hover) {
+    opacity: 1;
+    }
   </style>
 </head>
 
@@ -83,18 +86,15 @@
                 <a href="#communicate-naturally" class="nav-link dropdown-toggle" data-toggle="dropdown-grid"
                   aria-expanded="false" aria-haspopup="true">Communicate</a>
               </li>
-              <li class="nav-item dropdown mx-2">
-                <a href="#footer" class="nav-link dropdown-toggle" data-toggle="dropdown-grid"
-                  aria-expanded="false" aria-haspopup="true">Contact</a>
-              </li>
+             
 
             </ul>
           </div>
         </div>
-        <!-- <div class="collapse navbar-collapse justify-content-end col flex-fill px-0"><a href="#contact"
-            class="btn btn-primary ml-lg-3">Contact</a>
+        <div class="collapse navbar-collapse justify-content-end col flex-fill px-0"><a href="https://demo.mi.team/"
+          class="btn btn-primary ml-lg-3">Login</a>
 
-        </div> -->
+      </div>
       </div>
     </nav>
   </div>
@@ -210,10 +210,22 @@
 
   <footer class="py-4 bg-primary text-light" id="footer">
     <div class="container">
-     
+      
       <div class="row justify-content-center">
         <div class="col col-md-auto text-center">
-          <small class="text-muted">&copy;2020 <a href="https://mongrov.com">Mongrov, Inc.</a>
+          <ul class="nav flex-row">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#benefits" class="nav-link">Benefits</a>
+            </li>
+            <li class="nav-item">
+              <a href="#communicate-naturally" class="nav-link">Communicate</a>
+            </li>
+          </ul>
+
+          <small class="text-muted">©2020 Mongrov <a href="#">Privacy Policy</a> and <a href="#">Terms of Service.</a>
           </small>
         </div>
       </div>
