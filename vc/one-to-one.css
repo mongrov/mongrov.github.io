@@ -1,10 +1,10 @@
 body {
-  background-color: darkslategrey;
+  background-color: darkslateblue;
 }
 
 .primary--1IbqAO {
-  background-color: #FFFFFF;
-  border: 3px solid #FFFFFF;
+  background-color: #FFF;
+  border: 3px solid #FFF;
   color: #2F4F4F;
 }
 
@@ -13,5 +13,5 @@ body {
 }
 
 .speaking--Z2tUpzD button {
-  color: #FFFF00!important;
+  color: #fff!important;
 }
