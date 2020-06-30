@@ -1,0 +1,17 @@
+body {
+  background-color: seagreen;
+}
+
+.primary--1IbqAO {
+  background-color: #FFF;
+  border: 3px solid #FFF;
+  color: #2F4F4F;
+}
+
+.primary--1IbqAO:hover {
+  color: #2F4F4F!important;
+}
+
+.speaking--Z2tUpzD button {
+  color: #fff!important;
+}
