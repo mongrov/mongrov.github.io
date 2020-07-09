@@ -15,11 +15,17 @@ body {
 .speaking--Z2tUpzD button {
   color: #fff!important;
 }
+.presentationArea--1VFCwU .primary--1IbqAO {
+  background: #45546d;
+  color: #ffffff;
+}
 
 /* Header styles */
 .navbar--Z2lHYbG {
   background: #f5f5f7;
   border-left: 1px solid #dddee0;
+  padding-left: 50px;
+  padding-right: 20px;
 }
 header .ghost--Z136aiN.default--Z19H5du, header .presentationTitle--1LT79g {
   color: #45546d;
@@ -40,4 +46,7 @@ header .recordingControlOFF--26cqft {
 header .recordingControlON--ZTT4Mq {
   background-color: #2e8b57;
   border: 2px solid #2e8b57;
+}
+.messages--Z1feno8 {
+  margin-top: 40px;
 }
