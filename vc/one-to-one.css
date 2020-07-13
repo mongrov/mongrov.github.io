@@ -27,6 +27,7 @@ body {
   padding-left: 50px;
   padding-right: 35px;
   height: 73px;
+  padding-top: 7px;
 }
 header .ghost--Z136aiN.default--Z19H5du, header .presentationTitle--1LT79g {
   color: #45546d;
@@ -67,4 +68,10 @@ header .recordingControlON--ZTT4Mq {
 .footer--2qrGC5 .primary--1IbqAO, .footer--2qrGC5 .primary--1IbqAO:hover {
   background: #45546d;
   color: #FFF;
+}
+header .md--Q7ug4 {
+  font-size: 14px;
+}
+.ghost--Z136aiN.default--Z19H5du:focus, .buttonWrapper--x8uow:focus .ghost--Z136aiN.default--Z19H5du {
+  box-shadow: none !important;
 }
