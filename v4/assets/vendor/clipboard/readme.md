@@ -59,7 +59,7 @@ The value you include on this attribute needs to match another's element selecto
 
 <!-- Trigger -->
 <button class="btn" data-clipboard-target="#foo">
-    <img src="assets/clippy.svg" alt="Copy to clipboard">
+    <img src="v4/assets/clippy.svg" alt="Copy to clipboard">
 </button>
 ```
 
