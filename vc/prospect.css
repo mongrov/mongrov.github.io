@@ -21,14 +21,6 @@ body {
 }
 
 /* Header styles */
-.navbar--Z2lHYbG {
-  background: #f5f5f7;
-  border-left: 1px solid #dddee0;
-  padding-left: 50px;
-  padding-right: 38px;
-  height: 73px;
-  padding-top: 7px;
-}
 header .ghost--Z136aiN.default--Z19H5du, header .presentationTitle--1LT79g {
   color: #45546d;
 }
@@ -75,3 +67,32 @@ header .md--Q7ug4 {
 .ghost--Z136aiN.default--Z19H5du:focus, .buttonWrapper--x8uow:focus .ghost--Z136aiN.default--Z19H5du {
   box-shadow: none !important;
 }
+
+/* Style changes for Vanity URL  */
+
+header .dropdown--Z10dYoc {
+    display: none;
+}
+
+.arrowRight--Zbqp1D, .arrowLeft--1CFBz1 {
+    color: #45546d;
+}
+
+.arrowLeft--1CFBz1 {
+    left: 10px;
+}
+
+.arrowRight--Zbqp1D {
+    left: 40px;
+}
+
+.navbar--Z2lHYbG {
+    background: #f5f5f7;
+    border-left: 1px solid #dddee0;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 73px;
+    padding-top: 7px;
+}
+
+/* End Style changes for Vanity URL  */
