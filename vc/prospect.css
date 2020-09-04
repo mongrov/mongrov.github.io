@@ -91,10 +91,15 @@ body {
     padding-top: 7px;
 }
 
-section.wrapper--Z20hQYP {
+/* section.wrapper--Z20hQYP {
     background-color: darkslateblue;
     margin: 5px;
     border: 3px solid #d5d5d5;
+} */
+
+section.wrapper--Z20hQYP {
+  background-color: darkslateblue;
+  border: 5px solid #00b8ff;
 }
 
 .recordingStatusViewOnly--Z9UOXT {
