@@ -23,7 +23,8 @@
 }
 
 body {
-  font-family: 'Mukta Malar', sans-serif;
+  /* font-family: 'Mukta Malar', sans-serif; */
+  font-family: 'Baloo Thambi 2', cursive;
   font-size: 18px;
   line-height: 1.7;
   color: #383340;
@@ -166,7 +167,7 @@ hr {
 }
 
 .bg-light {
-  background-color: #f8f8f8 !important;
+  background-color: #f3f5fb !important;
 }
 
 .bg-white {
