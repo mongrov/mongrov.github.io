@@ -46,6 +46,10 @@ a:hover {
     background-color: #f9fbfc;
 }
 
+.img-place {
+    float:right;
+}
+
 .addon-footer {
     position: absolute;
     left: 15px;
@@ -65,5 +69,8 @@ a:hover {
         bottom: -30px;
         text-align: center;
         width: 100%;
+    }
+    .img-place {
+        float:none;
     }
 }
