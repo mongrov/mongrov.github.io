@@ -74,3 +74,19 @@ a:hover {
         float:none;
     }
 }
+
+.social-media {
+    float: right;
+    margin-top: -3px;
+    margin-left: 5px;
+}
+
+.social-media a:hover {
+    color: #c1f6e5 !important;
+    text-decoration: none !important;
+}
+
+.btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #d5fff1;
+}
