@@ -1,6 +1,3 @@
-p {
-    font-weight: 500;
-}
 
 a{
     color: #39d39f ;
@@ -89,4 +86,9 @@ a:hover {
 .btn:focus, .btn.focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem #d5fff1;
+}
+
+.eng-font {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
 }
